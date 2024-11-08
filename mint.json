@@ -12,7 +12,7 @@
     "dark": "#0D9373",
     "background": {
       "light": "#ffffff",
-      "dark": "#090014"
+      "dark": "#08090a"
     },
     "anchors": {
       "from": "#FF7F57",
@@ -93,6 +93,7 @@
     "linkedin": "https://linkedin.com/company/mintlify"
   },
   "modeToggle": {
-    "default": "light"
+    "default": "light",
+    "isHidden": true
   }
 }
