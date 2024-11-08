@@ -42,7 +42,7 @@
       "url": "https://docs.easybuilder.com.br/introduction"
     },
     {
-      "name": "Communidade",
+      "name": "Community",
       "icon": "slack",
       "url": "https://mintlify.com/community"
     },
@@ -56,9 +56,9 @@
     {
       "group": "Get Started",
       "pages": [
-        "Introdução",
-        "Configuração rápdida",
-        "Erros comuns"
+        "introduction",
+        "quickstart",
+        "development"
       ]
     },
     {
