@@ -2,8 +2,8 @@
   "$schema": "https://mintlify.com/schema.json",
   "name": "Starter Kit",
   "logo": {
-    "dark": "/logo/light.svg",
-    "light": "/logo/dark.svg"
+    "scr": "logo/light.svg",
+    "width": "220px"
   },
   "favicon": "/favicon.svg",
   "colors": {
@@ -21,13 +21,13 @@
   },
   "topbarLinks": [
     {
-      "name": "Support",
+      "name": "Suporte",
       "url": "mailto:hi@mintlify.com"
     }
   ],
   "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "name": "Acessar",
+    "url": "https://easybuilder.com.br"
   },
   "tabs": [
     {
