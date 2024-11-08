@@ -2,8 +2,8 @@
   "$schema": "https://mintlify.com/schema.json",
   "name": "Starter Kit",
   "logo": {
-    "scr": "logo/light.svg",
-    "width": "220px"
+    "dark": "/logo/light.svg",
+    "light": "/logo/dark.svg"
   },
   "favicon": "/favicon.svg",
   "colors": {
@@ -39,10 +39,10 @@
     {
       "name": "Documentation",
       "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
+      "url": "https://docs.easybuilder.com.br/introduction"
     },
     {
-      "name": "Community",
+      "name": "Communidade",
       "icon": "slack",
       "url": "https://mintlify.com/community"
     },
@@ -56,9 +56,9 @@
     {
       "group": "Get Started",
       "pages": [
-        "introduction",
-        "quickstart",
-        "development"
+        "Introdução",
+        "Configuração rápdida",
+        "Erros comuns"
       ]
     },
     {
