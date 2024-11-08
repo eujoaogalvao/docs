@@ -3,8 +3,7 @@
   "name": "Starter Kit",
   "logo": {
     "dark": "/logo/light.svg",
-    "light": "/logo/dark.svg",
-    "width": "220"
+    "light": "/logo/dark.svg"
   },
   "favicon": "/favicon.svg",
   "colors": {
