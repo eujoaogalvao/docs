@@ -22,7 +22,7 @@
   "topbarLinks": [
     {
       "name": "Suporte",
-      "url": "mailto:hi@mintlify.com"
+      "url": "https://wa.me/5566996255253"
     }
   ],
   "topbarCtaButton": {
@@ -37,19 +37,14 @@
   ],
   "anchors": [
     {
-      "name": "Documentation",
+      "name": "Documentação",
       "icon": "book-open-cover",
       "url": "https://docs.easybuilder.com.br/introduction"
     },
     {
-      "name": "Community",
+      "name": "Comunidade",
       "icon": "slack",
       "url": "https://mintlify.com/community"
-    },
-    {
-      "name": "Blog",
-      "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
     }
   ],
   "navigation": [
