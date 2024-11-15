@@ -59,7 +59,7 @@
     {
       "group": "API Documentation",
       "pages": [
-        "faq/introducao"
+        "api-reference/introduction"
       ]
     }
   ],
