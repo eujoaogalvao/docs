@@ -62,6 +62,12 @@
   ],
   "navigation": [
     {
+      "group": "Comece Aqui",
+      "pages": [
+        "onboarding"
+      ]
+    },
+    {
       "group": "Guia Obrigatório Inicial",
       "pages": [
         "primeiros-passos/configuracao",
