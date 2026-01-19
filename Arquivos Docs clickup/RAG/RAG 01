@@ -1,0 +1,345 @@
+<PERGUNTA 1>
+
+E SE O CLIENTE ACABOU DE INICIAR O SEU USO E PRECISA DE AJUDA PARA COMEÇAR A USAR A FERRAMENTA?
+  
+        Assim que tu receber o documento no WhatsApp, a primeira parada é instalar a extensão. Clica no link, vai abrir no navegador (pode ser Chrome, Edge ou Opera, funciona igual) e tu clica em 👉 **“Usar no Chrome”**. Instalou? Show.
+         
+        Agora vai lá no quebra-cabeça 🧩 (ícone das extensões no canto superior direito do navegador), procura o Easy Builder e clica no 📌 alfinete pra fixar na barra. Depois é só clicar nele e logar com o e-mail que tu usou no cadastro. Vai pedir pra definir a senha, coloca e marca "permanecer conectado".
+
+        Aí tu parte pro WordPress. Abre o admin do teu site. Não precisa ser a versão mais nova do WP, mas por Deus, não usa versão das cavernas. Agora instala o Elementor e o Elementor Pro. Não tem o Pro? Relaxa, baixa o **Pro Elements** que faz a função.
+
+        Vai em **Elementor > Configurações > Experimentos (Features)** e ativa tudo. Salva. Depois vai em **Elementor > Ferramentas** e clica em **Regenerar CSS** e **Sincronizar Biblioteca**. Isso evita que os elementos bugueiem.
+
+        Criando a página: vai em **Páginas > Adicionar Nova**. Dá um nome e clica em **Editar com Elementor**. No canto inferior esquerdo tem uma engrenagem ⚙️ — clica nela e muda o **Layout da Página** pra **Elementor Canvas**. Isso some com o cabeçalho e rodapé, fica só o que interessa.
+        
+        Agora sim, vamo usar o Easy Builder de verdade 🔥
+      
+</PERGUNTA 1>  
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+<PERGUNTA 2>
+    
+E SE O CLIENTE JÁ INSTALOU A FERRAMENTA, QUAIS OS PASSOS PARA TER UM MODELO DE SESSÃO OU PÁGINA DO EASY BUILDER DENTRO DO SEU WORDPRESS?
+
+
+        Clica no ícone do Easy Builder no navegador e fuça os recursos. Escolhe uma seção que tu curtiu, clica com o botão direito no quadrado cinza e copia. Aí vai no Elementor, botão direito onde quer colar, e clica em **"Colar de outro site"**. Aperta **Ctrl + V** (ou Command + V se tu for do bonde do Mac).
+        
+          
+        
+        🎨 Quer deixar o visual padronizado rapidão? No menu do Elementor, vai lá em cima no canto esquerdo (ícone de três linhas), entra em **Configurações do Site** > **Cores Globais** e **Tipografia Global**. Assim tu edita tudo de uma vez só. Muito mais rápido do que ficar mexendo elemento por elemento.
+        
+          
+        
+        ⚠️ Se der erro na importação (tipo uma mensagem vermelha ou a seção não cola), provavelmente:
+        
+        > Ou teu WordPress/Elementor tá desatualizado
+        > 
+        > Os recursos avançados do elementor (tipo flexbox container) está desativado
+        > 
+        > Falta você ir em "Ferramentas" do Elementor e apertar nos 2 botões que tem lá de recriar os kits e sincronizar biblioteca.
+        > 
+        > Ou tua hospedagem tá limitando o tempo de execução ou bloqueando códigos
+        
+          
+        
+        🔗 Se ainda ficou com dúvida, vê o vídeo completo aqui que é tiro e queda: 
+👉 https://www.youtube.com/watch?v=Rch4oLpSDco       
+  
+</PERGUNTA 2>          
+
+
+
+
+
+
+
+
+
+
+<PERGUNTA 3>
+        
+COMO EU POSSO USAR O EASY BUILDER DA FORMA MAIS EFICIENTE E PRÁTICA?
+    
+[ Sempre disponibilize o link da aula gravada para o cliente https://www.youtube.com/watch?v=yV24uyf5YXA
+E entregar o tutorial em texto:]
+  
+       
+        Você vai começar no seu WordPress, normal. Vai em **Páginas > Adicionar Nova**. Dá um nome (tipo "Página de Aula" ou “Easy Builder Teste”) e clica em **Editar com Elementor**.
+        
+        🛠 Antes de qualquer coisa, vai no canto inferior esquerdo no ⚙️ e muda o **Layout da Página** pra **Elementor Canvas**. Isso apaga cabeçalho e rodapé pra deixar a parada clean, só o que interessa.
+        
+        Depois disso, clica lá no topo do navegador no ícone do Easy Builder 🔧 que você já instalou (se não fez isso ainda, volta pro vídeo anterior que eu te explico).
+        
+        🚀 Quando abrir o Easy Builder, você vai ver:
+        
+        *   **Meus Recursos** (onde ficam as paradas que você mesmo salvou)
+        *   E abaixo: **Páginas**, **Sessões**, **Botões**, **Carrosséis**, **Códigos**...
+        
+        Quer usar uma página completa? Suave. Vai em **Páginas**, escolhe uma que tu curtir (tipo a da Tássia), clica em **Visualizar** se quiser ver o modelo inteiro antes. Curtiu? Clica em **Copiar**.
+        
+        👉 Agora o segredo: volta pro Elementor, clica com o botão direito no espaço onde quer colar e seleciona **“Colar de outro site”**. Depois aperta **Ctrl + V**.
+        
+        ☝️ Dá uns 5 segundinhos e BUM! A página aparece com tudo montado — responsiva, bonitinha, no grau.
+        
+        Mas aí vem o pulo do gato...
+        
+        🧠 O Easy Builder não é pack de template engessado. Ele é tipo um chefão que agiliza tua vida, mas o conteúdo (copy, imagens, logo) é contigo. Ou seja:
+        
+        *   Muda a logo pra do seu cliente.
+        *   Edita os textos direto ali.
+        *   Quer mudar um ícone? Vai na biblioteca de ícones do Elementor e troca fácil.
+        
+        💡 Quer montar do zero? Vai em **Sessões**. Exemplo: tu precisa começar com um “Hero” (aquele bloco inicial com título, subtítulo e botão)? Vai lá, escolhe um que combine com a copy do teu cliente (tem com vídeo, com player, centralizado...).
+        
+        Copia a sessão, volta pro Elementor > botão direito > colar de outro site > Ctrl + V. Fez isso? Parte pro próximo bloco: Benefícios, Comparação, Depoimentos... Vai montando como Lego 🧱.
+        
+        ⚠️ Só cuidado: alguns templates têm efeitos com CSS. Se quiser trocar a cor de fundo de uma sessão com animação, vai no **Avançado > CSS Personalizado** e edita lá. Tipo: `background: #FF0000;`
+        
+        E mais um truque ninja 🥷:
+        
+        *   Quando um botão não colar direito, cria uma **nova coluna** com o botão de “+”, aí sim clica com botão direito nela e **colar de outro site + Ctrl + V**. Se colar no lugar errado, só arrastar.
+        
+        🎨 Tá com scroll lateral bugado? Vai no Easy Builder > Códigos > pega o código que remove o scroll, cola no CSS da página. Simples assim.
+        
+        🎯 Quer customizar scrollbar, título com degradê ou qualquer outro efeito? Tudo isso tá em **Códigos** também. Clica, copia, cola no **Avançado > CSS Personalizado** e aplica.
+        
+        🛑 Dica final e valiosa: se a página do cliente segue a estrutura clássica (Hero, Benefícios, Depoimentos, Bio, Oferta, FAQ...), NÃO PERDE TEMPO FAZENDO PROTÓTIPO NO FIGMA! Sério. Já monta direto com o Easy Builder. Você economiza horas de vida e ainda entrega mais rápido.
+        
+        👉 Quer ver tudo isso rolando ao vivo, em movimento, com mouse e clique? Tá aqui o link do vídeo: 🎥 [Assista aqui – YouTube](https://www.youtube.com/watch?v=yV24uyf5YXA)
+        
+          
+</PERGUNTA 3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<PERGUNTA 4>
+
+E SE O CLIENTE ESTIVER INTERESSADO EM CONHECIMENTOS PARA ECONOMIZAR TEMPO USANDO O EASY BUILDER PARA CONSTRUIR AS PÁGINAS?
+
+ Sempre disponibilize o link da aula gravada:       
+https://www.youtube.com/watch?v=ozVJZUbiWcI  
+  
+E também traga o conteúdo resumido em texto:
+
+
+    *   Instrução em Texto:
+        
+        🧠 Antes do Easy Builder, montar uma página era quase uma saga épica. O cliente chegava, aí tinha briefing, pagamento, nota, grupo de WhatsApp, Drive, ClickUp, planilha financeira, revisão de arquivos, validação... tudo isso _antes_ de começar o design. 🙄
+        
+        Aí vem o caos real:
+        
+        Cria Figma → monta layout da primeira sessão → aprova internamente → manda pro cliente → cliente aprova → aí sim faz o resto da página no Figma → aprova de novo → começa implementação no Elementor → cria páginas → exporta arquivos → implementa manualmente cada detalhe → revisa tudo → otimiza → configura plugins → ativa cache → insere formulários, cookies, políticas → faz backup → coleta depoimento → salva portfólio → atualiza financeiro → só então entrega.
+        
+        Resultado? **Dias de trampo só pra uma página.** E olha que nem falei dos ajustes de responsivo que comiam mais tempo que sogra em visita.
+        
+        🚀 Aí entra o **Easy Builder** e muda tudo. Saca só o novo fluxo com a ferramenta:
+        
+        1. **Onboarding?** Igual. Cliente preenche briefing e bora.
+        2. **Desenvolvimento?** Tu instala o backup do Easy Builder no WordPress. Ele já vem com tudo: Elementor, plugins, pré-carregamento de pixel, WP Rocket, Light Speed... já otimizado pra voar.
+        3. **Nada de Figma!** Tu monta a primeira sessão direto no Easy Builder. Baseado na copy: logo, título, texto, botão. Já com imagem de fundo se quiser. Envia pro cliente aprovar.
+        4. **Cliente aprovou?** Continua montando o layout direto no Elementor usando sessões do Easy Builder: benefícios, comparações, depoimentos... só copiar e colar.
+        5. **Responsivo?** Só ajusta imagens. O resto já vem pronto. Nada de reconfigurar margem, espaçamento, fonte... já vem tudo afinado.
+        6. **Finalização?** Salva o projeto nos teus recursos do Easy Builder, coleta depoimento, tira print e joga no teu portfólio.
+        
+        💸 Pós-entrega? Recebe a grana, posta no portfólio, atualiza teu financeiro e **partiu próxima venda**.
+        
+        🎯 O que antes era 20 etapas entre design e implementação, hoje virou isso aqui:
+        
+        **Montou – colou – ajustou imagem – entregou. Fim.**
+        
+        Esse processo novo vai te fazer economizar dias de trabalho a cada projeto. Dias mesmo. Deixa os concorrentes aí desenhando frame no Figma e montando grid. Tu vai é ganhar tempo e grana. Trabalha com inteligência, não com força bruta.
+        
+        📺 Quer ver essa aula visualmente? Tá aqui: 👉 [Fluxograma - Processos que vão te fazer economizar dias](https://www.youtube.com/watch?v=ozVJZUbiWcI)
+        
+        Se não entendeu tudo, tem mentoria gravada explicando esse fluxo tim-tim por tim-tim lá na área de membros.
+        
+        Foca no que importa. Layout bem feito. Conteúdo organizado. Resultado no bolso. O resto é vaidade.
+               
+</PERGUNTA 4>
+
+
+
+
+
+
+      
+<PERGUNTA 5>
+
+
+E SE O CLIENTE FOR INICIANTE E PRECISA ENTENDER COMO USAR 100% DO EASY BUILDER DO ZERO PARA APROVEITAR AO MÁXIMO O EASY BUILDER?
+   
+Sempre entregar o link da aula gravada:
+  [https://youtu.be/pNGtNLb5xy4](https://youtu.be/pNGtNLb5xy4)
+    
+    *   Instrução em Texto:
+        
+        👑 **TUDO QUE VOCÊ PRECISA SABER PRA USAR O EASY BUILDER COM MAESTRIA (obrigatório pra iniciantes)**
+        
+        Fica de boa que aqui não tem enrolação. Esse vídeo é basicamente um _mapa da mina_ pra tu parar de apanhar de Elementor e começar a surfar no Easy Builder sem medo. Bora lá! 👇
+        
+        🔧 **1\. Primeira coisa: fixa a extensão!** Abre o Easy Builder no navegador, clica no ícone da peça de quebra-cabeça 🧩 no canto superior direito e fixa a extensão no topo clicando no 📌. Isso te dá acesso mais rápido a tudo.
+        
+        No menu lateral da extensão:
+        
+        *   🏠 **Home**
+        *   ⭐ **Favoritos**
+        *   ❓ **Tire suas dúvidas** (tem guias, erros comuns, configs do WP, etc.)
+        *   👨‍💻 **Easy Coder** (a IA que escreve código por você)
+        *   🐞 **Reportar Bug**
+        *   💬 **Suporte** direto com o João ou com a equipe
+        
+        🎨 **2\. Cores e fontes bugadas? Não, é o sistema global!**
+        
+        Quando tu importa um template e tudo parece “bugado”, na real é o Elementor puxando o padrão do teu WordPress.
+        
+        > Exemplo: A fonte e a cor vêm tudo zoado? Relaxa, é só porque tá puxando o estilo global.
+        
+        👉 Vai nas **Configurações do Site > Cores e Tipografia Globais** e muda tudo ali. Pronto, tua página se adapta inteira.
+        
+        💡 Spoiler: Versões futuras do EB vão ter templates sem padrão global. É só copiar e colar que fica exatamente igual ao modelo.
+        
+        🧠 **3\. Personalizações com HTML/CSS (sem pirar)**
+        
+        Quer deixar uma palavra colorida ou em destaque? Usa `<span style="color:#FF0000">Texto</span>`. Mas se isso parece grego:
+        
+        > 🧙 Vai no Easy Coder e pede: “coloca esse trecho em amarelo”, pronto, ele cospe o código pra você.
+        
+        ⚠️ Muito dos efeitos vêm prontos com classes CSS. Se quiser personalizar algo mais específico, o código tá no “Avançado > CSS Personalizado”. Mas se tu quiser deletar tudo e deixar o botão limpinho, só selecionar, apagar e pronto. Ou joga no Easy Coder: “muda a cor pra verde limão”, e já era.
+        
+        📦 **4\. DOM otimizado (menos elementos, site mais leve)**
+        
+        Tem sessões com várias caixas (imagem, texto, botão…) e outras com tudo agrupado num só widget. As versões otimizadas usam menos elementos = carregamento mais rápido.
+        
+        > Quer mudar o texto ou a imagem? Só clicar na caixa. Mas se o texto “bugar” e não editar, tem uma gambiarra do bem: clica fora, volta e edita de novo. Elementor é birrento às vezes.
+        
+        🧱 **5\. Organização em camadas (NAVEGADOR)**
+        
+        Clica com botão direito > **Navegador**. Vai abrir uma árvore com tudo organizado em containers. Isso te ajuda a:
+        
+        *   Mover coisas
+        *   Saber onde enfiar aquele botão maldito
+        *   Ver o que tá por cima ou por baixo com o `z-index`
+        
+        Ex: Tem imagem “em cima” do texto? Muda a direção do container ou a ordem dos elementos. Quer que a imagem vá pra direita? Troca a direção ou reorganiza.
+        
+        📱 **6\. Responsivo e visibilidade**
+        
+        Quer que uma sessão apareça só no mobile? Vai no **Avançado > Responsivo** e marca “ocultar no desktop”. Simples assim.
+        
+        Quer mudar a cor da scrollbar? Vai no Easy Builder > Códigos > pega o código da scrollbar e joga no **Custom CSS da página inteira**.
+        
+        🧩 **7\. Layout, Estilo, Avançado**
+        
+        Essa é a base:
+        
+        *   **Layout** = estrutura (altura, direção, alinhamento, espaçamento)
+        *   **Estilo** = aparência (cores, fundo, borda, gradiente, efeito de rolagem)
+        *   **Avançado** = detalhes técnicos (margin, padding, z-index, responsivo, custom CSS)
+        
+        💡 Use isso em qualquer coisa: se é um container, botão ou imagem, essas 3 abas são o coração da personalização.
+        
+        🎥 **8\. Efeitos visuais**
+        
+        Quer que algo “entre na tela” com um fade, zoom ou slide? Vai no **Avançado > Efeitos de Movimento** e escolhe o efeito. Pode aplicar só em uma imagem ou na sessão inteira.
+        
+        📚 **9\. Curso, PDF e macetes**
+        
+        Tem um PDF com tags HTML básicas (negrito, itálico, sublinhado) pra tu brincar com texto direto no editor.
+        
+        Tem curso rolando chamado **Fast Builder** que ensina tudo sobre layout, estrutura, otimização e o caralho a quatro. E custa baratíssimo. Quer saber se tá disponível? Chama no suporte ou na comunidade.
+        
+        🧠 **10\. Dica final de ouro (pra você, iniciante)**
+        
+        Configurações da página ficam em **Configurações > Layout da Página** (troca pra “Tela do Elementor” se aparecer título ou rodapé indesejado).
+        
+        Personalizações em **Estilo**, ajustes finos em **Avançado**. E se tudo der errado? Easy Coder resolve.
+        
+        🎁 BÔNUS: Tem aula pra caramba já disponível — mentoria com gente que já fez mais de 1 milhão de dólares, dicas de tráfego pago, design com IA, vendas e tudo mais.
+        
+        📺 Quer ver tudo isso em vídeo? Tá aqui, irmão: 👉 [https://www.youtube.com/watch?v=pNGtNLb5xy4](https://www.youtube.com/watch?v=pNGtNLb5xy4)
+        
+        Não fica só “comprando ferramenta”. Aprende a usar. Aplica. E se enrolar, chama no suporte, pergunta pro Easy Coder, entra na comunidade. Tu não tá sozinho nessa porra. Bora botar site no ar e dinheiro no bolso.
+        
+</PERGUNTA 5>
+
+
+
+
+
+
+<PERGUNTA 6>          
+        
+COMO PERSONALIZAR AS FONTES E CORES GLOBAIS DO ELEMENTOR?
+    
+Sempre entregar o link da aula gravada:  
+https://www.youtube.com/watch?v=YdBD9Zha4ms    
+
+
+    *   Instrução em Texto:
+        
+        🎨 **COMO PERSONALIZAR CORES E FONTES NO EASY BUILDER EM 2 MINUTOS SEM VIRAR UM ZUMBI DO ELEMENTOR**
+        
+        Tu já deve ter percebido que quando importa uma página pelo Easy Builder, tudo já vem responsivo. Massa. Mas se tu quiser deixar as fontes e cores com a cara do teu cliente (ou da tua marca), sem precisar mudar **elemento por elemento**, presta atenção:
+        
+        Primeiro, abre a página no Elementor normalmente. Aí no canto superior esquerdo, tu vai ver três tracinhos empilhados (tipo hambúrguer 🍔). Clica neles e depois vai em 👉 **“Configurações do Site”**.
+        
+        Ali dentro, tu vai encontrar duas paradas mágicas:
+        
+        > 🌈 **Cores Globais**
+        > 
+        > ✍️ **Fontes Globais**
+        
+        Em **Cores Globais**, tu vai ver quatro caixinhas: primária, secundária, texto e realce. Só clicar em cima e mudar a cor pra que quiser (pode arrastar na paleta ou colar o hex tipo `#FF0000`). Isso já altera em tudo que estiver usando essas cores globais. Sim, tudo mesmo.
+        
+        Agora, em **Fontes Globais**, o esquema é o mesmo. Tu pode escolher:
+        
+        *   A família da fonte (tipo Poppins, Bebas, etc)
+        *   O peso (fino, médio, grosso)
+        *   Tamanho, altura da linha, espaçamento...
+        
+        👉 E dá pra configurar diferente pra **desktop, tablet e celular** clicando no ícone de dispositivo no canto inferior esquerdo do editor. Digamos que a fonte ficou pequena no mobile? Vai lá no modo celular e aumenta só pra ele.
+        
+        Terminou de ajustar? Não esquece de clicar em **“Atualizar”** no cantinho. Espera a barrinha roxa carregar e pronto. Volta no site e tudo vai estar com as novas cores e fontes.
+        
+        💡 Importante: essas mudanças só funcionam se os elementos estiverem usando as configurações globais. Se não tiverem, tu pode editar um por um — clicando no texto > aba “Estilo” > mudando fonte e cor direto ali.
+        
+        ⚠️ Ah, e tem novidade vindo aí: logo mais vai rolar uma opção pra importar as sessões SEM essas configs globais, ou seja, vai colar a parada com o estilo exato do template — sem puxar cor nem fonte padrão do WP. Aguardem.
+        
+        🎥 Quer ver isso na prática, com mouse clicando e tudo mais? Tá aqui o link completo:
+https://www.youtube.com/watch?v=YdBD9Zha4ms        
+          
+</PERGUNTA 6>           

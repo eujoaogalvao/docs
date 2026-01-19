@@ -1,0 +1,212 @@
+---
+title: 'Erro de Importação de Ícones'
+description: 'Como resolver problemas com ícones não carregando no Elementor'
+icon: 'icons'
+---
+
+## O Problema
+
+Você importou um template do Easy Builder, mas:
+- Ícones não aparecem (quadrados vazios)
+- Mensagem de erro ao inserir ícones
+- Font Awesome não carrega
+- Ícones ficam como "□" (quadrado vazio)
+
+<Warning>
+  **Causa:** Biblioteca de ícones (Font Awesome) não está atualizada ou sincronizada no Elementor.
+</Warning>
+
+## Tutorial em Vídeo
+
+Veja como resolver o erro de importação de ícones:
+
+<iframe
+  width="100%"
+  height="400"
+  src="https://www.youtube.com/embed/UelRPSLN0o4"
+  title="[Erro] Importação de Ícones - como resolver?"
+  frameBorder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowFullScreen
+></iframe>
+
+## Solução Rápida
+
+<Steps>
+  <Step title="1. Atualizar WordPress">
+    **WordPress → Painel → Atualizações**
+
+    - Verificar se tem atualizações disponíveis
+    - Atualizar WordPress para última versão
+  </Step>
+
+  <Step title="2. Regenerar arquivos do Elementor">
+    **Elementor → Ferramentas**
+
+    Clique em:
+    - **"Gerar arquivos e dados novamente"** (ou "Regenerar CSS")
+    - **"Sincronizar Biblioteca"**
+
+    <Check>
+      Isso força o Elementor a recriar o cache e sincronizar bibliotecas de ícones!
+    </Check>
+  </Step>
+
+  <Step title="3. Atualizar Font Awesome">
+    **Adicionar ícone no Elementor:**
+
+    1. Crie um elemento qualquer (Título, Botão, etc)
+    2. Procure opção de **"Ícone"**
+    3. Clique para adicionar ícone
+    4. Biblioteca de ícones vai abrir
+    5. Se aparecer mensagem para **"Atualizar Font Awesome"**, clique!
+
+    <Info>
+      Isso vai baixar e instalar a versão mais recente da biblioteca Font Awesome.
+    </Info>
+  </Step>
+
+  <Step title="4. Atualizar Font Awesome 4 e 5">
+    No seletor de ícones do Elementor:
+
+    - Procure por opção de **atualizar Font Awesome 4**
+    - Clique em **"Atualizar"**
+    - Procure por opção de **atualizar Font Awesome 5**
+    - Clique em **"Atualizar"**
+
+    **Valores recomendados (conforme vídeo):**
+    - Font Awesome 4: Atualizar
+    - Font Awesome 5: Atualizar
+  </Step>
+
+  <Step title="5. Testar importação">
+    **Teste se funcionou:**
+
+    1. Crie nova página
+    2. Editar com Elementor
+    3. Easy Builder → Copiar qualquer sessão com ícones
+    4. Colar no Elementor
+    5. Verificar se ícones aparecem corretamente
+
+    **Funcionou?** Problema resolvido! ✅
+  </Step>
+</Steps>
+
+## Resumo do Processo (do vídeo)
+
+Baseado na transcrição:
+
+1. **Após importar backup:**
+   - WordPress → Páginas
+   - Regenerar ficheiros (Elementor → Ferramentas)
+   - Atualizar WordPress
+
+2. **Criar página de teste:**
+   - Editar com Elementor
+   - Elementor pode pedir para "Recriar o Kit" → Aceite!
+
+3. **Atualizar Font Awesome:**
+   - Procure por "Ícones" no Elementor
+   - Adicione qualquer ícone
+   - Sistema vai pedir para atualizar Font Awesome 4 e 5
+   - **Clique em atualizar para ambos!**
+
+4. **Pronto!**
+   - Ícones importados vão aparecer normalmente
+   - Todos os templates com ícones vão funcionar
+
+## Checklist de Verificação
+
+Antes de entrar em contato com suporte, confirme:
+
+<Steps>
+  <Step title="✅ WordPress atualizado">
+    Versão mais recente instalada
+  </Step>
+
+  <Step title="✅ Elementor atualizado">
+    Plugin na última versão
+  </Step>
+
+  <Step title="✅ Arquivos regenerados">
+    Elementor → Ferramentas → Gerar arquivos novamente
+  </Step>
+
+  <Step title="✅ Biblioteca sincronizada">
+    Elementor → Ferramentas → Sincronizar biblioteca
+  </Step>
+
+  <Step title="✅ Font Awesome atualizado">
+    Font Awesome 4 e 5 nas versões mais recentes
+  </Step>
+</Steps>
+
+## Por Que Isso Acontece?
+
+<Info>
+  **Explicação técnica:**
+
+  Templates do Easy Builder usam ícones da biblioteca **Font Awesome**. Quando você importa o backup ou usa WordPress/Elementor desatualizado, a biblioteca de ícones pode estar em versão antiga ou não sincronizada.
+
+  Ao atualizar Font Awesome 4 e 5, você garante compatibilidade com TODOS os ícones usados nos templates!
+</Info>
+
+## Problemas Relacionados
+
+<AccordionGroup>
+  <Accordion title="Ícones aparecem mas são diferentes" icon="exchange">
+    **Solução:**
+    - Isso pode ser normal (versões diferentes de ícones)
+    - Troque manualmente: Clique no ícone → Biblioteca → Escolha outro
+  </Accordion>
+
+  <Accordion title="Alguns ícones aparecem, outros não" icon="circle-half-stroke">
+    **Solução:**
+    - Atualizar AMBOS Font Awesome 4 e 5
+    - Alguns templates usam ícones FA4, outros FA5
+    - Precisa ter os dois atualizados!
+  </Accordion>
+
+  <Accordion title="Ícones customizados não aparecem" icon="upload">
+    **Solução:**
+    - Ícones customizados (SVG) precisam ser importados manualmente
+    - Elementor → Ícones Personalizados → Enviar SVG
+  </Accordion>
+</AccordionGroup>
+
+## Alternativa: Método .htaccess
+
+Se você não tem acesso ao cPanel ou prefere via código:
+
+1. Acesse arquivos via FTP ou Gerenciador de Arquivos
+2. Abra o arquivo `.htaccess` (na raiz do WordPress)
+3. Adicione no INÍCIO do arquivo:
+
+```apache
+# Easy Builder config
+php_value max_execution_time 600
+php_value max_input_time 600
+php_value memory_limit 1024M
+php_value upload_max_filesize 512M
+php_value post_max_size 512M
+```
+
+4. Salve o arquivo
+5. Aguarde 1-2 minutos para propagar
+6. Teste novamente
+
+## Precisa de Ajuda?
+
+<CardGroup cols={2}>
+  <Card title="Comunidade Discord" icon="discord" href="https://discord.gg/WR6nzkydse">
+    Tire dúvidas com outros membros
+  </Card>
+
+  <Card title="Suporte WhatsApp" icon="whatsapp" href="https://api.whatsapp.com/send?phone=5551992751897">
+    Fale diretamente com o suporte
+  </Card>
+</CardGroup>
+
+<Info>
+  **Dica:** 90% dos problemas com ícones se resolvem atualizando Font Awesome! Se o problema persistir, entre em contato com suporte.
+</Info>

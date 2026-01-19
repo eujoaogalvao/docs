@@ -1,0 +1,505 @@
+Protocolo Padrão de Implementação no Elementor com EasyBuilder
+1. Nomenclatura de Elementos
+1.1 Padrão de Nomes
+Use nomes claros e consistentes para seções, colunas e widgets
+Padrão recomendado: tipo-funcao-identificador
+Exemplos: "btn-cta-contato", "secao-hero-principal", "card-servico-01"
+Evite nomes genéricos como "coluna1", "section2", "container3"
+Nomeie todos os containers e elementos importantes
+1.2 Exemplos de Nomenclatura
+Containers: container-hero, container-servicos, container-depoimentos
+Botões: btn-primario, btn-secundario, btn-cta
+Cards: card-servico, card-beneficio, card-depoimento
+Seções: secao-sobre, secao-contato, secao-portfolio
+
+2. Performance e Otimização
+2.1 Imagens
+Formato: WebP como primeira escolha, JPEG para fallback
+Dimensões recomendadas por uso:
+Hero/Banner full width: 1920x800px a 1920x1080px
+Imagens de conteúdo: 1200x800px
+Cards/Thumbnails: 600x400px
+Ícones/Logos: 200x200px (SVG preferencial)
+Compressão: 80-85% de qualidade para fotos
+Proporções comuns: 16:9 (landscape), 1:1 (quadrado), 4:3 (clássico)
+2.2 CSS e Scripts
+Minimize o uso de Custom CSS inline - prefira classes reutilizáveis
+Evite carregar múltiplas fontes do Google Fonts (máximo 2-3 famílias)
+Desabilite widgets não utilizados em Elementor → Tools → Regenerate CSS
+Ative CSS minificado e combinado quando possível
+2.3 Widgets e Elementos
+Evite uso excessivo de animações (impacto na performance mobile)
+Prefira Icon Box ao invés de múltiplos widgets separados
+Limite carrosséis a 5-8 slides por seção
+Evite múltiplos vídeos em autoplay na mesma página
+3. Padrões Responsivos
+3.1 Breakpoints Padrão Elementor
+Desktop: 1025px+
+Tablet: 768px - 1024px
+Mobile: até 767px
+
+3.2 Tipografia Responsiva - Valores em REM
+Base de referência: 1rem = 16px (padrão dos navegadores)
+Headings (Títulos)
+H1 (Título Principal)
+├─ Desktop: 3rem - 3.75rem (48px - 60px)
+├─ Tablet: 2.25rem - 3rem (36px - 48px)
+└─ Mobile: 1.75rem - 2.25rem (28px - 36px)
+
+H2 (Títulos de Seção)
+├─ Desktop: 2.25rem - 2.625rem (36px - 42px)
+├─ Tablet: 1.75rem - 2.25rem (28px - 36px)
+└─ Mobile: 1.5rem - 1.75rem (24px - 28px)
+
+H3 (Subtítulos)
+├─ Desktop: 1.75rem - 2rem (28px - 32px)
+├─ Tablet: 1.5rem - 1.75rem (24px - 28px)
+└─ Mobile: 1.25rem - 1.5rem (20px - 24px)
+
+H4 (Títulos Menores)
+├─ Desktop: 1.375rem - 1.625rem (22px - 26px)
+├─ Tablet: 1.25rem - 1.5rem (20px - 24px)
+└─ Mobile: 1.125rem - 1.375rem (18px - 22px)
+
+H5 e H6
+├─ Desktop: 1.125rem - 1.25rem (18px - 20px)
+├─ Tablet: 1rem - 1.125rem (16px - 18px)
+└─ Mobile: 1rem - 1.125rem (16px - 18px)
+
+Textos Corpo e Elementos
+Parágrafo/Texto Base (REFERÊNCIA)
+├─ Desktop: 1rem - 1.125rem (16px - 18px)
+├─ Tablet: 0.9375rem - 1.0625rem (15px - 17px)
+└─ Mobile: 0.875rem - 1rem (14px - 16px)
+
+Texto Pequeno (Small)
+├─ Desktop: 0.875rem - 0.9375rem (14px - 15px)
+├─ Tablet: 0.8125rem - 0.875rem (13px - 14px)
+└─ Mobile: 0.75rem - 0.8125rem (12px - 13px)
+
+Texto em Botões
+├─ Desktop: 1rem - 1.125rem (16px - 18px)
+├─ Tablet: 0.9375rem - 1.0625rem (15px - 17px)
+└─ Mobile: 0.875rem - 1rem (14px - 16px)
+
+Line Height (Altura de Linha) - Valores Relativos
+Headings: 1.2 - 1.3
+Texto corpo: 1.6 - 1.8
+Botões: 1.5
+
+💡 Dica: Use clamp() para fluidez total entre breakpoints:
+/* Exemplo: H1 que escala automaticamente */
+font-size: clamp(1.75rem, 5vw, 3.75rem);
+/* Mínimo 1.75rem (mobile), máximo 3.75rem (desktop), 5vw entre eles */
+
+3.3 Espaçamentos (Margin e Padding) - Sistema Relativo
+Sistema de Espaçamento Base em REM
+Adote um sistema baseado em múltiplos para consistência:
+XS (Extra Small): 0.5rem (8px)
+S (Small): 1rem (16px)
+M (Medium): 1.5rem (24px)
+L (Large): 2rem (32px)
+XL (Extra Large): 3rem (48px)
+XXL: 4rem (64px)
+XXXL: 6rem (96px)
+
+Containers - Padding em Porcentagem e REM
+Container Principal
+├─ Desktop: 
+│   ├─ Padding horizontal: 5% - 7.5% (ou 5rem - 7.5rem)
+│   └─ Padding vertical: 5rem - 7.5rem
+├─ Tablet: 
+│   ├─ Padding horizontal: 4% - 5% (ou 2.5rem - 3.75rem)
+│   └─ Padding vertical: 3.75rem - 5rem
+└─ Mobile: 
+    ├─ Padding horizontal: 5% - 6% (ou 1.25rem - 1.875rem)
+    └─ Padding vertical: 2.5rem - 3.75rem
+
+Container Interno (Nested)
+├─ Desktop: Padding: 2.5rem - 3.75rem
+├─ Tablet: Padding: 1.875rem - 2.5rem
+└─ Mobile: Padding: 1.25rem - 1.875rem
+
+💡 Dica de Largura: Use max-width em containers:
+Container de conteúdo: max-width: 75rem (1200px)
+Container estreito (texto): max-width: 50rem (800px)
+Container largo (full): max-width: 90rem (1440px)
+
+Seções - Margin e Padding
+Entre Seções (Section Margin)
+├─ Desktop: 5rem - 7.5rem
+├─ Tablet: 3.75rem - 5rem
+└─ Mobile: 2.5rem - 3.75rem
+
+Dentro de Seções (Section Padding)
+├─ Desktop: 3.75rem - 5rem (vertical), 5% (horizontal)
+├─ Tablet: 2.5rem - 3.75rem (vertical), 4% (horizontal)
+└─ Mobile: 1.875rem - 2.5rem (vertical), 5% (horizontal)
+
+Elementos Individuais
+Entre Parágrafos (Margin Bottom)
+├─ Desktop: 1.25rem - 1.5rem
+├─ Tablet: 1.125rem - 1.25rem
+└─ Mobile: 1rem - 1.125rem
+
+Entre Heading e Parágrafo
+├─ Desktop: 1rem - 1.5rem
+├─ Tablet: 0.875rem - 1.25rem
+└─ Mobile: 0.75rem - 1rem
+
+Entre Cards/Colunas (Gap)
+├─ Desktop: 1.875rem - 2.5rem
+├─ Tablet: 1.5rem - 1.875rem
+└─ Mobile: 1.25rem - 1.5rem
+
+💡 Dica de Gap: Use CSS Grid/Flexbox com gap:
+Desktop: gap: 2rem;
+Tablet: gap: 1.5rem;
+Mobile: gap: 1.25rem;
+
+3.4 Botões - Dimensões em REM e EM
+Botão Padrão (Medium)
+├─ Desktop:
+│   ├─ Padding: 1rem 2rem
+│   ├─ Font size: 1rem - 1.125rem
+│   └─ Border radius: 0.25rem - 0.5rem
+├─ Tablet:
+│   ├─ Padding: 0.875rem 1.75rem
+│   ├─ Font size: 0.9375rem - 1.0625rem
+│   └─ Border radius: 0.25rem - 0.5rem
+└─ Mobile:
+    ├─ Padding: 0.75rem 1.5rem
+    ├─ Font size: 0.875rem - 1rem
+    └─ Border radius: 0.25rem - 0.5rem
+
+Botão Grande (Large)
+├─ Desktop: Padding 1.25rem 2.5rem, Font 1.125rem - 1.25rem
+├─ Tablet: Padding 1.125rem 2.25rem, Font 1.0625rem - 1.1875rem
+└─ Mobile: Padding 1rem 2rem, Font 1rem - 1.125rem
+
+Botão Pequeno (Small)
+├─ Desktop: Padding 0.75rem 1.5rem, Font 0.875rem - 1rem
+├─ Tablet: Padding 0.625rem 1.25rem, Font 0.8125rem - 0.9375rem
+└─ Mobile: Padding 0.625rem 1.25rem, Font 0.8125rem - 0.9375rem
+
+💡 Dica de Largura:
+Botão com largura fluida: width: auto; (padrão)
+Botão full width mobile: width: 100%; (apenas mobile)
+Largura mínima recomendada: min-width: 8rem;
+
+3.5 Ícones - Tamanhos em REM e EM
+Ícones Decorativos/Features
+├─ Desktop: 3rem - 4rem (48px - 64px)
+├─ Tablet: 2.5rem - 3.5rem (40px - 56px)
+└─ Mobile: 2.25rem - 3rem (36px - 48px)
+
+Ícones em Botões
+├─ Desktop: 1.25rem - 1.5rem (20px - 24px)
+├─ Tablet: 1.125rem - 1.375rem (18px - 22px)
+└─ Mobile: 1rem - 1.25rem (16px - 20px)
+
+Ícones Inline (no texto)
+├─ Desktop: 1.125rem - 1.25rem (18px - 20px)
+├─ Tablet: 1rem - 1.125rem (16px - 18px)
+└─ Mobile: 1rem - 1.125rem (16px - 18px)
+
+Ícones de Redes Sociais
+├─ Desktop: 1.5rem - 2rem (24px - 32px)
+├─ Tablet: 1.375rem - 1.75rem (22px - 28px)
+└─ Mobile: 1.25rem - 1.5rem (20px - 24px)
+
+💡 Dica: Para ícones inline, use em ao invés de rem:
+font-size: 1.2em; 
+/* O ícone será 1.2x o tamanho do texto ao redor */
+
+3.6 Formulários - Campos em REM
+Input/Textarea
+├─ Desktop:
+│   ├─ Height: 3.125rem - 3.5rem (50px - 56px)
+│   ├─ Padding: 0.75rem 1.25rem
+│   ├─ Font size: 1rem
+│   └─ Border radius: 0.25rem - 0.5rem
+├─ Tablet:
+│   ├─ Height: 3rem - 3.25rem (48px - 52px)
+│   ├─ Padding: 0.75rem 1.125rem
+│   ├─ Font size: 0.9375rem
+│   └─ Border radius: 0.25rem - 0.5rem
+└─ Mobile:
+    ├─ Height: 2.75rem - 3rem (44px - 48px)
+    ├─ Padding: 0.625rem 1rem
+    ├─ Font size: 1rem (mínimo para evitar zoom no iOS)
+    └─ Border radius: 0.25rem - 0.5rem
+
+Espaçamento entre Campos
+├─ Desktop: 1.25rem - 1.5rem
+├─ Tablet: 1.125rem - 1.25rem
+└─ Mobile: 1rem - 1.125rem
+
+Labels
+├─ Desktop: Font 0.875rem - 1rem, Margin bottom 0.5rem
+├─ Tablet: Font 0.8125rem - 0.9375rem, Margin bottom 0.375rem
+└─ Mobile: Font 0.875rem - 1rem, Margin bottom 0.375rem
+
+Textarea (altura específica)
+├─ Desktop: min-height: 9rem (144px) - cerca de 6 linhas
+├─ Tablet: min-height: 8rem (128px)
+└─ Mobile: min-height: 7rem (112px)
+
+💡 Dica de Width:
+Campos full-width: width: 100%;
+Campos de 50%: width: calc(50% - 0.75rem); /* menos metade do gap */
+Campo de email/telefone: max-width: 25rem;
+
+3.7 Imagens em Cards/Grids
+Cards de Serviços/Produtos
+├─ Desktop: 
+│   ├─ Imagem: altura 15.625rem - 18.75rem (250px - 300px)
+│   ├─ Card padding: 1.875rem (30px)
+│   └─ Gap entre cards: 1.875rem (30px)
+├─ Tablet:
+│   ├─ Imagem: altura 13.75rem - 16.25rem (220px - 260px)
+│   ├─ Card padding: 1.5rem (24px)
+│   └─ Gap entre cards: 1.5rem (24px)
+└─ Mobile:
+    ├─ Imagem: altura 12.5rem - 15rem (200px - 240px)
+    ├─ Card padding: 1.25rem (20px)
+    └─ Gap entre cards: 1.25rem (20px)
+
+💡 Dica de Proporções: Use aspect-ratio para manter proporções:
+Landscape 16:9: aspect-ratio: 16/9;
+Quadrado: aspect-ratio: 1/1;
+Retrato 4:5: aspect-ratio: 4/5;
+Foto vertical: aspect-ratio: 3/4;
+
+💡 Dica de Largura em Grid:
+3 colunas desktop: width: calc(33.333% - 1.25rem);
+2 colunas tablet: width: calc(50% - 0.75rem);
+1 coluna mobile: width: 100%;
+
+Ou use CSS Grid:
+grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+gap: 1.875rem;
+
+3.8 Práticas Responsivas Gerais
+Regras de Ouro:
+Sempre defina valores para os 3 breakpoints (Desktop, Tablet, Mobile)
+Use unidades relativas prioritariamente:
+rem para espaçamentos, paddings, margins (baseado no root)
+em para elementos que devem escalar com seu container
+% para larguras de colunas e containers
+vw/vh para elementos que devem escalar com a viewport
+px apenas para valores fixos críticos (bordas de 1px, por exemplo)
+Oculte elementos desnecessários no mobile com "Hide on Mobile"
+Use "Reverse Columns" estrategicamente no mobile quando a ordem visual importa
+Teste em dispositivos reais, não apenas no preview
+💡 Função CSS clamp() para fluidez total:
+/* Tipografia fluida - cresce suavemente entre breakpoints */
+font-size: clamp(1rem, 2.5vw, 1.5rem);
+/* Mínimo 1rem, ideal 2.5% da largura, máximo 1.5rem */
+
+/* Espaçamento fluido */
+padding: clamp(2rem, 5vw, 5rem) clamp(1.25rem, 5%, 7.5rem);
+/* Vertical: min 2rem, max 5rem | Horizontal: min 1.25rem, max 7.5rem */
+
+/* Gap fluido */
+gap: clamp(1rem, 3vw, 2.5rem);
+
+💡 Quando usar cada unidade:
+rem - Tamanhos de fonte, espaçamentos gerais, paddings, margins
+em - Elementos que escalam com o texto pai (ícones inline)
+% - Larguras de containers, colunas, imagens responsivas
+vw - Elementos que devem escalar com largura da tela (hero sections)
+vh - Alturas de seções full-screen
+px - Bordas (1px), sombras, valores muito pequenos
+
+4. Estrutura e Hierarquia
+4.1 Headings - Estrutura Semântica
+Use apenas um H1 por página (normalmente o título principal do Hero)
+Mantenha hierarquia lógica: H1 → H2 → H3 → H4 (não pule níveis)
+Configure headings através do widget Heading, não através de estilo de texto
+Cada seção principal deve começar com H2
+Subseções usam H3, detalhes menores H4
+Exemplo de Estrutura:
+H1 - Título da Página (Hero)
+  H2 - Sobre Nós (Seção)
+    H3 - Nossa Missão (Subseção)
+    H3 - Nossos Valores (Subseção)
+  H2 - Serviços (Seção)
+    H3 - Consultoria (Card/Item)
+    H3 - Desenvolvimento (Card/Item)
+
+5. Cores e Contraste
+5.1 Contraste Mínimo
+Texto normal: contraste mínimo de 4.5:1 com o fundo
+Texto grande (18px+ ou 14px+ bold): contraste mínimo de 3:1
+Elementos interativos (botões, links): contraste mínimo de 3:1
+5.2 Combinações Seguras
+Texto escuro em fundo claro:
+├─ Texto: #222222 ou #333333
+└─ Fundo: #FFFFFF ou #F5F5F5
+
+Texto claro em fundo escuro:
+├─ Texto: #FFFFFF ou #F5F5F5
+└─ Fundo: #222222 ou #1A1A1A
+
+6. Checklist de Publicação de Template
+Antes de publicar/compartilhar qualquer template, verifique:
+[ ] Todos os elementos estão nomeados adequadamente
+[ ] Valores responsivos definidos para Desktop, Tablet e Mobile
+[ ] Tipografia segue os padrões de tamanho estabelecidos
+[ ] Espaçamentos seguem o sistema de múltiplos de 8px
+[ ] Estrutura de headings está correta (H1 → H2 → H3)
+[ ] Contraste de cores está adequado (mínimo 4.5:1)
+[ ] Todos os links funcionam corretamente
+[ ] Formulários têm campos com tamanhos adequados
+[ ] Imagens têm dimensões otimizadas
+[ ] CSS e JS desnecessários foram removidos
+[ ] Testado visualmente nos 3 breakpoints principais
+7. Tabela de Referência Rápida
+Tamanhos de Fonte (REM)
+Elemento
+Desktop
+Tablet
+Mobile
+H1
+3rem - 3.75rem
+2.25rem - 3rem
+1.75rem - 2.25rem
+H2
+2.25rem - 2.625rem
+1.75rem - 2.25rem
+1.5rem - 1.75rem
+H3
+1.75rem - 2rem
+1.5rem - 1.75rem
+1.25rem - 1.5rem
+H4
+1.375rem - 1.625rem
+1.25rem - 1.5rem
+1.125rem - 1.375rem
+Body
+1rem - 1.125rem
+0.9375rem - 1.0625rem
+0.875rem - 1rem
+Small
+0.875rem - 0.9375rem
+0.8125rem - 0.875rem
+0.75rem - 0.8125rem
+
+Conversão: 1rem = 16px (padrão do navegador)
+Espaçamentos Base (REM)
+Tamanho
+Valor REM
+Equivalente PX
+XS
+0.5rem
+8px
+S
+1rem
+16px
+M
+1.5rem
+24px
+L
+2rem
+32px
+XL
+3rem
+48px
+XXL
+4rem
+64px
+XXXL
+6rem
+96px
+
+Container Padding (REM ou %)
+Breakpoint
+Horizontal
+Vertical
+Desktop
+5% - 7.5% ou 5rem - 7.5rem
+5rem - 7.5rem
+Tablet
+4% - 5% ou 2.5rem - 3.75rem
+3.75rem - 5rem
+Mobile
+5% - 6% ou 1.25rem - 1.875rem
+2.5rem - 3.75rem
+
+Botões - Padding (REM)
+Tamanho
+Desktop
+Tablet
+Mobile
+Large
+1.25rem 2.5rem
+1.125rem 2.25rem
+1rem 2rem
+Medium
+1rem 2rem
+0.875rem 1.75rem
+0.75rem 1.5rem
+Small
+0.75rem 1.5rem
+0.625rem 1.25rem
+0.625rem 1.25rem
+
+Ícones (REM)
+Tipo
+Desktop
+Tablet
+Mobile
+Decorativos
+3rem - 4rem
+2.5rem - 3.5rem
+2.25rem - 3rem
+Em Botões
+1.25rem - 1.5rem
+1.125rem - 1.375rem
+1rem - 1.25rem
+Redes Sociais
+1.5rem - 2rem
+1.375rem - 1.75rem
+1.25rem - 1.5rem
+
+Formulários - Inputs (REM)
+Propriedade
+Desktop
+Tablet
+Mobile
+Height
+3.125rem - 3.5rem
+3rem - 3.25rem
+2.75rem - 3rem
+Padding
+0.75rem 1.25rem
+0.75rem 1.125rem
+0.625rem 1rem
+Font Size
+1rem
+0.9375rem
+1rem
+Gap entre campos
+1.25rem - 1.5rem
+1.125rem - 1.25rem
+1rem - 1.125rem
+
+Dicas de Conversão Rápida
+0.5rem = 8px    |  1rem = 16px     |  1.5rem = 24px
+2rem = 32px     |  3rem = 48px     |  4rem = 64px
+5rem = 80px     |  6rem = 96px     |  7.5rem = 120px
+
+8. Erros Comuns a Evitar
+Não testar em mobile real - o preview do Elementor nem sempre reflete o resultado final
+Abusar de animações - causa lentidão e distração
+Não otimizar imagens - maior causa de páginas lentas
+Copiar/colar código CSS sem entender - causa conflitos e problemas de manutenção
+Não nomear elementos - dificulta enormemente futuras edições
+Usar position: absolute excessivamente - quebra responsividade
+Não configurar fallbacks - elementos desaparecem quando integrações falham
+
+Versão: 2.0
+ Última atualização: Janeiro 2026
+ Uso: Templates prontos para copiar/colar e personalizar
+

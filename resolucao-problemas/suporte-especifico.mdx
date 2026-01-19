@@ -1,0 +1,317 @@
+---
+title: 'Resoluções para Suporte'
+description: 'Guia específico para atendimento ao cliente'
+icon: 'headset'
+---
+
+<Warning>
+  Este documento é voltado para equipe de suporte. Se você é usuário final, consulte o [guia de resolução de problemas](/resolucao-problemas/erros-comuns).
+</Warning>
+
+## Fluxo de Atendimento: "Não consigo colar/importar"
+
+Quando o usuário reportar problema ao colar ou importar elementos, siga este fluxo estruturado:
+
+### Passo 1: Verificar Configurações Iniciais
+
+<Steps>
+  <Step title="Primeira Pergunta">
+    **"Já fez as configurações iniciais do seu WordPress?"**
+
+    Aguarde a resposta antes de prosseguir.
+  </Step>
+
+  <Step title="Se responder NÃO">
+    **Resposta padrão:**
+
+    > "Vou te enviar o passo a passo para configurar"
+
+    **Enviar link:**
+    ```
+    https://app.easybuilder.com.br/onboarding
+    ```
+
+    <Info>
+      Este link leva ao onboarding completo com todas as etapas de configuração inicial.
+    </Info>
+  </Step>
+
+  <Step title="Se responder SIM">
+    Continue para o Passo 2
+  </Step>
+</Steps>
+
+### Passo 2: Identificar Tipo de Problema
+
+<Steps>
+  <Step title="Segunda Pergunta">
+    **"Seu problema é só em colar as páginas ou as seções também?"**
+
+    Esta pergunta ajuda a identificar se é problema generalizado ou específico.
+  </Step>
+
+  <Step title="Problema com PÁGINAS e SEÇÕES">
+    **Resposta padrão:**
+
+    > "Vou te enviar um link para te ajudar a resolver"
+
+    **Enviar link:**
+    ```
+    https://app.easybuilder.com.br/onboarding/?step=03
+    ```
+
+    <Warning>
+      Este link vai para a etapa 3 do onboarding que trata de problemas de colagem geral.
+    </Warning>
+  </Step>
+
+  <Step title="Problema SOMENTE com SEÇÕES">
+    **Resposta padrão:**
+
+    > "Vou te enviar um link específico para seções"
+
+    **Enviar link:**
+    ```
+    https://app.easybuilder.com.br/onboarding/?step=02
+    ```
+
+    <Info>
+      Etapa 2 focada especificamente em problemas ao colar seções.
+    </Info>
+  </Step>
+</Steps>
+
+### Passo 3: Problema Persiste?
+
+<Steps>
+  <Step title="Se o problema continuar">
+    **Enviar troubleshooting avançado:**
+
+    ```
+    https://app.easybuilder.com.br/onboarding/?step=04
+    ```
+
+    <Warning>
+      Etapa 4 contém soluções avançadas para casos mais complexos.
+    </Warning>
+  </Step>
+
+  <Step title="Se ainda não resolver">
+    **Escalar para suporte humano:**
+
+    > "Vou transferir você para um especialista que vai te ajudar diretamente."
+
+    **Ações:**
+    - Anotar todos os passos já tentados
+    - Informar versão do WordPress e Elementor
+    - Screenshot do erro se possível
+    - Informar navegador utilizado
+  </Step>
+</Steps>
+
+## Diagnóstico Rápido
+
+<Tabs>
+  <Tab title="Sintomas Comuns">
+    <AccordionGroup>
+      <Accordion title="Erro ao colar: versão desatualizada" icon="clock">
+        **Causa:** WordPress ou Elementor antigo
+
+        **Solução:** Etapa 3 do onboarding
+      </Accordion>
+
+      <Accordion title="Elementos não aparecem após colar" icon="eye-slash">
+        **Causa:** Biblioteca não sincronizada
+
+        **Solução:** Regenerar CSS e sincronizar (Etapa 2)
+      </Accordion>
+
+      <Accordion title="Seção colada fica quebrada" icon="triangle-exclamation">
+        **Causa:** Containers não ativados
+
+        **Solução:** Ativar recursos do Elementor (Etapa 2)
+      </Accordion>
+
+      <Accordion title="Não consegue colar de jeito nenhum" icon="ban">
+        **Causa:** Múltiplos problemas
+
+        **Solução:** Onboarding completo desde início
+      </Accordion>
+    </AccordionGroup>
+  </Tab>
+
+  <Tab title="Links Úteis">
+    **Onboarding por etapas:**
+
+    | Etapa | Link | Quando usar |
+    |-------|------|-------------|
+    | Completo | [app.easybuilder.com.br/onboarding](https://app.easybuilder.com.br/onboarding) | Configuração inicial zero |
+    | Etapa 2 | [onboarding/?step=02](https://app.easybuilder.com.br/onboarding/?step=02) | Problema só com seções |
+    | Etapa 3 | [onboarding/?step=03](https://app.easybuilder.com.br/onboarding/?step=03) | Problema geral de colagem |
+    | Etapa 4 | [onboarding/?step=04](https://app.easybuilder.com.br/onboarding/?step=04) | Troubleshooting avançado |
+  </Tab>
+
+  <Tab title="Checklist">
+    **Antes de escalar para suporte humano:**
+
+    <Check>
+      - ✅ Enviou link do onboarding completo
+      - ✅ Identificou tipo de problema (páginas/seções)
+      - ✅ Enviou link específico da etapa correta
+      - ✅ Enviou troubleshooting avançado (etapa 4)
+      - ✅ Aguardou retorno do usuário
+      - ✅ Coletou informações técnicas (versões, navegador)
+    </Check>
+  </Tab>
+</Tabs>
+
+## Respostas Prontas (Templates)
+
+<AccordionGroup>
+  <Accordion title="Template 1: Configuração Inicial" icon="message">
+    ```
+    Olá! 👋
+
+    Vejo que você está com dificuldade para colar elementos.
+
+    Já fez as configurações iniciais do seu WordPress?
+
+    Aguardo sua resposta para te direcionar corretamente! 😊
+    ```
+  </Accordion>
+
+  <Accordion title="Template 2: Envio Onboarding" icon="message">
+    ```
+    Perfeito! Vou te enviar o passo a passo para configurar tudo corretamente:
+
+    🔗 https://app.easybuilder.com.br/onboarding
+
+    Siga cada etapa com calma e me avise se tiver alguma dúvida!
+
+    Estou aqui para ajudar. 🚀
+    ```
+  </Accordion>
+
+  <Accordion title="Template 3: Problema Específico" icon="message">
+    ```
+    Entendi! Vou te enviar um link específico para resolver isso:
+
+    🔗 [INSERIR LINK DA ETAPA CORRETA]
+
+    Testa aí e me conta se funcionou! 👍
+    ```
+  </Accordion>
+
+  <Accordion title="Template 4: Escalar" icon="message">
+    ```
+    Vejo que o problema persiste mesmo após os passos anteriores.
+
+    Vou transferir você para um especialista que vai te atender diretamente e resolver isso rapidinho!
+
+    Um momento... 🔄
+    ```
+  </Accordion>
+</AccordionGroup>
+
+## Informações para Coleta
+
+Quando precisar escalar, colete estas informações:
+
+<Tabs>
+  <Tab title="Dados Técnicos">
+    - **WordPress:** Versão
+    - **Elementor:** Versão (Free/Pro/Pro Elements)
+    - **Tema:** Qual está usando
+    - **Navegador:** Chrome/Edge/Brave/etc e versão
+    - **Hospedagem:** Hostinger/Stay/Outra
+    - **PHP:** Versão (se souber)
+  </Tab>
+
+  <Tab title="Histórico Tentativas">
+    - Links já enviados
+    - Etapas já tentadas
+    - Mensagens de erro (se houver)
+    - Screenshot ou vídeo do problema
+    - Último passo que funcionou
+  </Tab>
+
+  <Tab title="Contexto Usuário">
+    - Iniciante ou experiente?
+    - Primeira vez usando Easy Builder?
+    - Já funcionou antes?
+    - WordPress novo ou antigo?
+    - Pode instalar backup?
+  </Tab>
+</Tabs>
+
+## Casos Especiais
+
+<AccordionGroup>
+  <Accordion title="Usuário com pressa" icon="clock">
+    **Ação rápida:**
+    1. Enviar diretamente etapa 3 (mais abrangente)
+    2. Se não resolver em 5min, escalar imediatamente
+    3. Priorizar atendimento humano
+  </Accordion>
+
+  <Accordion title="Múltiplas tentativas falhadas" icon="repeat">
+    **Ação:**
+    1. Verificar se não é problema de hospedagem
+    2. Perguntar sobre limite de memória PHP
+    3. Considerar reinstalação com backup
+    4. Escalar para suporte técnico avançado
+  </Accordion>
+
+  <Accordion title="Problema no navegador" icon="browser">
+    **Verificar:**
+    - Extensão instalada corretamente?
+    - Navegador atualizado?
+    - Cache limpo?
+    - Testar em modo anônimo
+    - Testar em outro navegador
+  </Accordion>
+
+  <Accordion title="Problema de permissões" icon="lock">
+    **Verificar:**
+    - Usuário é administrador do WordPress?
+    - Elementor instalado e ativado?
+    - Pro Elements ou Elementor Pro ativo?
+    - Licença do Easy Builder válida?
+  </Accordion>
+</AccordionGroup>
+
+## Métricas de Sucesso
+
+<CardGroup cols={3}>
+  <Card title="Resolvido Etapa 1" icon="check">
+    Usuário só precisou do onboarding inicial
+  </Card>
+
+  <Card title="Resolvido Etapa 2-4" icon="check-double">
+    Problema resolvido com links específicos
+  </Card>
+
+  <Card title="Escalado" icon="headset">
+    Necessitou intervenção de suporte humano
+  </Card>
+</CardGroup>
+
+## Recursos Adicionais
+
+<CardGroup cols={2}>
+  <Card title="Documentação Completa" icon="book" href="/resolucao-problemas/erros-comuns">
+    Guia completo de erros
+  </Card>
+
+  <Card title="FAQ" icon="circle-question" href="/faq/perguntas-frequentes">
+    Perguntas frequentes
+  </Card>
+
+  <Card title="Área de Membros" icon="graduation-cap" href="https://hotmart.com/en/club/easybuilder">
+    Tutoriais em vídeo
+  </Card>
+
+  <Card title="Suporte Direto" icon="whatsapp" href="https://wa.me/5566996255253">
+    WhatsApp da equipe
+  </Card>
+</CardGroup>

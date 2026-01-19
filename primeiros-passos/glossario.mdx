@@ -1,0 +1,2895 @@
+---
+title: 'Glossário de Termos Técnicos'
+description: 'Dicionário completo de termos de web design, WordPress e desenvolvimento'
+icon: 'book'
+---
+
+## O Que é Este Glossário?
+
+Se você está começando e se deparando com termos que parecem "código secreto", este glossário é para você!
+
+<Info>
+  **Use como dicionário:** Não precisa ler tudo de uma vez. Consulte sempre que encontrar um termo desconhecido!
+</Info>
+
+---
+
+## A
+
+<AccordionGroup>
+  <Accordion title="AVIF" icon="image">
+    **O que é:** Formato moderno de imagem (mais novo que WebP)
+
+    **Em português simples:** É como JPEG ou PNG, mas o arquivo fica MUITO menor (até 50% menor que WebP!)
+
+    **Quando usar:** Para todas as fotos do site
+
+    **Ferramenta:** [Squoosh.app](https://squoosh.app) converte qualquer imagem para AVIF
+  </Accordion>
+
+  <Accordion title="Aspect Ratio (Proporção)" icon="rectangle-wide">
+    **O que é:** Relação entre largura e altura de uma imagem/elemento
+
+    **Exemplos:**
+    - 16:9 = Widescreen (vídeos do YouTube)
+    - 1:1 = Quadrado (foto de perfil Instagram)
+    - 4:3 = Clássico (fotos antigas)
+
+    **Por quê importa:** Mantém imagem proporcional sem distorcer
+
+    **Código CSS:**
+    ```css
+    aspect-ratio: 16/9; /* Sempre widescreen */
+    ```
+  </Accordion>
+
+  <Accordion title="Alt Text (Texto Alternativo)" icon="closed-captioning">
+    **O que é:** Descrição de texto para imagens
+
+    **Exemplo:** `alt="Logo Easy Builder verde e preta"`
+
+    **Por quê usar:**
+    - Pessoas cegas usam leitores de tela que LEEM o alt text
+    - Google usa para entender a imagem (SEO)
+    - Aparece se imagem não carregar
+
+    **Como adicionar:** Elementor → Imagem → Alt Text
+  </Accordion>
+
+  <Accordion title="API (Interface de Programação)" icon="plug">
+    **O que é:** Ponte que conecta sistemas diferentes
+
+    **Em português simples:** Como um garçom que leva seu pedido para a cozinha e traz a comida de volta
+
+    **Exemplo prático:** Integrar formulário do WordPress com Mailchimp (API conecta os dois)
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## B
+
+<AccordionGroup>
+  <Accordion title="Backup" icon="floppy-disk">
+    **O que é:** Cópia de segurança do seu site
+
+    **Em português simples:** Como fazer backup do celular - se algo der errado, você restaura!
+
+    **Por quê fazer:** Se site quebrar, você volta para versão anterior em minutos
+
+    **Ferramenta:** All-in-One WP Migration (plugin)
+  </Accordion>
+
+  <Accordion title="Border (Borda)" icon="border-all">
+    **O que é:** Linha ao redor de um elemento
+
+    **Propriedades:**
+    - Espessura: `1px`, `2px`, `3px`
+    - Estilo: `solid` (sólida), `dashed` (tracejada), `dotted` (pontilhada)
+    - Cor: `#000000` (preta), `#FF0000` (vermelha)
+
+    **Código:**
+    ```css
+    border: 2px solid #000000; /* Borda preta sólida de 2px */
+    ```
+  </Accordion>
+
+  <Accordion title="Border Radius (Cantos Arredondados)" icon="circle">
+    **O que é:** Quanto os cantos ficam arredondados
+
+    **Valores:**
+    - `0` = Quadrado (sem arredondamento)
+    - `0.25rem` (4px) = Levemente arredondado
+    - `0.5rem` (8px) = Médio (padrão botões)
+    - `50%` = Círculo perfeito
+
+    **Código:**
+    ```css
+    border-radius: 0.5rem; /* Cantos suaves */
+    ```
+  </Accordion>
+
+  <Accordion title="Breakpoint (Ponto de Quebra)" icon="mobile-screen">
+    **O que é:** Largura de tela onde o layout muda
+
+    **Breakpoints padrão:**
+    - Desktop: 1025px+ (computadores)
+    - Tablet: 768-1024px (iPads)
+    - Mobile: até 767px (celulares)
+
+    **Em português simples:** Quando tela fica pequena demais, layout reorganiza para caber melhor
+  </Accordion>
+
+  <Accordion title="Box Shadow (Sombra)" icon="cube">
+    **O que é:** Sombra ao redor de um elemento
+
+    **Valores:**
+    - Horizontal: quanto desloca para direita
+    - Vertical: quanto desloca para baixo
+    - Blur: quão desfocada é
+    - Cor: cor da sombra
+
+    **Código:**
+    ```css
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    /* X: 0, Y: 10px, Blur: 20px, Cor: preto 10% */
+    ```
+
+    **Gerador:** [Box Shadow Generator](https://cssgenerator.org/box-shadow-css-generator.html)
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## C
+
+<AccordionGroup>
+  <Accordion title="Cache" icon="database">
+    **O que é:** Memória temporária que guarda versão do site
+
+    **Em português simples:** Como guardar comida na geladeira ao invés de cozinhar toda vez
+
+    **Por quê usar:** Site carrega MUITO mais rápido (de 3s para 0.5s!)
+
+    **Plugin:** LiteSpeed Cache, WP Rocket
+  </Accordion>
+
+  <Accordion title="CDN (Content Delivery Network)" icon="network-wired">
+    **O que é:** Rede de servidores espalhados pelo mundo
+
+    **Em português simples:** Ao invés de todos acessarem servidor no Brasil, cada um acessa servidor mais próximo (EUA acessa servidor nos EUA, Europa acessa servidor na Europa)
+
+    **Resultado:** Site carrega mais rápido para TODO MUNDO
+
+    **Exemplo:** Cloudflare (CDN grátis)
+  </Accordion>
+
+  <Accordion title="Class (Classe CSS)" icon="tag">
+    **O que é:** Nome reutilizável para aplicar estilo
+
+    **Em português simples:** Como um uniforme escolar - vários alunos usam o mesmo
+
+    **Exemplo:**
+    ```css
+    .btn-primario {
+      background: blue;
+    }
+    /* Todos elementos com class="btn-primario" ficam azuis */
+    ```
+
+    **Diferença de ID:** Classe = reutilizável / ID = único
+  </Accordion>
+
+  <Accordion title="clamp() (Função CSS)" icon="brackets-curly">
+    **O que é:** Faz valor crescer/diminuir automaticamente entre mínimo e máximo
+
+    **Sintaxe:** `clamp(mínimo, ideal, máximo)`
+
+    **Exemplo:**
+    ```css
+    font-size: clamp(1rem, 5vw, 3rem);
+    /* Mobile: 1rem → Desktop: 3rem → Entre eles: 5% da tela */
+    ```
+
+    **Vantagem:** Tipografia fluida sem media queries!
+  </Accordion>
+
+  <Accordion title="Container (Recipiente)" icon="box">
+    **O que é:** Caixa que agrupa outros elementos
+
+    **Em português simples:** Como uma gaveta que organiza coisas dentro
+
+    **No Elementor:** Container é a base de tudo - você coloca widgets dentro dele
+
+    **Tipos:**
+    - Container principal (seção inteira)
+    - Container interno (bloco dentro da seção)
+  </Accordion>
+
+  <Accordion title="CSS (Cascading Style Sheets)" icon="palette">
+    **O que é:** Linguagem de estilo (cores, tamanhos, posições)
+
+    **Em português simples:** HTML é a estrutura da casa, CSS é a pintura e decoração
+
+    **Exemplo:**
+    ```css
+    h1 {
+      color: blue; /* Título fica azul */
+      font-size: 2rem; /* Tamanho 32px */
+    }
+    ```
+
+    **No Elementor:** Você NÃO precisa escrever CSS! Interface visual faz por você.
+  </Accordion>
+
+  <Accordion title="CTA (Call to Action)" icon="hand-pointer">
+    **O que é:** Chamada para ação
+
+    **Em português simples:** Botão ou texto que pede para pessoa fazer algo
+
+    **Exemplos:**
+    - "Comprar Agora"
+    - "Baixar Grátis"
+    - "Fale no WhatsApp"
+    - "Assine a Newsletter"
+
+    **Por quê importa:** É o que faz visitante virar cliente!
+  </Accordion>
+
+  <Accordion title="cPanel" icon="server">
+    **O que é:** Painel de controle da hospedagem
+
+    **Em português simples:** "Painel de controle" onde você mexe em configurações do servidor (domínio, email, banco de dados, PHP)
+
+    **Onde encontrar:** Dentro do painel da sua hospedagem (Hostinger, StayCloud, etc)
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## D
+
+<AccordionGroup>
+  <Accordion title="DNS (Domain Name System)" icon="globe">
+    **O que é:** Sistema que traduz nome do site (google.com) para endereço IP (142.250.80.46)
+
+    **Em português simples:** Como agenda de telefone - você digita nome, ele disca número
+
+    **Quando mexer:** Ao apontar domínio para hospedagem
+
+    **Tempo de propagação:** 2-48 horas
+  </Accordion>
+
+  <Accordion title="Domínio" icon="at">
+    **O que é:** Endereço do seu site na internet
+
+    **Exemplos:**
+    - `easybuilder.com.br`
+    - `seunegocio.com`
+    - `meusite.net`
+
+    **Onde comprar:** Registro.br, GoDaddy, Hostinger, StayCloud
+
+    **Preço:** R$ 12-60/ano
+  </Accordion>
+
+  <Accordion title="Display (Propriedade CSS)" icon="grip">
+    **O que é:** Como elemento se comporta no layout
+
+    **Valores comuns:**
+    - `block` = Ocupa linha inteira (parágrafo, título)
+    - `inline` = Fica na mesma linha (link, ícone)
+    - `flex` = Flexível, se adapta (layout moderno!)
+    - `grid` = Grade organizada (cards, galerias)
+    - `none` = Invisível/oculto
+
+    **Exemplo:**
+    ```css
+    display: flex; /* Elementos ficam flexíveis */
+    ```
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## E
+
+<AccordionGroup>
+  <Accordion title="Elementor" icon="e">
+    **O que é:** Editor visual para WordPress (arrastar e soltar)
+
+    **Em português simples:** Ferramenta que transforma WordPress em "construtor de sites" sem código
+
+    **Versões:**
+    - Elementor Free (grátis)
+    - Elementor PRO (pago - R$ 249/ano)
+    - Pro Elements (grátis alternativo ao PRO)
+
+    **Easy Builder funciona:** COM Elementor instalado
+  </Accordion>
+
+  <Accordion title="EM (Unidade Relativa)" icon="text-height">
+    **O que é:** Unidade relativa ao elemento PAI
+
+    **Diferença de REM:**
+    - `em` = relativo ao pai direto
+    - `rem` = relativo ao root (sempre)
+
+    **Quando usar:** Ícones inline (escalam com o texto)
+
+    **Exemplo:**
+    ```css
+    .icone {
+      font-size: 1.2em; /* 120% do tamanho do texto ao redor */
+    }
+    ```
+  </Accordion>
+
+  <Accordion title="Embed (Incorporar)" icon="code">
+    **O que é:** Colocar conteúdo de outro site dentro do seu
+
+    **Exemplos:**
+    - Vídeo do YouTube
+    - Mapa do Google Maps
+    - Post do Instagram
+
+    **Como fazer:** Copiar código iframe e colar no Elementor (widget HTML)
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## F
+
+<AccordionGroup>
+  <Accordion title="Fallback" icon="parachute-box">
+    **O que é:** Alternativa caso algo falhe
+
+    **Exemplo:** Se navegador não suportar AVIF, usa WebP
+
+    **Em português simples:** Plano B
+
+    **Código:**
+    ```html
+    <picture>
+      <source srcset="imagem.avif" type="image/avif">
+      <source srcset="imagem.webp" type="image/webp">
+      <img src="imagem.jpg" alt="Fallback"> <!-- Último recurso -->
+    </picture>
+    ```
+  </Accordion>
+
+  <Accordion title="Flexbox" icon="arrows-left-right">
+    **O que é:** Sistema de layout CSS que distribui elementos de forma flexível
+
+    **Em português simples:** Organiza elementos em linha ou coluna, com espaçamento automático
+
+    **Vantagens:**
+    - ✅ Responsivo automaticamente
+    - ✅ Centraliza facilmente
+    - ✅ Distribui espaço igual
+
+    **Exemplo:**
+    ```css
+    display: flex;
+    justify-content: center; /* Centraliza horizontal */
+    align-items: center; /* Centraliza vertical */
+    ```
+  </Accordion>
+
+  <Accordion title="Font Awesome" icon="icons">
+    **O que é:** Biblioteca gigante de ícones gratuitos
+
+    **Quantos ícones:** Mais de 2.000!
+
+    **Exemplos:** ✓ ✗ ⚙️ 🏠 📧 📱
+
+    **No Elementor:** Já vem integrado! Clique em "Ícone" e escolhe
+  </Accordion>
+
+  <Accordion title="FTP (File Transfer Protocol)" icon="folder-open">
+    **O que é:** Forma de enviar/baixar arquivos do servidor
+
+    **Em português simples:** Como pen drive na nuvem - você acessa pastas do site remotamente
+
+    **Ferramenta:** FileZilla (programa gratuito)
+
+    **Quando usar:** Editar arquivos do WordPress manualmente, fazer backup
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## G
+
+<AccordionGroup>
+  <Accordion title="Gap (Espaço Entre)" icon="grip">
+    **O que é:** Espaço entre elementos em Flexbox ou Grid
+
+    **Código:**
+    ```css
+    gap: 1.5rem; /* 24px de espaço entre cards */
+    ```
+
+    **Vantagem:** Mais fácil que margin (não precisa calcular)
+  </Accordion>
+
+  <Accordion title="Grid (Grade CSS)" icon="grid">
+    **O que é:** Sistema de layout em grade (linhas e colunas)
+
+    **Em português simples:** Como tabela do Excel - organiza em linhas e colunas
+
+    **Quando usar:** Cards de serviços, galeria de imagens, produtos
+
+    **Exemplo:**
+    ```css
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas iguais */
+    gap: 2rem; /* Espaço entre */
+    ```
+  </Accordion>
+
+  <Accordion title="Gradiente" icon="droplet">
+    **O que é:** Transição suave entre cores
+
+    **Tipos:**
+    - Linear: uma direção (esquerda→direita, cima→baixo)
+    - Radial: do centro para fora
+
+    **Código:**
+    ```css
+    background: linear-gradient(90deg, blue, purple);
+    /* Azul na esquerda, roxo na direita */
+    ```
+
+    **Gerador:** [CSS Gradient](https://cssgradient.io/)
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## H
+
+<AccordionGroup>
+  <Accordion title="Headings (H1, H2, H3...)" icon="heading">
+    **O que são:** Títulos e subtítulos da página
+
+    **Hierarquia:**
+    - H1 = Título principal (APENAS 1 por página!)
+    - H2 = Títulos de seção ("Sobre Nós", "Serviços")
+    - H3 = Subtítulos (títulos de cards)
+    - H4, H5, H6 = Títulos menores
+
+    **Por quê importa:** Google usa para entender estrutura do site (SEO!)
+
+    **Regra:** Sempre H1 → H2 → H3 (não pule!)
+  </Accordion>
+
+  <Accordion title="Hero (Seção Hero)" icon="star">
+    **O que é:** Primeira seção grande da página (banner principal)
+
+    **Elementos comuns:**
+    - Imagem de fundo impactante
+    - Título grande (H1)
+    - Subtítulo
+    - Botão de ação
+
+    **Por quê "Hero":** É a seção "heroína" que salva a primeira impressão!
+  </Accordion>
+
+  <Accordion title="Hospedagem (Hosting)" icon="server">
+    **O que é:** Servidor onde seu site "mora"
+
+    **Em português simples:** Como alugar um apartamento - site precisa de lugar para ficar online
+
+    **O que vem:** Espaço em disco, banda, email, banco de dados
+
+    **Recomendadas:** StayCloud (R$ 27/mês), Hostinger (R$ 12/mês)
+  </Accordion>
+
+  <Accordion title="HTML (HyperText Markup Language)" icon="code">
+    **O que é:** Linguagem de estrutura de sites
+
+    **Em português simples:** Esqueleto da casa - define o que é título, parágrafo, imagem, link
+
+    **Exemplo:**
+    ```html
+    <h1>Título</h1>
+    <p>Parágrafo de texto</p>
+    <a href="link.com">Link</a>
+    ```
+
+    **No Elementor:** Você NÃO escreve HTML! Interface visual cria automaticamente
+  </Accordion>
+
+  <Accordion title="Hover (Passar Mouse)" icon="hand-pointer">
+    **O que é:** Estado quando você passa mouse sobre elemento
+
+    **Uso comum:** Botão muda de cor ao passar mouse
+
+    **Código:**
+    ```css
+    .botao:hover {
+      background: red; /* Fica vermelho ao passar mouse */
+    }
+    ```
+
+    **No Elementor:** Aba "Hover" em botões e elementos
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## I
+
+<AccordionGroup>
+  <Accordion title="ID (Identificador CSS)" icon="fingerprint">
+    **O que é:** Nome ÚNICO para um elemento específico
+
+    **Diferença de Class:**
+    - ID = usa UMA VEZ (#hero-principal)
+    - Class = usa VÁRIAS VEZES (.btn-cta)
+
+    **Código:**
+    ```css
+    #hero-principal {
+      background: blue;
+    }
+    ```
+
+    **Quando usar:** Elementos únicos na página
+  </Accordion>
+
+  <Accordion title="Iframe" icon="window-maximize">
+    **O que é:** Janela que mostra conteúdo de outro site
+
+    **Usos comuns:**
+    - Vídeo do YouTube
+    - Mapa do Google
+    - Calendário
+    - Formulário externo
+
+    **Exemplo:**
+    ```html
+    <iframe src="https://youtube.com/embed/VIDEO_ID"></iframe>
+    ```
+  </Accordion>
+
+  <Accordion title="Inline (Em Linha)" icon="horizontal-rule">
+    **O que é:** Elemento que fica na mesma linha do texto
+
+    **Exemplos:** Link, ícone pequeno, negrito
+
+    **Oposto:** Block (ocupa linha inteira)
+
+    **CSS:**
+    ```css
+    display: inline; /* Fica na mesma linha */
+    ```
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## J
+
+<AccordionGroup>
+  <Accordion title="JavaScript (JS)" icon="js">
+    **O que é:** Linguagem de programação para interatividade
+
+    **Em português simples:** Faz coisas acontecerem (cliques, animações, formulários)
+
+    **Exemplos:**
+    - Botão que abre modal
+    - Scroll suave
+    - Validar formulário
+    - Contador regressivo
+
+    **No Elementor:** Widget HTML ou campo "Custom JavaScript"
+  </Accordion>
+
+  <Accordion title="JPEG/JPG" icon="file-image">
+    **O que é:** Formato antigo de imagem
+
+    **Problema:** Arquivo grande (comparado a WebP/AVIF)
+
+    **Recomendação:** NÃO use mais! Converta para AVIF ou WebP
+
+    **Exceção:** Open Graph (Facebook/WhatsApp ainda preferem JPG)
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## L
+
+<AccordionGroup>
+  <Accordion title="Landing Page" icon="bullseye">
+    **O que é:** Página com UM objetivo específico
+
+    **Objetivo:** Capturar lead, vender, fazer clicar em botão
+
+    **Características:**
+    - Sem menu (sem distração)
+    - Um CTA claro
+    - Foco total na conversão
+
+    **Diferença de Site:** Site tem várias páginas, Landing Page é UMA página focada
+  </Accordion>
+
+  <Accordion title="Lazy Load (Carregamento Preguiçoso)" icon="hourglass">
+    **O que é:** Imagem só carrega quando usuário rola até ela
+
+    **Por quê usar:** Site carrega MUITO mais rápido!
+
+    **Como ativar:** Elementor → Imagem → Avançado → Loading: Lazy
+
+    **Resultado:** Ao invés de carregar 50 imagens de uma vez, carrega 5 (só as visíveis)
+  </Accordion>
+
+  <Accordion title="Line Height (Altura de Linha)" icon="text-height">
+    **O que é:** Espaço vertical entre linhas de texto
+
+    **Valores:**
+    - `1.0` = Linhas grudadas (difícil de ler)
+    - `1.6` = Confortável para leitura
+    - `2.0` = Muito espaçado
+
+    **Recomendado:**
+    - Headings: 1.2-1.3
+    - Texto corrido: 1.6-1.8
+
+    **Por quê importa:** Legibilidade! Muito junto cansa os olhos.
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## M
+
+<AccordionGroup>
+  <Accordion title="Margin (Margem)" icon="arrows-alt">
+    **O que é:** Espaço FORA do elemento (empurra outros elementos para longe)
+
+    **Em português simples:** Zona de segurança ao redor da caixa
+
+    **Diferença de Padding:**
+    - Margin = espaço FORA (entre elementos)
+    - Padding = espaço DENTRO (entre borda e conteúdo)
+
+    **Código:**
+    ```css
+    margin: 2rem 0; /* 32px em cima e embaixo, 0 nas laterais */
+    ```
+
+    **Visual:**
+    ```
+    [Elemento 1]
+    ← margin →
+    [Elemento 2]
+    ```
+  </Accordion>
+
+  <Accordion title="Media Query" icon="mobile-screen-button">
+    **O que é:** Regra CSS que só aplica em certo tamanho de tela
+
+    **Uso:** Responsividade (layout diferente para mobile/desktop)
+
+    **Exemplo:**
+    ```css
+    /* Desktop (padrão) */
+    .texto { font-size: 1.5rem; }
+
+    /* Mobile (767px ou menos) */
+    @media (max-width: 767px) {
+      .texto { font-size: 1rem; } /* Menor no mobile */
+    }
+    ```
+
+    **No Elementor:** Faz automaticamente! Você só ajusta por breakpoint.
+  </Accordion>
+
+  <Accordion title="Meta Tags (Metadados)" icon="tags">
+    **O que são:** Informações SOBRE a página (invisíveis para visitantes)
+
+    **Principais:**
+    - Title: Título que aparece no Google
+    - Description: Texto abaixo do título no Google
+    - Keywords: Palavras-chave (não tão importante mais)
+
+    **Como configurar:** Plugin Yoast SEO
+
+    **Por quê importa:** Google lê para rankear seu site!
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## O
+
+<AccordionGroup>
+  <Accordion title="Object-fit" icon="image">
+    **O que é:** Como imagem preenche container
+
+    **Valores:**
+    - `cover` = Preenche tudo, pode cortar (mais usado!)
+    - `contain` = Cabe inteira, pode sobrar espaço
+    - `fill` = Estica/distorce para caber
+
+    **Código:**
+    ```css
+    img {
+      object-fit: cover; /* Preenche sem distorcer */
+    }
+    ```
+
+    **Quando usar:** Manter proporção de imagens em cards
+  </Accordion>
+
+  <Accordion title="Open Graph (OG)" icon="share-nodes">
+    **O que é:** Meta tags para redes sociais
+
+    **Controla:** Como página aparece ao compartilhar no Facebook, WhatsApp, LinkedIn
+
+    **Principais tags:**
+    - og:title (título do card)
+    - og:description (descrição)
+    - og:image (imagem de preview - 1200x630px)
+
+    **Como configurar:** Yoast SEO → Aba Social
+  </Accordion>
+
+  <Accordion title="Otimização" icon="gauge-high">
+    **O que é:** Tornar site mais rápido e eficiente
+
+    **Principais ações:**
+    - Comprimir imagens (AVIF/WebP)
+    - Ativar cache
+    - Minificar CSS/JS
+    - Lazy load em imagens
+    - Limitar fontes (máximo 3)
+
+    **Por quê:** Site lento = visitantes desistem = menos vendas!
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## P
+
+<AccordionGroup>
+  <Accordion title="Padding (Preenchimento)" icon="square">
+    **O que é:** Espaço DENTRO do elemento (entre borda e conteúdo)
+
+    **Em português simples:** Colchão interno que afasta conteúdo das bordas
+
+    **Diferença de Margin:**
+    - Padding = espaço DENTRO
+    - Margin = espaço FORA
+
+    **Código:**
+    ```css
+    padding: 2rem; /* 32px de colchão em todos lados */
+    ```
+
+    **Visual:**
+    ```
+    ┌─────────────────┐
+    │ ← padding →     │
+    │     Texto       │
+    │ ← padding →     │
+    └─────────────────┘
+    ```
+  </Accordion>
+
+  <Accordion title="PHP" icon="php">
+    **O que é:** Linguagem de programação do WordPress
+
+    **Em português simples:** Motor que faz WordPress funcionar (você NÃO precisa aprender!)
+
+    **Quando mexer:** Apenas em configurações (limite de memória, tempo de execução)
+
+    **Onde configurar:** cPanel → MultiPHP INI Editor
+  </Accordion>
+
+  <Accordion title="Plugin" icon="plug">
+    **O que é:** Extensão que adiciona funcionalidades ao WordPress
+
+    **Em português simples:** Como apps no celular - cada plugin adiciona uma função nova
+
+    **Exemplos:**
+    - Elementor (editor visual)
+    - Yoast SEO (otimização Google)
+    - LiteSpeed Cache (velocidade)
+
+    **Como instalar:** WordPress → Plugins → Adicionar Novo
+  </Accordion>
+
+  <Accordion title="Position (Posicionamento)" icon="location-dot">
+    **O que é:** Como elemento é posicionado na página
+
+    **Valores:**
+    - `static` = Normal (padrão)
+    - `relative` = Relativo à posição original
+    - `absolute` = Posição fixa na tela (cuidado! quebra responsividade)
+    - `fixed` = Fixo mesmo scrollando (menu grudado no topo)
+
+    **Código:**
+    ```css
+    position: fixed;
+    top: 0; /* Gruda no topo */
+    ```
+  </Accordion>
+
+  <Accordion title="PX (Pixel)" icon="grid-2">
+    **O que é:** Unidade de medida fixa
+
+    **Quando usar:**
+    - Bordas (`border: 1px`)
+    - Sombras
+
+    **Quando NÃO usar:**
+    - Fontes (use rem!)
+    - Espaçamentos (use rem!)
+
+    **Por quê:** Pixels não escalam bem em diferentes telas
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## R
+
+<AccordionGroup>
+  <Accordion title="REM (Root EM)" icon="ruler">
+    **O que é:** Unidade relativa ao tamanho base do navegador
+
+    **Base:** 1rem = 16px (padrão dos navegadores)
+
+    **Conversão:**
+    - 0.5rem = 8px
+    - 1rem = 16px
+    - 1.5rem = 24px
+    - 2rem = 32px
+
+    **Por quê usar:** Escala melhor, respeita preferências do usuário, mais acessível
+
+    **Exemplo:**
+    ```css
+    font-size: 1rem; /* 16px que se adapta */
+    ```
+  </Accordion>
+
+  <Accordion title="Responsivo (Responsividade)" icon="mobile-screen">
+    **O que é:** Site que se adapta a qualquer tamanho de tela
+
+    **Em português simples:** Funciona bem no celular, tablet E computador
+
+    **Por quê CRÍTICO:** 70% das pessoas acessam sites pelo celular!
+
+    **Como testar:**
+    - F12 no navegador → Toggle Device Toolbar
+    - Acessar do celular real
+    - Elementor: ícone de dispositivo embaixo
+  </Accordion>
+
+  <Accordion title="RGB / RGBA (Cores)" icon="palette">
+    **O que é:** Sistema de cores (Red, Green, Blue)
+
+    **Valores:** 0-255 para cada cor
+
+    **Exemplos:**
+    - `rgb(255, 0, 0)` = Vermelho puro
+    - `rgb(0, 0, 0)` = Preto
+    - `rgba(0, 0, 0, 0.5)` = Preto 50% transparente (A = Alpha/opacidade)
+
+    **Diferença de HEX:**
+    - RGB: `rgb(255, 0, 0)`
+    - HEX: `#FF0000` (mesma cor!)
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## S
+
+<AccordionGroup>
+  <Accordion title="SEO (Search Engine Optimization)" icon="magnifying-glass">
+    **O que é:** Otimização para mecanismos de busca (Google)
+
+    **Objetivo:** Aparecer nas primeiras posições do Google
+
+    **Principais fatores:**
+    - Headings corretos (H1, H2, H3)
+    - Title e Description otimizados
+    - Site rápido
+    - Mobile-friendly
+    - Conteúdo relevante
+
+    **Plugin:** Yoast SEO
+  </Accordion>
+
+  <Accordion title="SVG (Scalable Vector Graphics)" icon="vector-square">
+    **O que é:** Formato de imagem vetorial
+
+    **Vantagem:** Escala INFINITAMENTE sem perder qualidade!
+
+    **Quando usar:**
+    - Logos
+    - Ícones
+    - Ilustrações simples
+
+    **Quando NÃO usar:** Fotos (use AVIF/WebP)
+
+    **Onde criar:** Figma, Illustrator, Canva Pro
+  </Accordion>
+
+  <Accordion title="Slug (URL Amigável)" icon="link">
+    **O que é:** Parte final da URL da página
+
+    **Exemplos:**
+    - ✅ `site.com/sobre-nos` (slug: sobre-nos)
+    - ❌ `site.com/p=123` (não amigável!)
+
+    **Como editar:** WordPress → Página → Permalink
+
+    **Por quê importa:** URLs descritivas = melhor SEO
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## T
+
+<AccordionGroup>
+  <Accordion title="Tema (Theme)" icon="brush">
+    **O que é:** Template visual do WordPress
+
+    **Em português simples:** "Pele" do site - define aparência geral
+
+    **Recomendado com Elementor:** Hello Theme (leve, sem bloat)
+
+    **Onde trocar:** WordPress → Aparência → Temas
+  </Accordion>
+
+  <Accordion title="Transition (Transição)" icon="right-left">
+    **O que é:** Animação suave entre estados
+
+    **Exemplo:** Botão muda de cor suavemente ao passar mouse
+
+    **Código:**
+    ```css
+    .botao {
+      background: blue;
+      transition: all 0.3s ease; /* Transição de 0.3 segundos */
+    }
+
+    .botao:hover {
+      background: red; /* Muda suavemente para vermelho */
+    }
+    ```
+
+    **Propriedades:**
+    - `all` = anima tudo
+    - `0.3s` = duração (300 milissegundos)
+    - `ease` = curva de animação (suave)
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## V
+
+<AccordionGroup>
+  <Accordion title="VH (Viewport Height)" icon="arrows-up-down">
+    **O que é:** Porcentagem da ALTURA da tela visível
+
+    **Valores:**
+    - `100vh` = 100% da altura da tela
+    - `50vh` = metade da altura da tela
+
+    **Quando usar:** Hero que ocupa tela inteira verticalmente
+
+    **Código:**
+    ```css
+    .hero {
+      min-height: 100vh; /* Altura da tela toda */
+    }
+    ```
+  </Accordion>
+
+  <Accordion title="VW (Viewport Width)" icon="left-right">
+    **O que é:** Porcentagem da LARGURA da tela visível
+
+    **Valores:**
+    - `100vw` = 100% da largura da tela
+    - `50vw` = metade da largura
+
+    **Uso comum:** Tipografia fluida
+
+    **Código:**
+    ```css
+    font-size: 5vw; /* Tamanho = 5% da largura da tela */
+    ```
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## W
+
+<AccordionGroup>
+  <Accordion title="WebP" icon="image">
+    **O que é:** Formato moderno de imagem (mais leve que JPEG/PNG)
+
+    **Vantagem:** 96% menor que JPEG com mesma qualidade!
+
+    **Quando usar:** Todas as imagens do site (alternativa ao AVIF)
+
+    **Como converter:** [Squoosh.app](https://squoosh.app)
+  </Accordion>
+
+  <Accordion title="Widget" icon="puzzle-piece">
+    **O que é:** Bloco funcional do Elementor
+
+    **Exemplos:**
+    - Widget Heading (título)
+    - Widget Button (botão)
+    - Widget Image (imagem)
+    - Widget Text Editor (texto)
+
+    **Como usar:** Arrastar da barra lateral esquerda para a página
+  </Accordion>
+
+  <Accordion title="WordPress" icon="wordpress">
+    **O que é:** Plataforma para criar sites (CMS - Content Management System)
+
+    **Características:**
+    - Gratuito e open-source
+    - Usado por 40%+ dos sites do mundo!
+    - Não precisa programar
+
+    **Versão:** Easy Builder funciona COM WordPress + Elementor
+  </Accordion>
+
+  <Accordion title="WP-CLI" icon="terminal">
+    **O que é:** Interface de linha de comando do WordPress
+
+    **Para quem:** Desenvolvedores avançados
+
+    **Você precisa:** NÃO! Interface visual é suficiente para 99% dos casos
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Z
+
+<AccordionGroup>
+  <Accordion title="z-index (Camadas)" icon="layer-group">
+    **O que é:** Define qual elemento fica "em cima" de outro
+
+    **Valores:**
+    - Número baixo = mais atrás
+    - Número alto = mais na frente
+
+    **Exemplo:**
+    ```css
+    .modal {
+      z-index: 1000; /* Bem na frente */
+    }
+
+    .fundo {
+      z-index: 1; /* Bem atrás */
+    }
+    ```
+
+    **Uso comum:** Modals, menus dropdown, tooltips
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Mais Termos de CSS
+
+<AccordionGroup>
+  <Accordion title="Transform (Transformação)" icon="arrows-rotate">
+    **O que é:** Modifica visual do elemento sem alterar layout
+
+    **Principais transformações:**
+    - `translate()` = Move
+    - `scale()` = Aumenta/diminui
+    - `rotate()` = Gira
+    - `skew()` = Inclina
+
+    **Código:**
+    ```css
+    .botao:hover {
+      transform: translateY(-3px); /* Move 3px para cima */
+    }
+
+    .imagem:hover {
+      transform: scale(1.1); /* Aumenta 10% */
+    }
+    ```
+  </Accordion>
+
+  <Accordion title="Filter (Filtro)" icon="filter">
+    **O que é:** Aplica efeitos visuais em elemento
+
+    **Principais filtros:**
+    - `blur()` = Desfoque
+    - `brightness()` = Brilho
+    - `contrast()` = Contraste
+    - `grayscale()` = Preto e branco
+    - `saturate()` = Saturação
+
+    **Código:**
+    ```css
+    img {
+      filter: grayscale(100%); /* Preto e branco */
+    }
+
+    img:hover {
+      filter: grayscale(0%); /* Volta colorida */
+    }
+    ```
+  </Accordion>
+
+  <Accordion title="Cursor" icon="hand-pointer">
+    **O que é:** Aparência do mouse sobre elemento
+
+    **Valores comuns:**
+    - `pointer` = Mãozinha (link clicável)
+    - `default` = Seta normal
+    - `text` = Cursor de texto (I)
+    - `not-allowed` = Proibido
+    - `grab` = Mão aberta (arrastar)
+
+    **Código:**
+    ```css
+    .botao {
+      cursor: pointer; /* Mãozinha */
+    }
+    ```
+  </Accordion>
+
+  <Accordion title="Letter-spacing (Espaçamento de Letras)" icon="text-width">
+    **O que é:** Espaço entre as letras
+
+    **Valores:**
+    - Negativo = Letras mais juntas
+    - Positivo = Letras mais espaçadas
+
+    **Código:**
+    ```css
+    h1 {
+      letter-spacing: 0.05em; /* Levemente espaçado */
+    }
+
+    .all-caps {
+      letter-spacing: 0.1em; /* Maiúsculas precisam mais espaço */
+      text-transform: uppercase;
+    }
+    ```
+
+    **Quando usar:** Títulos grandes, textos em maiúsculas
+  </Accordion>
+
+  <Accordion title="Text-transform" icon="font-case">
+    **O que é:** Transforma capitalização do texto
+
+    **Valores:**
+    - `uppercase` = MAIÚSCULAS
+    - `lowercase` = minúsculas
+    - `capitalize` = Primeira Letra Maiúscula
+    - `none` = Normal
+
+    **Código:**
+    ```css
+    .titulo {
+      text-transform: uppercase; /* TUDO MAIÚSCULO */
+    }
+    ```
+  </Accordion>
+
+  <Accordion title="Box-sizing" icon="box">
+    **O que é:** Como largura/altura é calculada
+
+    **Valores:**
+    - `content-box` = Padrão (padding e border SÃO ADICIONADOS)
+    - `border-box` = Melhor! (padding e border JÁ INCLUSOS)
+
+    **Código:**
+    ```css
+    * {
+      box-sizing: border-box; /* Padrão moderno */
+    }
+    ```
+
+    **Por quê usar border-box:** Muito mais fácil calcular tamanhos!
+
+    **Exemplo:**
+    - width: 100px + padding: 20px
+    - content-box = 140px total (100+20+20)
+    - border-box = 100px total (padding JÁ incluído)
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Termos de Responsividade
+
+<AccordionGroup>
+  <Accordion title="Mobile-First (Mobile Primeiro)" icon="mobile">
+    **O que é:** Criar design pensando em MOBILE primeiro, depois desktop
+
+    **Por quê:** 70% dos acessos são mobile!
+
+    **Como fazer:**
+    1. Design para celular primeiro
+    2. Depois adapta para telas maiores
+
+    **Código:**
+    ```css
+    /* Mobile (padrão) */
+    .texto { font-size: 1rem; }
+
+    /* Desktop (adiciona) */
+    @media (min-width: 1025px) {
+      .texto { font-size: 1.5rem; }
+    }
+    ```
+  </Accordion>
+
+  <Accordion title="Retina Display (Tela Retina)" icon="display">
+    **O que é:** Tela com DOBRO de pixels (muito mais nítida)
+
+    **Exemplo:** iPhone, iPad, MacBook
+
+    **Impacto:** Imagens precisam ser 2x maiores para ficarem nítidas!
+
+    **Solução:**
+    - Imagem de 600px? Exporte em 1200px
+    - Use @2x no nome (logo@2x.png)
+    - Ou use SVG (sempre nítido!)
+  </Accordion>
+
+  <Accordion title="Touch Target (Área de Toque)" icon="hand">
+    **O que é:** Tamanho mínimo para tocar com dedo
+
+    **Regra do Google:** Mínimo 44x44px
+
+    **Por quê:** Dedos são grandes! Botões pequenos = difícil clicar
+
+    **Aplique em:**
+    - Botões (mínimo 44px altura)
+    - Links
+    - Campos de formulário
+    - Ícones clicáveis
+  </Accordion>
+
+  <Accordion title="Viewport" icon="window-maximize">
+    **O que é:** Área visível da tela
+
+    **Em português simples:** Janela do navegador (sem contar barra de ferramentas)
+
+    **Meta tag importante:**
+    ```html
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    ```
+
+    **O que faz:** Diz ao mobile para não dar zoom automático
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Termos de Google Analytics
+
+<AccordionGroup>
+  <Accordion title="Session (Sessão)" icon="clock">
+    **O que é:** Período de atividade de um visitante
+
+    **Duração:** 30 minutos sem interação = nova sessão
+
+    **Exemplo:** Pessoa entra no site, navega 10 minutos, sai = 1 sessão
+  </Accordion>
+
+  <Accordion title="Pageview (Visualização de Página)" icon="eye">
+    **O que é:** Cada vez que uma página carrega
+
+    **Exemplo:** Pessoa visita Home + Sobre + Contato = 3 pageviews
+
+    **Diferença de Session:** 1 sessão pode ter várias pageviews
+  </Accordion>
+
+  <Accordion title="Event (Evento)" icon="hand-pointer">
+    **O que é:** Ação que você rastreia
+
+    **Exemplos:**
+    - Clique em botão
+    - Download de PDF
+    - Play em vídeo
+    - Scroll até 50% da página
+
+    **Como configurar:** Google Tag Manager (GTM)
+  </Accordion>
+
+  <Accordion title="Goal (Meta)" icon="bullseye">
+    **O que é:** Objetivo que você quer que visitante complete
+
+    **Exemplos:**
+    - Preencher formulário
+    - Comprar produto
+    - Assistir vídeo
+    - Tempo no site >2min
+
+    **Como usar:** Analytics → Admin → Goals
+  </Accordion>
+
+  <Accordion title="UTM Parameters (Parâmetros UTM)" icon="link">
+    **O que são:** Códigos que rastreiam origem do tráfego
+
+    **Estrutura:**
+    ```
+    ?utm_source=facebook
+    &utm_medium=cpc
+    &utm_campaign=black-friday
+    ```
+
+    **Para quê:** Saber qual anúncio/post gerou venda
+
+    **Ferramenta:** [Google Campaign URL Builder](https://ga-dev-tools.google/campaign-url-builder/)
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Termos de Imagem
+
+<AccordionGroup>
+  <Accordion title="PNG (Portable Network Graphics)" icon="file-image">
+    **O que é:** Formato de imagem com transparência
+
+    **Quando usar:**
+    - Logos com fundo transparente
+    - Ícones
+    - Imagens com texto nítido
+
+    **Problema:** Arquivo GRANDE
+
+    **Solução:** Converter para WebP/AVIF (mesmo com transparência!)
+  </Accordion>
+
+  <Accordion title="GIF (Graphics Interchange Format)" icon="photo-film">
+    **O que é:** Formato de imagem animada
+
+    **Quando usar:** Animações simples, memes
+
+    **Problema:** Arquivo gigante, qualidade baixa
+
+    **Alternativa moderna:** MP4 ou WebM (vídeo comprimido, MUITO menor!)
+  </Accordion>
+
+  <Accordion title="Favicon" icon="image-portrait">
+    **O que é:** Ícone pequeno que aparece na aba do navegador
+
+    **Tamanho:** 32x32px ou 16x16px
+
+    **Formato:** ICO, PNG ou SVG
+
+    **Como adicionar:** WordPress → Aparência → Personalizar → Identidade do Site
+
+    **Importante:** Ajuda reconhecer site entre várias abas!
+  </Accordion>
+
+  <Accordion title="Sprite Sheet" icon="images">
+    **O que é:** Várias imagens pequenas em um arquivo só
+
+    **Vantagem:** 1 request ao invés de 20!
+
+    **Quando usar:** Muitos ícones pequenos
+
+    **Você precisa:** Raramente (Font Awesome já faz isso automaticamente!)
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Termos de Formulário
+
+<AccordionGroup>
+  <Accordion title="Placeholder" icon="input-text">
+    **O que é:** Texto de exemplo dentro do campo (some ao digitar)
+
+    **Exemplo:**
+    ```html
+    <input type="email" placeholder="seu@email.com">
+    ```
+
+    **CUIDADO:** Placeholder NÃO substitui label!
+
+    **Correto:** Label + Placeholder juntos
+  </Accordion>
+
+  <Accordion title="Required (Obrigatório)" icon="asterisk">
+    **O que é:** Campo que DEVE ser preenchido
+
+    **Visual:** Geralmente tem asterisco (*)
+
+    **HTML:**
+    ```html
+    <input type="text" required>
+    ```
+
+    **Comportamento:** Navegador impede envio se vazio
+  </Accordion>
+
+  <Accordion title="Validation (Validação)" icon="shield-check">
+    **O que é:** Verificação se dados estão corretos
+
+    **Tipos:**
+    - Email válido (tem @)
+    - Telefone (só números)
+    - CPF (formato correto)
+    - Senha forte
+
+    **Quando fazer:** ANTES de enviar (frontend) E DEPOIS no servidor (backend)
+  </Accordion>
+
+  <Accordion title="Autocomplete" icon="wand-magic-sparkles">
+    **O que é:** Navegador sugere preenchimento automático
+
+    **Exemplo:** Preenche nome/email salvos
+
+    **Como ativar:**
+    ```html
+    <input type="email" autocomplete="email">
+    ```
+
+    **Vantagem:** Facilita MUITO para usuário (menos digitação!)
+  </Accordion>
+
+  <Accordion title="Honeypot (Pote de Mel)" icon="honeycomb">
+    **O que é:** Campo escondido para pegar bots (spam)
+
+    **Como funciona:**
+    1. Campo invisível para humanos
+    2. Bots preenchem (não sabem que é invisível)
+    3. Se preenchido = bot = rejeita envio!
+
+    **Código:**
+    ```html
+    <input type="text" name="honeypot" style="display:none;">
+    ```
+
+    **Vantagem:** Bloqueia spam sem incomodar humanos!
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Termos de Animação
+
+<AccordionGroup>
+  <Accordion title="Fade (Aparecer/Desaparecer)" icon="eye">
+    **O que é:** Transição suave de opacidade
+
+    **Tipos:**
+    - Fade In = Aparece gradualmente
+    - Fade Out = Desaparece gradualmente
+
+    **Código:**
+    ```css
+    .elemento {
+      opacity: 0;
+      transition: opacity 0.5s ease;
+    }
+
+    .elemento.visivel {
+      opacity: 1; /* Fade in */
+    }
+    ```
+  </Accordion>
+
+  <Accordion title="Slide (Deslizar)" icon="arrows-left-right">
+    **O que é:** Elemento entra/sai deslizando
+
+    **Direções:**
+    - Slide Up = De baixo para cima
+    - Slide Down = De cima para baixo
+    - Slide Left = Da direita para esquerda
+    - Slide Right = Da esquerda para direita
+
+    **Código:**
+    ```css
+    @keyframes slideUp {
+      from { transform: translateY(20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    ```
+  </Accordion>
+
+  <Accordion title="Bounce (Pular)" icon="basketball">
+    **O que é:** Elemento "pula" (efeito elástico)
+
+    **Quando usar:** Chamar atenção para botão importante
+
+    **Código:**
+    ```css
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    .botao-cta {
+      animation: bounce 1s infinite;
+    }
+    ```
+
+    **CUIDADO:** Muito bounce = irritante!
+  </Accordion>
+
+  <Accordion title="Parallax (Paralaxe)" icon="layer-group">
+    **O que é:** Fundo se move mais devagar que conteúdo (efeito 3D)
+
+    **Quando usar:** Hero sections, seções grandes
+
+    **Como fazer:** Plugin (Advanced Parallax) ou CSS
+
+    **Resultado:** Profundidade visual, efeito "wow"!
+  </Accordion>
+
+  <Accordion title="Scroll-triggered (Ativado por Scroll)" icon="scroll">
+    **O que é:** Animação que acontece ao rolar até elemento
+
+    **Exemplo:** Card aparece quando você rola até ele
+
+    **Como fazer:**
+    - Elementor: Motion Effects → Scroll Effects
+    - JavaScript: Intersection Observer
+    - Plugin: AOS (Animate On Scroll)
+
+    **CUIDADO:** Muito = site pesado no mobile!
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Termos de Cores
+
+<AccordionGroup>
+  <Accordion title="HEX (Hexadecimal)" icon="hashtag">
+    **O que é:** Sistema de cores com 6 caracteres
+
+    **Formato:** #RRGGBB
+
+    **Exemplos:**
+    - #FF0000 = Vermelho puro
+    - #00FF00 = Verde puro
+    - #0000FF = Azul puro
+    - #FFFFFF = Branco
+    - #000000 = Preto
+
+    **Shorthand:** #F00 = #FF0000 (igual!)
+  </Accordion>
+
+  <Accordion title="HSL (Hue, Saturation, Lightness)" icon="palette">
+    **O que é:** Sistema de cores por matiz, saturação, luminosidade
+
+    **Formato:** hsl(matiz, saturação%, luminosidade%)
+
+    **Exemplo:**
+    ```css
+    color: hsl(0, 100%, 50%); /* Vermelho puro */
+    color: hsl(120, 100%, 50%); /* Verde puro */
+    ```
+
+    **Vantagem:** Mais fácil ajustar cores (muda só 1 valor!)
+  </Accordion>
+
+  <Accordion title="Monochromatic (Monocromático)" icon="circle-half-stroke">
+    **O que é:** Paleta com variações de UMA cor
+
+    **Exemplo:** Tons de azul (azul claro, azul médio, azul escuro)
+
+    **Quando usar:** Criar harmonia visual simples
+
+    **Resultado:** Layout coeso e profissional
+  </Accordion>
+
+  <Accordion title="Complementary Colors (Cores Complementares)" icon="palette">
+    **O que são:** Cores opostas no círculo cromático
+
+    **Exemplos:**
+    - Azul ↔ Laranja
+    - Vermelho ↔ Verde
+    - Roxo ↔ Amarelo
+
+    **Quando usar:** Criar contraste forte (botão vs fundo)
+
+    **Ferramenta:** [Adobe Color](https://color.adobe.com/)
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Termos de Elementor Específicos
+
+<AccordionGroup>
+  <Accordion title="Section vs Container" icon="layer-group">
+    **Section (Antigo):**
+    - Sistema legado do Elementor
+    - Section > Column > Widget
+
+    **Container (Novo):**
+    - Sistema moderno (Flexbox)
+    - Mais flexível
+    - Aninhamento infinito
+
+    **Recomendação:** Use Container (mais moderno!)
+  </Accordion>
+
+  <Accordion title="Inner Section" icon="boxes-stacked">
+    **O que é:** Seção dentro de outra seção
+
+    **Quando usar:** Layouts complexos, colunas dentro de colunas
+
+    **Alternativa:** Containers aninhados (mais moderno!)
+  </Accordion>
+
+  <Accordion title="Global Widget" icon="globe">
+    **O que é:** Widget salvo que atualiza em TODAS as páginas
+
+    **Exemplo:** Rodapé - muda em 1 lugar, atualiza em todo site!
+
+    **Como criar:**
+    1. Crie widget
+    2. Botão direito → Save as Global
+    3. Edita em 1 página = atualiza em todas!
+
+    **Cuidado:** Não confunda com Template (template é página inteira)
+  </Accordion>
+
+  <Accordion title="Template (Modelo)" icon="file-lines">
+    **O que é:** Estrutura salva reutilizável
+
+    **Tipos:**
+    - Page = Página inteira
+    - Section = Seção
+    - Header = Cabeçalho
+    - Footer = Rodapé
+
+    **Onde salvar:** Elementor → Meus Modelos
+
+    **Diferença de Easy Builder:** Easy Builder tem biblioteca gigante de templates prontos!
+  </Accordion>
+
+  <Accordion title="Navigator (Navegador)" icon="sitemap">
+    **O que é:** Painel que mostra estrutura da página em árvore
+
+    **Como abrir:**
+    - Botão direito → Navigator
+    - Ou ícone no canto
+
+    **Para quê:** Encontrar elementos rapidamente, ver hierarquia
+
+    **Vantagem:** Não precisa ficar clicando em tudo para achar!
+  </Accordion>
+
+  <Accordion title="Finder (Localizador)" icon="magnifying-glass">
+    **O que é:** Busca de elementos por nome
+
+    **Atalho:** Ctrl + E (Windows) / Cmd + E (Mac)
+
+    **Uso:** Digita nome do elemento e acha instantaneamente!
+
+    **Exemplo:** Buscar "botao-cta" = pula direto para ele
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Termos Específicos de Easy Builder
+
+<AccordionGroup>
+  <Accordion title="Sessões" icon="layer-group">
+    **O que são:** Blocos prontos do Easy Builder (hero, benefícios, depoimentos, etc)
+
+    **Como usar:**
+    1. Easy Builder → Sessões
+    2. Escolhe sessão
+    3. Copiar
+    4. Cola no Elementor
+
+    **Vantagem:** Já vem responsiva e otimizada!
+  </Accordion>
+
+  <Accordion title="Meus Recursos" icon="folder">
+    **O que é:** Sua biblioteca pessoal dentro do Easy Builder
+
+    **O que salvar:**
+    - Sessões customizadas
+    - Botões personalizados
+    - Códigos CSS/JS
+    - Páginas completas
+
+    **Vantagem:** Reutilizar em múltiplos projetos = economia de tempo!
+  </Accordion>
+
+  <Accordion title="Easy Copy (IA)" icon="pen-nib">
+    **O que é:** IA que cria textos persuasivos
+
+    **Entrada:** Briefing do cliente
+
+    **Saída:** Textos prontos (headlines, CTAs, benefícios)
+
+    **Onde acessar:** Área de membros → IAs do Easy Builder
+  </Accordion>
+
+  <Accordion title="Easy Coder (IA)" icon="code">
+    **O que é:** IA que escreve código CSS/JS
+
+    **Entrada:** "Quero botão com brilho verde"
+
+    **Saída:** Código CSS pronto para copiar
+
+    **Onde acessar:** Área de membros → IAs do Easy Builder
+  </Accordion>
+
+  <Accordion title="Backup Configurado" icon="download">
+    **O que é:** WordPress pronto com tudo instalado e configurado
+
+    **O que vem:**
+    - Elementor + PRO Elements
+    - Plugins essenciais
+    - Otimizações ativadas
+    - Tema leve
+
+    **Vantagem:** Pula 45 minutos de configuração manual!
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Termos de Elementor
+
+<AccordionGroup>
+  <Accordion title="Elementor Canvas" icon="expand">
+    **O que é:** Layout de página SEM header e footer
+
+    **Quando usar:** Landing pages, páginas de vendas (você quer controle total!)
+
+    **Como ativar:** Editar Página → Configurações → Layout: **Elementor Canvas**
+  </Accordion>
+
+  <Accordion title="Colar de Outro Site" icon="paste">
+    **O que é:** Função ESSENCIAL do Elementor para colar conteúdo do Easy Builder
+
+    **Como usar:**
+    1. Copiar no Easy Builder
+    2. Elementor: Botão direito → **Colar de Outro Site**
+    3. Ctrl + V
+
+    **Por quê especial:** Colar normal (Ctrl+V) não funciona com Easy Builder!
+  </Accordion>
+
+  <Accordion title="Regenerar CSS" icon="arrows-rotate">
+    **O que é:** Recriar arquivos de estilo do Elementor
+
+    **Quando fazer:**
+    - Após instalar/atualizar Elementor
+    - Se cores/fontes não aplicam
+    - Após mudar configurações
+
+    **Como:** Elementor → Ferramentas → **Gerar Arquivos e Dados Novamente**
+  </Accordion>
+
+  <Accordion title="Sincronizar Biblioteca" icon="sync">
+    **O que é:** Atualizar biblioteca de templates e ícones do Elementor
+
+    **Quando fazer:**
+    - Após instalar Elementor
+    - Se elementos do Easy Builder não colam
+    - Se ícones não aparecem
+
+    **Como:** Elementor → Ferramentas → **Sincronizar Biblioteca**
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## N
+
+<AccordionGroup>
+  <Accordion title="Navbar (Barra de Navegação)" icon="bars">
+    **O que é:** Menu do site (geralmente no topo)
+
+    **Elementos comuns:**
+    - Logo
+    - Links (Home, Sobre, Serviços, Contato)
+    - Botão CTA
+
+    **Tipos:**
+    - Fixa (gruda no topo ao scrollar)
+    - Normal (some ao scrollar)
+  </Accordion>
+
+  <Accordion title="Nameserver" icon="server">
+    **O que é:** Endereço do servidor DNS da sua hospedagem
+
+    **Quando usar:** Ao apontar domínio para hospedagem
+
+    **Exemplo:**
+    ```
+    ns1.hostinger.com
+    ns2.hostinger.com
+    ```
+
+    **Onde pegar:** Painel da hospedagem (Hostinger, StayCloud)
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## O (Continuação)
+
+<AccordionGroup>
+  <Accordion title="Opacity (Opacidade)" icon="eye-low-vision">
+    **O que é:** Transparência de um elemento
+
+    **Valores:**
+    - `1` = Totalmente visível (0% transparente)
+    - `0.5` = Meio transparente (50%)
+    - `0` = Invisível (100% transparente)
+
+    **Código:**
+    ```css
+    .elemento {
+      opacity: 0.8; /* 80% visível, 20% transparente */
+    }
+    ```
+
+    **Uso comum:** Sobreposições, efeitos de hover
+  </Accordion>
+
+  <Accordion title="Overflow (Transbordamento)" icon="water">
+    **O que é:** O que acontece quando conteúdo não cabe no container
+
+    **Valores:**
+    - `visible` = Vaza para fora (padrão)
+    - `hidden` = Esconde o que não cabe
+    - `scroll` = Adiciona barra de rolagem
+    - `auto` = Barra só se necessário
+
+    **Código:**
+    ```css
+    .container {
+      overflow: hidden; /* Corta o que não cabe */
+    }
+    ```
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Q
+
+<AccordionGroup>
+  <Accordion title="Query (Consulta)" icon="database">
+    **O que é:** Pedido ao banco de dados
+
+    **Em WordPress:** Buscar posts, páginas, produtos
+
+    **Você precisa saber:** NÃO! WordPress faz automaticamente
+
+    **Exemplo técnico:** "Buscar últimos 10 posts do blog"
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## U
+
+<AccordionGroup>
+  <Accordion title="URL (Uniform Resource Locator)" icon="link">
+    **O que é:** Endereço completo de uma página
+
+    **Exemplo:**
+    ```
+    https://easybuilder.com.br/sobre-nos
+    ```
+
+    **Partes:**
+    - `https://` = Protocolo (seguro)
+    - `easybuilder.com.br` = Domínio
+    - `/sobre-nos` = Slug (caminho da página)
+  </Accordion>
+
+  <Accordion title="UI (User Interface)" icon="window-maximize">
+    **O que é:** Interface do usuário (tudo visual que você vê e interage)
+
+    **Exemplos:**
+    - Botões
+    - Menus
+    - Formulários
+    - Layout da página
+
+    **Diferença de UX:** UI = visual / UX = experiência completa
+  </Accordion>
+
+  <Accordion title="UX (User Experience)" icon="user">
+    **O que é:** Experiência do usuário (como pessoa SE SENTE ao usar)
+
+    **Inclui:**
+    - Facilidade de usar
+    - Velocidade
+    - Se encontra o que busca
+    - Se converte (compra, cadastra)
+
+    **Bom UX:**
+    - Site rápido ✅
+    - Navegação clara ✅
+    - Botões grandes no mobile ✅
+    - Textos legíveis ✅
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## X
+
+<AccordionGroup>
+  <Accordion title="XML (Extensible Markup Language)" icon="code">
+    **O que é:** Linguagem de marcação (como HTML, mas para dados)
+
+    **No WordPress:** Sitemap XML (mapa do site para Google)
+
+    **Você precisa:** Plugin Yoast SEO gera automaticamente!
+
+    **Para quê:** Ajuda Google a indexar seu site
+  </Accordion>
+
+  <Accordion title="XAMPP" icon="x">
+    **O que é:** Pacote para rodar WordPress no seu computador (localhost)
+
+    **Inclui:**
+    - Servidor Apache
+    - MySQL (banco de dados)
+    - PHP
+
+    **Quando usar:** Testar WordPress SEM pagar hospedagem (praticar!)
+
+    **Alternativa:** Local by Flywheel (mais fácil)
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Y
+
+<AccordionGroup>
+  <Accordion title="Yoast SEO" icon="y">
+    **O que é:** Plugin mais famoso de SEO para WordPress
+
+    **Funções:**
+    - Otimizar Title e Description
+    - Análise de legibilidade
+    - Sitemap XML automático
+    - Preview no Google
+    - Open Graph para redes sociais
+
+    **Como usar:** Instalar plugin → Caixa aparece abaixo do editor
+
+    **Grátis ou pago:** Versão gratuita é excelente!
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Termos de Performance
+
+<AccordionGroup>
+  <Accordion title="LCP (Largest Contentful Paint)" icon="gauge-high">
+    **O que é:** Tempo até elemento principal carregar
+
+    **Meta do Google:** Menos de 2.5 segundos
+
+    **Como melhorar:**
+    - Otimizar imagem principal (hero)
+    - Usar AVIF/WebP
+    - Ativar cache
+
+    **Onde testar:** [PageSpeed Insights](https://pagespeed.web.dev/)
+  </Accordion>
+
+  <Accordion title="FID (First Input Delay)" icon="hand-pointer">
+    **O que é:** Tempo até site responder ao primeiro clique
+
+    **Meta do Google:** Menos de 100ms
+
+    **Como melhorar:**
+    - Reduzir JavaScript
+    - Não travar navegador com scripts pesados
+  </Accordion>
+
+  <Accordion title="CLS (Cumulative Layout Shift)" icon="arrows-alt">
+    **O que é:** Quanto o layout "pula" enquanto carrega
+
+    **Problema:** Você vai clicar em botão e ele pula (aparece imagem acima)
+
+    **Meta do Google:** Menos de 0.1
+
+    **Como melhorar:**
+    - Definir width/height de imagens
+    - Reservar espaço para anúncios
+    - Carregar fontes corretamente
+  </Accordion>
+
+  <Accordion title="TTI (Time to Interactive)" icon="stopwatch">
+    **O que é:** Tempo até site ficar totalmente interativo
+
+    **Em português simples:** Quanto demora até você poder clicar/rolar sem travamento
+
+    **Meta:** Menos de 3.8 segundos
+
+    **Como melhorar:**
+    - Reduzir JavaScript
+    - Lazy load em imagens
+    - Cache ativado
+  </Accordion>
+
+  <Accordion title="Minificação (Minify)" icon="compress">
+    **O que é:** Remover espaços e quebras de linha do código
+
+    **Antes (normal):**
+    ```css
+    .botao {
+      background: blue;
+      padding: 1rem;
+    }
+    ```
+
+    **Depois (minificado):**
+    ```css
+    .botao{background:blue;padding:1rem}
+    ```
+
+    **Vantagem:** Arquivo menor = carrega mais rápido!
+
+    **Plugin:** LiteSpeed Cache, WP Rocket
+  </Accordion>
+
+  <Accordion title="GZIP / Brotli (Compressão)" icon="file-zipper">
+    **O que são:** Métodos de comprimir arquivos antes de enviar
+
+    **Resultado:** Site 70% menor!
+
+    **Em português simples:** Como zipar arquivo antes de enviar por email
+
+    **Como ativar:** Plugin de cache ou configuração do servidor
+
+    **Melhor:** Brotli (mais moderno que GZIP)
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Termos de Design
+
+<AccordionGroup>
+  <Accordion title="Above the Fold (Acima da Dobra)" icon="up">
+    **O que é:** Parte visível da página SEM rolar
+
+    **Em português simples:** O que você vê imediatamente ao abrir página
+
+    **Por quê importa:** 80% das pessoas não rolam! Coloque o ESSENCIAL acima da dobra.
+
+    **O que colocar:**
+    - Headline forte
+    - Benefício principal
+    - CTA visível
+  </Accordion>
+
+  <Accordion title="Whitespace (Espaço em Branco)" icon="square">
+    **O que é:** Áreas vazias sem conteúdo
+
+    **Por quê usar:** Dá "respiro" visual, não deixa página poluída
+
+    **Regra:** Mais espaço = mais elegante (até certo ponto!)
+
+    **Erro comum:** Tentar preencher TUDO com conteúdo (fica poluído!)
+  </Accordion>
+
+  <Accordion title="Typography (Tipografia)" icon="font">
+    **O que é:** Arte de organizar e estilizar texto
+
+    **Inclui:**
+    - Escolha de fontes
+    - Tamanhos (hierarchy)
+    - Espaçamento entre linhas (line-height)
+    - Espaçamento entre letras (letter-spacing)
+
+    **Boa tipografia:** Texto fácil e agradável de ler
+  </Accordion>
+
+  <Accordion title="Contrast (Contraste)" icon="adjust">
+    **O que é:** Diferença entre cor do texto e cor do fundo
+
+    **Mínimo WCAG:**
+    - Texto normal: 4.5:1
+    - Texto grande: 3:1
+
+    **Exemplo BOM:**
+    - Preto #000 em branco #FFF = 21:1 ✅
+
+    **Exemplo RUIM:**
+    - Cinza claro #CCC em branco #FFF = 1.6:1 ❌
+
+    **Teste em:** [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/)
+  </Accordion>
+
+  <Accordion title="Glassmorphism" icon="water">
+    **O que é:** Efeito vidro fosco (fundo desfocado)
+
+    **Código:**
+    ```css
+    .card-glass {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    ```
+
+    **Quando usar:** Cards modernos, modais, overlays
+  </Accordion>
+
+  <Accordion title="Neumorphism" icon="cube">
+    **O que é:** Estilo visual com sombras suaves (parece 3D)
+
+    **Características:**
+    - Sombras interna e externa
+    - Cores sutis
+    - Parece "embutido" ou "elevado"
+
+    **Código:**
+    ```css
+    .card-neuro {
+      background: #e0e0e0;
+      box-shadow:
+        5px 5px 10px #bebebe,
+        -5px -5px 10px #ffffff;
+    }
+    ```
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Termos de Marketing Digital
+
+<AccordionGroup>
+  <Accordion title="Above the Fold" icon="up">
+    **O que é:** Conteúdo visível sem rolar a página
+
+    **Por quê crítico:** 80% não rolam! Coloque headline e CTA principais aqui.
+  </Accordion>
+
+  <Accordion title="Bounce Rate (Taxa de Rejeição)" icon="door-open">
+    **O que é:** Porcentagem de visitantes que saem sem interagir
+
+    **Exemplo:** 70% = 7 de cada 10 pessoas saem imediatamente
+
+    **Causas:**
+    - Site lento
+    - Não é o que esperavam
+    - Mobile ruim
+
+    **Meta:** Menos de 50%
+  </Accordion>
+
+  <Accordion title="Conversion Rate (Taxa de Conversão)" icon="chart-line">
+    **O que é:** Porcentagem de visitantes que viram clientes
+
+    **Exemplo:** 2% = 2 de cada 100 visitantes compram
+
+    **Como melhorar:**
+    - CTA claro
+    - Prova social
+    - Site rápido
+    - Mobile perfeito
+  </Accordion>
+
+  <Accordion title="Lead Magnet (Isca Digital)" icon="magnet">
+    **O que é:** Material gratuito em troca de email
+
+    **Exemplos:**
+    - E-book grátis
+    - Checklist
+    - Webinar
+    - Cupom de desconto
+
+    **Objetivo:** Capturar contato para nutrir depois
+  </Accordion>
+
+  <Accordion title="Funil de Vendas" icon="filter">
+    **O que é:** Caminho que visitante faz até comprar
+
+    **Etapas:**
+    1. Topo: Pessoa descobre você (anúncio, Google)
+    2. Meio: Se interessa (lê conteúdo, vê vídeo)
+    3. Fundo: Compra!
+
+    **Landing pages:** Geralmente para topo/meio do funil
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Termos de Banco de Dados
+
+<AccordionGroup>
+  <Accordion title="MySQL" icon="database">
+    **O que é:** Sistema de banco de dados que WordPress usa
+
+    **O que guarda:**
+    - Posts e páginas
+    - Usuários
+    - Configurações
+    - Comentários
+
+    **Você precisa mexer:** Raramente! WordPress gerencia sozinho
+
+    **Quando mexer:** Backup, migração, otimização avançada
+  </Accordion>
+
+  <Accordion title="phpMyAdmin" icon="table">
+    **O que é:** Interface para ver/editar banco de dados MySQL
+
+    **Onde acessar:** cPanel → phpMyAdmin
+
+    **CUIDADO:** Pode quebrar site se deletar coisa errada!
+
+    **Quando usar:** Apenas se souber o que está fazendo
+  </Accordion>
+
+  <Accordion title="wp_options (Tabela)" icon="gear">
+    **O que é:** Tabela do banco de dados que guarda configurações
+
+    **Guarda:**
+    - URL do site
+    - Título
+    - Configurações de plugins
+
+    **Quando mexer:** Ao migrar site (precisa trocar URL antiga para nova)
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Termos de Segurança
+
+<AccordionGroup>
+  <Accordion title="SSL/HTTPS (Certificado de Segurança)" icon="lock">
+    **O que é:** Criptografia que protege dados entre visitante e servidor
+
+    **Visual:** Cadeado verde na barra do navegador
+
+    **Por quê OBRIGATÓRIO:**
+    - Google penaliza sites HTTP (sem SSL)
+    - Navegadores mostram "Não Seguro"
+    - Formulários não são confiáveis sem SSL
+
+    **Como ativar:** Hospedagem oferece grátis (Let's Encrypt)
+  </Accordion>
+
+  <Accordion title="Firewall" icon="shield">
+    **O que é:** Barreira de proteção contra ataques
+
+    **Protege de:**
+    - Hackers
+    - Bots maliciosos
+    - Ataques DDoS
+
+    **Onde ativar:**
+    - Cloudflare (grátis)
+    - Plugin Wordfence
+    - Configuração da hospedagem
+  </Accordion>
+
+  <Accordion title="Malware" icon="virus">
+    **O que é:** Software malicioso (vírus)
+
+    **Como WordPress pega:**
+    - Plugins craqueados
+    - Temas piratas
+    - Senha fraca
+
+    **Como prevenir:**
+    - Usar só plugins oficiais
+    - Senha forte
+    - Manter WordPress atualizado
+    - Plugin de segurança (Wordfence)
+  </Accordion>
+
+  <Accordion title="Brute Force (Ataque de Força Bruta)" icon="user-shield">
+    **O que é:** Tentativa de adivinhar senha (tenta milhares de combinações)
+
+    **Como proteger:**
+    - Senha forte (letras, números, símbolos)
+    - Limite de tentativas
+    - Two-Factor Authentication (2FA)
+    - Trocar URL de login (/wp-admin para /meu-login-secreto)
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Termos de Integração
+
+<AccordionGroup>
+  <Accordion title="Webhook" icon="webhook">
+    **O que é:** Notificação automática entre sistemas
+
+    **Em português simples:** Quando algo acontece no site, avisa outro sistema automaticamente
+
+    **Exemplo:** Alguém preenche formulário → Webhook avisa Slack → Time recebe notificação
+
+    **Ferramenta:** Zapier, Make (Integromat)
+  </Accordion>
+
+  <Accordion title="Shortcode" icon="brackets">
+    **O que é:** Código curto que WordPress substitui por funcionalidade
+
+    **Exemplo:**
+    ```
+    [formulario_contato]
+    ```
+    WordPress substitui por formulário completo!
+
+    **Onde usar:** Dentro de posts/páginas
+
+    **Como criar:** Plugins geram automaticamente
+  </Accordion>
+
+  <Accordion title="WooCommerce" icon="cart-shopping">
+    **O que é:** Plugin que transforma WordPress em loja virtual
+
+    **Adiciona:**
+    - Carrinho de compras
+    - Checkout
+    - Produtos
+    - Pagamentos
+
+    **Easy Builder funciona:** SIM! Templates de e-commerce disponíveis
+  </Accordion>
+
+  <Accordion title="SMTP (Envio de Email)" icon="envelope">
+    **O que é:** Protocolo para enviar emails
+
+    **Por quê configurar:** Emails do WordPress caem em spam SEM SMTP!
+
+    **Como configurar:**
+    - Plugin WP Mail SMTP
+    - Usar Gmail, SendGrid, ou Mailgun
+    - Configurar autenticação
+
+    **Resultado:** Emails de formulário chegam na caixa de entrada!
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Conceitos Avançados (Opcional)
+
+<AccordionGroup>
+  <Accordion title="Pseudo-classes CSS" icon="colon-sign">
+    **O que são:** Estados especiais de elementos
+
+    **Principais:**
+    - `:hover` = mouse em cima
+    - `:active` = enquanto clica
+    - `:focus` = campo de formulário selecionado
+    - `:first-child` = primeiro filho
+    - `:last-child` = último filho
+
+    **Exemplo:**
+    ```css
+    a:hover { color: red; } /* Link fica vermelho ao passar mouse */
+    ```
+  </Accordion>
+
+  <Accordion title="Pseudo-elementos CSS" icon="colon">
+    **O que são:** Elementos virtuais que CSS cria
+
+    **Principais:**
+    - `::before` = antes do conteúdo
+    - `::after` = depois do conteúdo
+
+    **Exemplo:**
+    ```css
+    .titulo::before {
+      content: "⭐ "; /* Adiciona estrela antes */
+    }
+    ```
+  </Accordion>
+
+  <Accordion title="Flexbox vs Grid" icon="table-cells">
+    **Quando usar cada um:**
+
+    **Flexbox:**
+    - ✅ Layouts em UMA direção (linha OU coluna)
+    - ✅ Centralizar elementos
+    - ✅ Distribuir espaço
+    - Exemplo: Menu horizontal, cards em linha
+
+    **Grid:**
+    - ✅ Layouts em DUAS direções (linhas E colunas)
+    - ✅ Galerias de imagens
+    - ✅ Cards em grade
+    - Exemplo: Grid 3x3 de produtos
+  </Accordion>
+
+  <Accordion title="Variáveis CSS (Custom Properties)" icon="brackets-curly">
+    **O que são:** Valores reutilizáveis que você define uma vez
+
+    **Vantagem:** Muda em 1 lugar, atualiza TUDO!
+
+    **Exemplo:**
+    ```css
+    :root {
+      --cor-principal: #667eea;
+      --espacamento: 2rem;
+    }
+
+    .botao {
+      background: var(--cor-principal); /* Usa variável */
+      padding: var(--espacamento);
+    }
+
+    /* Mudar --cor-principal atualiza todos botões! */
+    ```
+  </Accordion>
+
+  <Accordion title="Keyframes (Animações CSS)" icon="film">
+    **O que são:** Definem etapas de uma animação
+
+    **Exemplo:**
+    ```css
+    @keyframes deslizar {
+      0% { transform: translateX(0); } /* Início */
+      100% { transform: translateX(100px); } /* Fim: 100px à direita */
+    }
+
+    .elemento {
+      animation: deslizar 2s ease infinite; /* Usa animação */
+    }
+    ```
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## K
+
+<AccordionGroup>
+  <Accordion title="Keyframe (Quadro-chave)" icon="film">
+    **O que é:** Etapa de uma animação CSS
+
+    **Em português simples:** Como frames de um desenho animado
+
+    **Exemplo:**
+    ```css
+    @keyframes deslizar {
+      0% { left: 0; } /* Início: posição 0 */
+      100% { left: 100px; } /* Fim: 100px à direita */
+    }
+    ```
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Termos de WordPress Específicos
+
+<AccordionGroup>
+  <Accordion title="Post vs Page (Post vs Página)" icon="file">
+    **Post (Artigo):**
+    - Conteúdo de blog
+    - Tem data
+    - Organizado por categoria/tag
+    - Aparece em ordem cronológica
+
+    **Page (Página):**
+    - Conteúdo estático
+    - Sem data
+    - Hierárquica (pode ter páginas filhas)
+    - Exemplo: Sobre, Contato, Serviços
+
+    **No Easy Builder:** Usamos PÁGINAS (não posts)
+  </Accordion>
+
+  <Accordion title="Custom Post Type" icon="file-code">
+    **O que é:** Tipo personalizado de conteúdo
+
+    **Exemplos:**
+    - Produtos (WooCommerce)
+    - Portfólio
+    - Depoimentos
+    - Equipe
+
+    **Como criar:** Plugin (Custom Post Type UI) ou código
+
+    **Vantagem:** Organizar conteúdo específico separadamente
+  </Accordion>
+
+  <Accordion title="Taxonomy (Taxonomia)" icon="tags">
+    **O que é:** Forma de classificar conteúdo
+
+    **Tipos:**
+    - Categoria (ampla)
+    - Tag (específica)
+    - Custom (personalizada)
+
+    **Exemplo:**
+    - Post sobre WordPress
+    - Categoria: "Tutoriais"
+    - Tags: "elementor", "easy-builder", "templates"
+  </Accordion>
+
+  <Accordion title="Permalink (Link Permanente)" icon="link">
+    **O que é:** Estrutura de URL das páginas
+
+    **Opções:**
+    - `/p=123` ❌ (ruim para SEO)
+    - `/sobre-nos` ✅ (bom para SEO)
+    - `/2024/01/titulo-post` (com data)
+
+    **Como configurar:** WordPress → Configurações → Links Permanentes
+
+    **Recomendado:** Nome do post
+  </Accordion>
+
+  <Accordion title="wp-config.php" icon="file-code">
+    **O que é:** Arquivo de configuração principal do WordPress
+
+    **Contém:**
+    - Dados do banco de dados
+    - Chaves de segurança
+    - Configurações do WordPress
+
+    **Onde fica:** Pasta raiz do WordPress
+
+    **CUIDADO:** Erro aqui = site quebra completamente!
+  </Accordion>
+
+  <Accordion title=".htaccess" icon="file">
+    **O que é:** Arquivo de configuração do servidor Apache
+
+    **Usos:**
+    - Redirecionamentos
+    - Limites de PHP
+    - Proteção de diretórios
+    - URLs amigáveis
+
+    **Onde fica:** Pasta raiz (pode estar oculto)
+
+    **Como ver:** Ativar "Mostrar arquivos ocultos" no FTP
+  </Accordion>
+
+  <Accordion title="Multisite" icon="sitemap">
+    **O que é:** Vários sites em uma instalação WordPress
+
+    **Exemplo:** 1 WordPress gerencia 10 sites diferentes
+
+    **Quando usar:** Agências com muitos clientes
+
+    **Você precisa:** Provavelmente NÃO (para maioria dos casos)
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Termos de Copywriting
+
+<AccordionGroup>
+  <Accordion title="Headline (Manchete)" icon="heading">
+    **O que é:** Título principal que chama atenção
+
+    **Objetivo:** Fazer pessoa PARAR e ler
+
+    **Características de boa headline:**
+    - Clara (entende em 3 segundos)
+    - Benefício óbvio
+    - Provoca curiosidade
+
+    **Exemplo BOM:**
+    > "Crie Sites Profissionais em 2 Horas ao Invés de 2 Dias"
+
+    **Exemplo RUIM:**
+    > "Easy Builder" (não diz benefício!)
+  </Accordion>
+
+  <Accordion title="Subheadline (Subtítulo)" icon="text-size">
+    **O que é:** Texto logo abaixo da headline
+
+    **Objetivo:** Complementar headline, dar mais contexto
+
+    **Exemplo:**
+    > Headline: "Crie Sites em Horas"
+    > Subheadline: "Templates prontos, IA integrada, sem programar"
+  </Accordion>
+
+  <Accordion title="Prova Social" icon="users">
+    **O que é:** Evidências de que outras pessoas usam/aprovam
+
+    **Tipos:**
+    - Depoimentos
+    - Avaliações (★★★★★)
+    - Número de clientes ("+ de 5.000 usuários")
+    - Logos de empresas
+    - Cases de sucesso
+
+    **Por quê funciona:** Pessoas confiam no que outros já validaram
+  </Accordion>
+
+  <Accordion title="Gatilho Mental" icon="brain">
+    **O que é:** Atalho mental que influencia decisão
+
+    **Principais:**
+    - Escassez ("Últimas vagas!")
+    - Urgência ("Promoção acaba em 24h")
+    - Autoridade ("Usado por 10.000+ empresas")
+    - Reciprocidade ("E-book grátis")
+    - Prova social ("5.000 clientes satisfeitos")
+
+    **Uso ético:** Use com verdade (não mentir!)
+  </Accordion>
+
+  <Accordion title="Objeção" icon="shield-halved">
+    **O que é:** Motivo pelo qual pessoa NÃO compra
+
+    **Objeções comuns:**
+    - "É caro demais"
+    - "Não vai funcionar para mim"
+    - "Não tenho tempo"
+    - "E se não der certo?"
+
+    **Solução:** Responder objeções na landing page (garantia, depoimentos, FAQ)
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Termos de E-commerce
+
+<AccordionGroup>
+  <Accordion title="Checkout" icon="cash-register">
+    **O que é:** Página final de compra (onde cliente paga)
+
+    **Elementos:**
+    - Carrinho resumido
+    - Dados de entrega
+    - Forma de pagamento
+    - Botão "Finalizar Compra"
+
+    **Otimização:** Menos campos = mais conversão!
+  </Accordion>
+
+  <Accordion title="Carrinho (Cart)" icon="cart-shopping">
+    **O que é:** Onde produtos ficam antes de comprar
+
+    **Funcionalidades:**
+    - Adicionar/remover produtos
+    - Alterar quantidade
+    - Calcular frete
+    - Ver total
+
+    **Plugin:** WooCommerce
+  </Accordion>
+
+  <Accordion title="Gateway de Pagamento" icon="credit-card">
+    **O que são:** Sistemas que processam pagamentos
+
+    **Principais no Brasil:**
+    - Mercado Pago
+    - PagSeguro
+    - Stripe
+    - PayPal
+
+    **Integração:** Via WooCommerce
+  </Accordion>
+
+  <Accordion title="Pixel de Rastreamento" icon="chart-line">
+    **O que é:** Código que rastreia comportamento de visitantes
+
+    **Principais:**
+    - Meta Pixel (Facebook/Instagram Ads)
+    - Google Analytics
+    - Google Ads
+
+    **Para quê:** Medir conversões, criar públicos, remarketing
+
+    **Como adicionar:** Plugin (Insert Headers and Footers) ou GTM
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Termos de Acessibilidade
+
+<AccordionGroup>
+  <Accordion title="WCAG (Web Content Accessibility Guidelines)" icon="universal-access">
+    **O que é:** Padrão internacional de acessibilidade web
+
+    **Níveis:**
+    - A = Básico
+    - AA = Recomendado (meta!)
+    - AAA = Avançado
+
+    **Principais requisitos:**
+    - Contraste mínimo 4.5:1
+    - Alt text em imagens
+    - Navegação por teclado
+    - Textos descritivos
+  </Accordion>
+
+  <Accordion title="Screen Reader (Leitor de Tela)" icon="audio-description">
+    **O que é:** Software que LÊ conteúdo da tela para cegos
+
+    **Exemplos:** NVDA, JAWS, VoiceOver (Mac/iPhone)
+
+    **Como ajudar:**
+    - Alt text em imagens
+    - Headings corretos
+    - Labels em formulários
+    - Links descritivos
+
+    **Teste:** Ative leitor de tela e navegue no seu site!
+  </Accordion>
+
+  <Accordion title="Aria Labels" icon="tag">
+    **O que são:** Atributos HTML para acessibilidade
+
+    **Exemplo:**
+    ```html
+    <button aria-label="Fechar modal">X</button>
+    ```
+    Leitor de tela lê: "Fechar modal" ao invés de só "X"
+
+    **Quando usar:** Botões com ícones, sem texto
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Termos de Hospedagem
+
+<AccordionGroup>
+  <Accordion title="Shared Hosting (Hospedagem Compartilhada)" icon="users">
+    **O que é:** Vários sites no mesmo servidor
+
+    **Vantagens:**
+    - ✅ Barato (R$ 12-27/mês)
+    - ✅ Fácil de usar
+
+    **Desvantagens:**
+    - ❌ Mais lento (divide recursos)
+    - ❌ Limites de PHP mais baixos
+
+    **Exemplos:** Hostinger, StayCloud planos básicos
+  </Accordion>
+
+  <Accordion title="VPS (Virtual Private Server)" icon="server">
+    **O que é:** Servidor virtual dedicado
+
+    **Vantagens:**
+    - ✅ Mais rápido
+    - ✅ Mais controle
+    - ✅ Recursos dedicados
+
+    **Desvantagens:**
+    - ❌ Mais caro (R$ 50-200/mês)
+    - ❌ Precisa conhecimento técnico
+
+    **Quando usar:** Site com muito tráfego (5.000+ visitas/dia)
+  </Accordion>
+
+  <Accordion title="Bandwidth (Largura de Banda)" icon="signal">
+    **O que é:** Quantidade de dados transferidos
+
+    **Em português simples:** Como franquia de internet - quanto pode baixar/enviar
+
+    **Exemplo:** 100GB/mês = suficiente para ~10.000 visitas
+
+    **O que consome:** Imagens grandes, vídeos, downloads
+  </Accordion>
+
+  <Accordion title="Uptime (Tempo Online)" icon="clock">
+    **O que é:** Porcentagem de tempo que servidor fica online
+
+    **Metas:**
+    - 99.9% = 43 minutos offline por mês ✅
+    - 99% = 7 horas offline por mês ⚠️
+    - 95% = 36 horas offline por mês ❌
+
+    **Hospedagens boas:** 99.9%+ de uptime
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Ferramentas Mencionadas
+
+<CardGroup cols={3}>
+  <Card title="Squoosh.app" icon="image" href="https://squoosh.app">
+    Converter e comprimir imagens (AVIF, WebP)
+  </Card>
+
+  <Card title="FileZilla" icon="folder-open" href="https://filezilla-project.org/">
+    Cliente FTP para acessar arquivos do servidor
+  </Card>
+
+  <Card title="DevTools (F12)" icon="wrench">
+    Ferramenta do navegador para inspecionar código e testar responsividade
+  </Card>
+
+  <Card title="cPanel" icon="server">
+    Painel de controle da hospedagem (configurações PHP, domínio, email)
+  </Card>
+
+  <Card title="Yoast SEO" icon="y" href="https://yoast.com/">
+    Plugin WordPress para otimização de SEO
+  </Card>
+
+  <Card title="LiteSpeed Cache" icon="bolt">
+    Plugin de cache para WordPress (velocidade)
+  </Card>
+</CardGroup>
+
+---
+
+## Dica: Como Usar Este Glossário
+
+<Steps>
+  <Step title="Encontrou termo desconhecido?">
+    Use Ctrl + F (buscar na página) e digite o termo
+  </Step>
+
+  <Step title="Leia explicação">
+    Entenda o conceito de forma simples
+  </Step>
+
+  <Step title="Veja exemplo prático">
+    Cada termo tem código ou caso de uso
+  </Step>
+
+  <Step title="Aplique no seu projeto">
+    Use o conhecimento imediatamente!
+  </Step>
+</Steps>
+
+<Info>
+  **Este glossário é vivo!** Novos termos serão adicionados conforme necessário. Tem algum termo que você não entende? Peça no Discord ou WhatsApp!
+</Info>
+
+## Próximos Passos
+
+<CardGroup cols={2}>
+  <Card title="Boas Práticas" icon="star" href="/primeiros-passos/boas-praticas">
+    Aplique os termos que aprendeu aqui!
+  </Card>
+
+  <Card title="Iniciante WordPress" icon="wordpress" href="/guias-perfil/iniciante-wordpress">
+    Trilha completa de aprendizado
+  </Card>
+
+  <Card title="Workflows Avançados" icon="bolt" href="/primeiros-passos/workflows-avancados">
+    Técnicas profissionais
+  </Card>
+
+  <Card title="FAQ" icon="circle-question" href="/faq/perguntas-frequentes">
+    Perguntas frequentes
+  </Card>
+</CardGroup>

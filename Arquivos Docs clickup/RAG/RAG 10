@@ -1,0 +1,479 @@
+<PERGUNTA 63>          
+    
+PARA USAR O EASY BUILDER PRECISA DE CONHECIMENTO PRÉVIO SOBRE PROGRAMAÇÃO?
+    
+    Não. O Easy Builder foi pensado justamente para eliminar a necessidade de codar. Todos os códigos já vêm:
+    
+    *   Prontos,
+    *   Testados,
+    *   Documentados com instruções claras.
+    
+    Exemplo: quer remover o scroll horizontal que aparece às vezes no mobile? Copia o CSS de “remover scrollbar” e cola direto no campo de Custom CSS do Elementor. Quer colocar gradiente no título? Copia o código correspondente. Quer uma scrollbar estilizada? Está lá, pronta.
+    
+    Além disso, o Easy Builder inclui um recurso complementar: o **Easy Coder**. Essa ferramenta (disponível para membros) permite transformar comandos simples em código CSS. Basta escrever, por exemplo:
+    
+    > “Mude a cor do botão para verde neon”
+    > 
+    > E o Easy Coder retorna o CSS pronto para colar.
+    
+    Portanto, **nenhum conhecimento técnico é obrigatório**. Mas, caso você tenha, poderá fazer ajustes ainda mais finos. O diferencial é que você não depende disso para entregar algo profissional — o código serve para turbinar, não travar o processo.
+    
+      
+    
+ </PERGUNTA 63>     
+
+
+
+   <PERGUNTA 64>     
+
+O EASY BUILDER FUNCIONA FORA DO WORDPRESS?
+    
+    Funcionar **fora do WordPress**? Mano… infelizmente (ou felizmente, dependendo do ponto de vista), o **Easy Builder é casado com o WordPress**, mais precisamente com o **Elementor**. Eles são tipo aquele casal que não vive um sem o outro — e se tu tenta separar, a coisa quebra.
+    
+    ⚙️ Resposta curta e direta:
+    
+    > ❌ **Não. O Easy Builder NÃO funciona fora do WordPress.**
+   
+    
+    Porque o EB foi **criado pra ser um turbo no Elementor**, que por sua vez é um **plugin do WordPress**. O Easy Builder depende:
+    
+    *   do DOM do Elementor pra colar os elementos,
+    *   das funções internas do WP pra rodar,
+    *   da arquitetura do editor visual pra montar as paradas responsivas bonitinhas.
+    
+    Ou seja, ele **não é um construtor de sites genérico**, é um **acelerador de estrutura** que vive e respira dentro do universo WordPress + Elementor.
+    
+   </PERGUNTA 64>     
+
+
+
+
+  
+   <PERGUNTA 65>
+
+
+COMO O EASY BUILDER AJUDA A ECONOMIZAR TEMPO NA CRIAÇÃO DE PÁGINAS?
+    
+    O Easy Builder oferece uma biblioteca vasta de seções e páginas pré-construídas, baseadas em projetos que já geraram resultados reais. Com isso, você não precisa começar do zero. Basta escolher as seções que melhor atendem às suas necessidades e personalizá-las com apenas alguns cliques. Além disso, o Easy Coder te ajuda a ajustar códigos específicos, sem ter que entender de programação profunda, agilizando ainda mais o processo.
+
+   </PERGUNTA 65>
+
+   <PERGUNTA 66>
+    
+QUAL O IMPACTO DO EASY BUILDER NA MINHA PRODUTIVIDADE?
+    
+    O impacto na produtividade é gigantesco. Com o Easy Builder, você consegue criar páginas 3 vezes mais rápido, o que significa mais projetos entregues em menos tempo. Isso não só aumenta seus ganhos, como também te dá mais tempo livre para focar em outras áreas do seu negócio ou até mesmo na sua vida pessoal.
+
+   </PERGUNTA 66>
+
+   <PERGUNTA 67>
+    
+COMO O EASY BUILDER AJUDA A MANTER UM PADRÃO VISUAL EM PROJETO GRANDES?
+    
+    Manter a consistência visual é crucial em projetos grandes, e o Easy Builder facilita isso com estilos globais de fontes, cores e layouts. Você pode definir esses parâmetros uma vez, e eles serão aplicados automaticamente a todas as seções e páginas do projeto. Além disso, com a possibilidade de salvar e reutilizar seus próprios recursos personalizados, você mantém a identidade visual coesa e profissional em todos os aspectos do projeto.
+
+   </PERGUNTA 67>
+
+   <PERGUNTA 68>
+    
+EXISTE ALGUM LIMITE DE PÁGINAS OU SESSÕES QUE POSSO CRIAR COM O EASY BUILDER?
+    
+    Não, o Easy Builder não impõe nenhum limite para o número de páginas ou seções que você pode criar. Você tem a liberdade total para criar quantas páginas e seções precisar, seja em projetos individuais ou em múltiplos projetos ao mesmo tempo. E com as funcionalidades de organização e reutilização, gerenciar tudo isso se torna simples e eficiente.
+    
+
+   </PERGUNTA 68>
+  
+   <PERGUNTA 69>
+
+POSSO REUTILIZAR E ORGANIZAR OS RECURSOS QUE CRIO NO EASY BUILDER?
+    
+    Com certeza! Você pode salvar e organizar seus próprios recursos personalizados no Easy Builder, armazenando-os em pastas para fácil acesso em futuros projetos. Isso significa que, se você criou uma seção matadora para um cliente, pode reutilizá-la em outros projetos com apenas dois cliques, economizando ainda mais tempo.
+
+   </PERGUNTA 69>   
+
+<PERGUNTA 70>
+    
+COMO O EASY BUILDER PODE MELHORAR A QUALIDADE DOS MEUS PROJETOS?
+    
+    A qualidade dos seus projetos vai disparar porque o Easy Builder te dá acesso a recursos validados e otimizados para conversão. Com templates e seções que já provaram seu valor, você elimina a adivinhação e foca em criar algo que funciona.
+
+</PERGUNTA 70>
+
+<PERGUNTA 71>
+    
+PRECISO ENTENDER DE CÓDIGO PARA PERSONALIZAR OS ELEMENTOS?
+    
+    Não! Para recursos que precisam de personalização em código, o Easy Builder conta com o Easy Coder, uma Inteligência Artificial para te auxiliar no processo, garantindo que você possa fazer ajustes avançados sem conhecimento técnico.
+
+</PERGUNTA 71>
+
+<PERGUNTA 72>
+    
+OS DESIGNS JÁ VEM PRONTOS?
+    
+    Não exatamente. O Easy Builder carrega as estruturas e efeitos, mas você precisa ajustar imagens, personalizações e conteúdo para cada projeto​​.
+    
+*   Os templates são adaptáveis para diferentes nichos, como saúde, advocacia e e-commerce?
+    
+    Sim. Os blocos prontos podem ser personalizados para qualquer nicho, de landing pages a sites institucionais​​.
+
+</PERGUNTA 72>
+
+<PERGUNTA 73>
+    
+PRECISO INSTALAR ALGUM PLUGIN ADICIONAL PARA O EASY BUILDER?
+    
+    Não. Você só precisa do Elementor, Elementor Pro ou do Pro Elements (uma alternativa gratuita).
+    
+
+</PERGUNTA 73>
+  
+<PERGUNTA 74>
+
+COMO O EASY BUILDER GARANTE A RESPONSIVIDADE DAS PÁGINAS CRIADAS?
+    
+    O Easy Builder garante a responsividade das páginas porque **as sessões e blocos que ele entrega já vêm prontas**, com estrutura adaptada pra funcionar lindamente em desktop, tablet e celular. Não é mágica, é otimização inteligente. Cada seção que você copia de lá já foi pensada com margem, espaçamento e alinhamento afinado pra cada tipo de tela. Tipo roupa sob medida — tu não precisa sair costurando do zero, já vem ajustado, você no máximo vai precisar fazer ajustes finos e adicionar as imagens do celular quando a seção específica exigir. Mas ensinamos tudo isso dentro da nossa área de membros.
+
+</PERGUNTA 74>
+
+<PERGUNTA 75>
+    
+COMO O EASY BUILDER SE COMPORTA EM RELAÇÃO A PERFORMANCE E CARREGAMENTO?
+    
+    Ele foi pensado pra **performance de verdade**, não pra enfeitar PowerPoint. As sessões e blocos que tu importa já vêm com **DOM otimizado**, ou seja, usam **menos elementos** dentro de cada seção. Isso deixa o HTML mais enxuto e o site mais leve. Em vez de colocar cinco divs pra fazer um botão brilhar, usa uma só com CSS na veia. Resultado? Página que carrega voando.
+    
+    Além disso, o setup padrão do backup Easy Builder (aquele que tu pode instalar logo no onboarding) **já vem turbinado** com plugins que melhoram o desempenho do site, tipo WP Rocket, LiteSpeed, cache pré-configurado e preload de pixel. Tudo já meio que no esquema Fórmula 1, saca?
+    
+    Outro ponto é que ele não te entuba imagens pesadas. Se tu seguir as instruções (que tão mastigadinhas lá nos tutoriais), tu vai exportar tudo em WebP, ajustar qualidade no Squoosh e subir arquivos com menos de 100kb. Isso sozinho já elimina 90% dos problemas de carregamento.
+    
+    Então, pra resumir com gosto: o Easy Builder não só **acelera tua criação**, como **acelera a navegação** do visitante. Menos firula, mais conversão. É tipo montar um site com cara de gringo, mas com desempenho de server europeu. Você também pode conhecer o Easy Optimize que ensina o melhor que tem sobre performance.
+
+</PERGUNTA 75>
+
+<PERGUNTA 76>    
+      
+    
+COMO O EASY BUILDER GERENCIA AS ATUALIZAÇÕES E LANÇAMENTOS?
+    
+    Atualizamos os recursos do Easy Builder periodicamente, garantindo que você sempre tenha acesso às funcionalidades mais recentes e melhorias contínuas. Temos um desenvolvedor dedicado exclusivamente para essa tarefa, focado em adicionar novos recursos e garantir que a ferramenta esteja sempre à frente das suas necessidades. Isso significa que você está usando uma ferramenta em constante evolução, alinhada com as últimas tendências e melhores práticas do mercado.
+
+</PERGUNTA 76>    
+
+<PERGUNTA 77>    
+
+COMO O EASY BUILDER EQUILIBRA A ADIÇÃO DE NOVOS RECURSOS COM A GARANTIA DE QUALIDADE?
+    
+    
+    No Easy Builder, priorizamos a qualidade sobre a quantidade. Sabemos que muitos projetos têm necessidades semelhantes, então focamos em criar recursos que realmente fazem a diferença e já provaram ser eficazes no mundo real. Não vamos adicionar novos recursos só para encher a plataforma – cada novo elemento é cuidadosamente desenvolvido e testado para garantir que vai agregar valor aos seus projetos e não ser apenas mais um item na lista.
+    
+
+</PERGUNTA 77>    
+
+<PERGUNTA 78>    
+
+COMO IMPORTAR PROJETOS DO ELEMENTOR PARA O FIGMA?
+
+
+    
+    Pra importar uma página do **Elementor** pro **Figma** e poder editar tudo como se tivesse sido feita no Figma desde o início, tem um esquema muito massa (e gratuito). Só seguir esses passos aqui:
+    
+    🧠 **Resumo rápido e mastigado:**
+    
+    1. **Abre a página final no navegador** – tem que ser o link público da página, nada de modo de edição ou preview do Elementor.
+    2. **Abre o Figma** e instala o plugin **HTML to Design**.
+    3. **Roda o plugin**, cola o link da página que tu quer importar.
+    4. O plugin vai te perguntar se quer importar com estilos, fontes, etc – diz que sim pra tudo.
+    5. **Boom**: tua página do Elementor aparece dentro do Figma, toda editável.
+    
+    ⚠️ Dicas de responsa:
+    
+    *   O plugin **HTML to Design** tem **limite de 10 importações grátis por mês**, então não desperdiça.
+    *   Ele não importa interações, só layout. Mas isso já ajuda pra caramba na parte visual e no protótipo.
+    *   Se a página tiver muito efeito animado, tipo Lottie, parallax ou coisa de CSS avançado, ele pode zoar um pouco. Mas o layout base vem legal.
+    
+    Tu usa isso quando quer:
+    
+    *   Testar variações de cor ou tipografia **sem mexer direto no Elementor**.
+    *   Mostrar um modelo pro cliente aprovar antes de meter a mão no site.
+    *   Criar uma identidade visual mais organizada com estilos locais no Figma.
+    
+    🎥 Tem vídeo passo a passo mostrando isso:
+    
+    👉 [Como importar uma página do Elementor pro Figma](https://www.youtube.com/watch?v=QMIAUUhJWrk)
+    
+</PERGUNTA 78>    
+
+<PERGUNTA 79>          
+    
+COMO CONFIGURAR ATALHOS RÁPIDOS PARA ABRIR O EASY BUILDER?
+    
+    💻 Como configurar um atalho pra abrir o Easy Builder no navegador:
+    
+    Se tu tá usando **Google Chrome** (ou Edge, Brave, Opera... funciona igual), segue o esquema:
+    
+    🔧 Passo a passo cabuloso:
+    
+    1. **Abre o Chrome** e clica nos **três pontinhos** no canto superior direito.
+    2. Vai em **Mais Ferramentas > Extensões**.
+    3. No canto esquerdo, clica em **Atalhos do teclado** (ou "Keyboard shortcuts", se tiver em inglês).
+    4. Vai aparecer uma lista com todas as extensões.
+    5. Acha a **Easy Builder** na lista.
+    6. Do lado dela, clica no campo vazio e **define o atalho** que tu quiser.
+        *   Exemplo clássico: `Ctrl + Shift + E` (de Easy)
+        *   Ou `Alt + E`, se quiser algo mais suave.
+    7. Fecha a aba e pronto! Teu atalho já tá ativo.
+    
+    🧠 Dica Ninja:
+    
+    Esse atalho vai **abrir o popup da extensão**, mesmo se tu tiver em outra aba. Ideal pra agilizar quando tu tá montando um layout e quer pegar recurso rapidão.
+    
+    🛑 Só cuidado:
+    
+    Se o atalho não funcionar, é porque outro programa já tá usando. Troca pra outra combinação que não esteja em uso.
+    
+      
+</PERGUNTA 79>   
+
+
+<PERGUNTA 80>  
+
+
+
+POSSO COMPARTILHAR MEUS RECURSOS SALVOS COM OUTRAS PESSOAS?
+    
+    No "Meus Recursos" — que é basicamente teu cofre de ouro com tudo que tu já salvou — dá pra **compartilhar suas pastas com outras pessoas** que também usam o Easy Builder.
+    
+    Funciona assim: tu entra na extensão, clica lá em **"Meus Recursos"**, escolhe a **pasta** que tu quer compartilhar (pode ser uma com sessões, botões, páginas inteiras, códigos, tanto faz) e vai ver um botãozinho pra **"Adicionar Colaborador"** ou algo do tipo.
+    
+    Aí tu digita o **e-mail do outro usuário Easy Builder** (tem que ser o mesmo e-mail que ele usou no cadastro da extensão, se não, não rola) e escolhe o **nível de permissão**:
+    
+    *   Visualização (só pode ver, copiar, mas não alterar nada)
+    *   Edição (pode mexer nos componentes da pasta)
+    *   Full power (libera tudo, tipo admin mesmo)
+    
+    Ou seja, tu consegue **trabalhar em equipe** sem precisar ficar mandando print no grupo ou exportando template manualmente. É como ter uma pasta no Google Drive, só que com estrutura de site pronta pra ser colada no Elementor com um Ctrl + V.
+    
+    Imagina tu e teu sócio com uma pasta chamada “Funis de Venda Fodões”, cada um salvando as páginas que monta e os dois usando nos próprios projetos, em tempo real. Economia de tempo, padronização e menos dor de cabeça. É colar uma vez e ganhar pra sempre.
+    
+    
+    Sim, o Easy Builder serve para qualquer tipo de página, sites institucionais e até e-commerces!
+    
+    Mesmo que ainda não tenhamos templates específicos para e-commerce, as seções essenciais já estão prontas – como benefícios, FAQ, sobre, depoimentos e muito mais. Isso já acelera muito a criação de qualquer loja virtual, permitindo que você monte as páginas principais rapidinho e foque no que realmente importa: a experiência do cliente e a conversão.
+    
+    Se você cria sites institucionais, landing pages ou vitrines digitais, o Easy Builder vai ser uma mão na roda, porque elimina o trabalho repetitivo e te dá total flexibilidade pra personalizar tudo do seu jeito. 🚀🔥
+
+</PERGUNTA 80>  
+
+<PERGUNTA 81>  
+
+SE O CLIENTE PRECISAR DE DEPOIMENTOS PARA SE CONVENCER SOBRE O EASY BUILDER?
+    
+    Primeira landing page usando o Easy Builder:
+    
+    💸 Valor: R$ 1.800
+    
+    ⏱ Tempo: 2 dias
+    
+    Já tinha as fotos e depoimentos, o resto criei com ChatGPT. Agora falta otimizar e vou aplicar as dicas da aula. Ferramenta já me fez ganhar tempo e grana logo de cara.
+    
+    **Ana – Web Designer**
+    
+    ![](https://t9007068676.p.clickup-attachments.com/t9007068676/eafc8bf3-8303-4048-bdf7-e0934096fbbe/image.png)
+    
+    Meu primeiro contato com Elementor e com Easy Builder. Ainda tô explorando, tem bastante coisa pra aprender, mas já curti o potencial da ferramenta.
+    
+    **Anônimo – Web Designer**
+    
+    ![](https://t9007068676.p.clickup-attachments.com/t9007068676/3a97d2eb-2e25-4d89-aaa8-a7e9a204ed1a/image.png)
+    
+    Já fiz minha aquisição e tô achando **fantástico** tudo o que tô vendo aqui! Muuuuito top! 👏🏼👏🏼👏🏼👏🏼
+    
+    **Matheus N. – Web Designer**
+    
+    Com o Easy Builder, dobrei minha produtividade. Fiz 8 sites em um mês, sendo que antes mal chegava a 5. A meta agora é bater 12.
+    
+    **A. Sant – Web Designer**
+    
+    Ferramenta é uma mão na roda pra produção em massa no Elementor. Banco de arquivos, códigos... sem palavras. Melhora produtividade e qualidade absurdamente.
+    
+    **Anderson F. – Designer e Web**
+    
+    Um sonho que virou real. Economia de tempo e aumento de produtividade. A melhor extensão de todas.
+    
+    **Guilherme A. – Designer e Web**
+    
+    Valeu cada centavo. A promessa já é forte, mas a entrega é mais ainda. Reduzi muito o tempo de produção de página. Parabéns aos devs.
+    
+    **JotaV – Web Designer**
+    
+    ![](https://t9007068676.p.clickup-attachments.com/t9007068676/043b3b24-5593-4380-9e01-8a1b28f3cc96/image.png)
+    
+    Feito com EB pra uma influencer de quase 2M 🥹🙏🏻
+    
+    Mais uma com Easy 🙏🏻
+    
+    **Sem nome – Web Designer**
+    
+    Site simples, todo estruturado com elementos do Easy Builder. 3 páginas de serviço + About e Contato. Fiz em 2h e recebi 250 dólares.
+    
+    **Vitor L. – Web Designer**
+    
+    ![](https://t9007068676.p.clickup-attachments.com/t9007068676/b5dd3b3b-e2ba-4544-9a0f-d2d5768abd78/image.png)
+    
+    Turma, vim comemorar uma conquista. Compromisso com cliente, princípios e um bom trampo geram resultado. Obrigado, Lorenzi e equipe.
+    
+    **Lucas V. – Web Designer**
+    
+    Simplesmente revolucionaram a construção de páginas no Elementor! Minha velocidade de criação aumentou demais.
+    
+    **João L. – Web Designer**
+    
+    ![](https://t9007068676.p.clickup-attachments.com/t9007068676/9c0a4f11-7f9b-427c-a01b-03d5da02ed56/image.png)
+    
+    Ainda falta a copy e uns ajustes, mas montei toda a estrutura em 2h.
+    
+    **Marllon T. – Designer e Web**
+    
+    Simplesmente sensacional. Melhorou MUITO minha produtividade como web designer.
+    
+    **Anderson M. – Designer e Web**
+    
+    Peguei o plano mais barato só pra testar, e até agora tô surpreso. A ferramenta ajuda 110% rs.
+    
+    **Lúcio – Designer e Web**
+    
+    Já fiz várias mentorias, mas suporte igual esse aqui? Nunca vi. Atendem até fora de horário. Estão fazendo além do esperado. Show demais! 👏👏
+    
+    **Marco A. – Web Designer**
+    
+    Maravilhoso. O verdadeiro canivete suíço do web design.
+    
+    **Lucas Jean – Web Designer**
+    
+    Ferramenta absurda! Otimizou muito meu tempo de criação. Fácil de usar e com suporte ágil.
+    
+    **Diogo V. – Web Designer**
+    
+    Sou um cara bem criterioso e essa extensão com certeza foi a melhor coisa que já utilizei, tirando que tive algumas dúvidas e necessidades que eles adicinaram no Roadmap ou já executaram isso foi impressionante. Reduzi por volta de 50% do tempo de produção das páginas entregando o mesmo nível de qualidade.
+    
+    **Isac Oliveira – Web Designer**
+    
+    Cara, simplesmente sensacional a ferramenta, demandando menos da metade do tempo que geralmente levaria para construir qualquer página normalmente, INSANO!
+    
+    **Ana – Web Designer**
+    
+    ![](https://t9007068676.p.clickup-attachments.com/t9007068676/f1b295ca-6f76-4810-95e9-b403235b0598/image.png)
+    
+    Meu primeiro contato com Elementor e com Easy Builder. Muita coisa pra melhorar mas ainda to conhecendo o site.
+    
+    **Gustavo M. – Designer**
+    
+    De 3 dias pra menos de 1 dia numa landing page. No mês passado, entreguei 20 LPs com o Easy.
+    
+    Nem acredito que tô conseguindo fazer site tão rápido. Me enrolava demais antes. Obrigado!
+    
+    **Mineiro. – Designer**
+    
+    Nem to acreditando que to conseguindo criar um site tão rápido mano. Tu te midea do quanto eu ficava travado nisso e me enrolava mais e mais para aprender? Caraca mano.. Obrigado!
+    
+    **Jack Luan – Web Designer**
+    
+    Cara, sinistra a parada de **Meus Recursos**, tô automatizando grande parte das entregas com _páginas e estruturas_ que já validei internamente com clientes consolidados. Tá me ajudando no meu principal ponto de escala por hora, que é justamente a **falta de tempo**, como eu dou bastante prioridade por projeto, acabava ficando meio foda de conciliar _3-4 projetos de uma vez_.
+    
+    **Caio G. – Designer e Web**
+    
+    Melhor ferramenta pra criação de páginas. Uso todo dia. Melhorou meu tempo de entrega em 100%.
+    
+    **Anônimo – Web Designer**
+    
+    ![](https://t9007068676.p.clickup-attachments.com/t9007068676/e2091603-1074-4cd7-b62d-c2ece4114c08/image.png)
+    
+    Já comprei e tô achando fantástico tudo que tô vendo! Muuuito top! 👏🏼👏🏼👏🏼👏🏼
+    
+    **Enrique B. – Analista de Sistemas**
+    
+    A ferramenta é sensacional. Suporte, estrutura, atenção... impossível não crescer usando isso.
+    
+    **Mateus M. – Web Designer**
+    
+    Excelente ferramenta! Nele eu consigo salvar meus widgets favoritos, com todas as customizações já feitas, e implementar nas minhas páginas de maneira rápida e eficiente. Otimizou muito meu tempo de trabalho!
+    
+    **Samuel – Web Designer**
+    
+    🔥 MANO NÃO ACREDITO!
+    
+    Uma nota verde pela primeira vez na vida kkkkkk
+    
+    A arquitetura tá surreal de boa.Pra quem sabe o B.O. que o Elementor dá com código e CSS, não imagina a satisfação de ver uma nota alta dessa.
+    
+    **Herbert Pro – Web Designer**
+    
+    ![](https://t9007068676.p.clickup-attachments.com/t9007068676/6f1fb6d2-3b67-42c0-a7fc-8e77ea81beca/image.png)
+    
+    Primeira LP usando o Easy Builder 
+    
+    – Valor 1.800,00
+    
+    – Dois dias para fazer
+    
+    Já tinha as fotos e os depoimentos, restante do conteúdo fiz pelo ChatGPT. Agora falta otimizar, vou assistir a aula e aplicar nessa LP.
+    
+    **Marina T. – Designer**
+    
+    O que eu já _“gastei”_, e falo: foi gasto mesmo! Comprando essas porcarias de pacotes prontos que nada funciona, nada dá certo, suporte zero… Pois investimento é quando é útil.
+    
+    O Easy Builder me ganhou  antes de comprar. Sabe aquela história _“quem sabe faz ao vivo”_? Tipo isso rsrs. E olha que nem é propaganda 🤭😂
+    
+    **Victor M. – Designer**
+    
+    A Melhor ferramenta para desenvolvimento de LandingPages no Elementor. Minha produtividade dobrou totalmente. Recomendo a todos sem sombra de dúvidas.
+    
+    **Kauele – Web Designer**
+    
+    Oi, queria dar um feedback sobre o EB. Apareceu uma página de vendas ontem e só peguei por conta do Easy. Levei coisa de um dia pra entregar (já entreguei)… Que se fosse do jeito tradicional, seria uns 3 dias.
+    
+    **Marcos V. – Web Designer**
+    
+    A ferramenta é incrível, eu uso todo dia, melhorou muito o meu tempo de entrega dos projetos.
+    
+    Sobre os cursos, você soube ouvir todo mundo e resolveu e está resolvendo várias dores da maioria. Não tinha a obrigação, mas no meu ver, você se colocou no lugar de muitos. Sugerimos várias melhorias e já foram implementadas. 👏
+    
+    **Samuel N. – Web Designer**
+    
+    Sensacional! Recursos incríveis e uma ideia inovadora que faz a gente economizar horas de trabalho na web! 1000000 estrelas!
+    
+    **Comprass Br. – Agência de Marketing**
+    
+    Minha experiência com o EB foi excelente, gostei muito de como funciona a extensão, e acredito que de fato vai revolucionar esse mercado. Agiliza muito o trabalho e quem não usar vai ficar pra trás. Parabéns pela criação
+    
+    **Anderson – Designer e Web**
+    
+    Estou usando o EasyBuilder, e cara, eu consegui implementar uma LP inteira em 1 dia, contando com o design também. Coisa que levava dias, tipo 2 ou 3, eu reduzi pra 1 dia.
+    
+    **Ricardo M. – Designer e Web**
+    
+    Produto sensacional!! Além de diminuir meu tempo de produção de páginas, ainda aumentou o leque de criatividade com os projetos disponibilzados, ferramenta essencial para todo e qualquer web designer… Sem contar ainda a questão de compartilhamento de asset’s entre contas, é muito fora da curva!
+    
+    **Nériton D. – Designer e Web**
+    
+    Uma das melhores ferramentas para WebDesigner que trabalha com WordPress/Elementor hoje! Sem duvida se você uma ferramenta que facilita muito a minha vida e me faz produzir muito mais e ganhar mais dinheiro.
+    
+    **Miguel M. – Designer e Web**
+    
+    Quando o assunto é tempo e entrega o Easy Builder muda tudo! Ajuda no muito no processo de construção, a ferramenta é incrível.
+    
+    **João Lima – Designer e Web**
+    
+    O Easy Builder é uma ótima extensão para quem usa Elementor e quer mais facilidade na hora do desenvolvimento. Ele é muito simples e prático de usar. Perfeito para quem quer ganhar tempo e ter mais controle na criação.
+    
+    **Isaque Levi – Designer e Web**
+    
+    Essa ferramenta aumentou minha velocidade de implementação de páginas em mais de 100%
+    
+    **Alan Paker – Designer e Web**
+    
+    Ter uma ferramenta que dobra a sua produtividade sem perde a qualidade do serviço, não poderia ser menos que 5 estrelas. Obrigado
+    
+*   Depoimentos em áudio
+
+</PERGUNTA 81>  

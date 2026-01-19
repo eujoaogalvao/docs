@@ -1,0 +1,246 @@
+---
+title: 'Erro 500 no Servidor'
+description: 'Solução para erro 500 ou tela branca no WordPress'
+icon: 'server'
+---
+
+## O Problema
+
+Seu site apresenta:
+- **Erro 500** (Internal Server Error)
+- Tela branca
+- Página não carrega
+- "Erro ao estabelecer conexão com banco de dados"
+
+## Tutorial em Vídeo
+
+Veja como resolver o Erro 500 no Elementor:
+
+<iframe
+  width="100%"
+  height="400"
+  src="https://www.youtube.com/embed/EF5w6XidI54"
+  title="Resolvendo Erro 500 - Elementor"
+  frameBorder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowFullScreen
+></iframe>
+
+## 7 Causas Principais
+
+O Erro 500 pode ter várias causas. Vamos resolver uma por uma:
+
+<AccordionGroup>
+  <Accordion title="1. Limite de Memória PHP Esgotado" icon="memory">
+    **Causa mais comum!**
+
+    **Sintomas:**
+    - Site trava ao editar
+    - Erro ao importar templates
+    - Lentidão extrema
+
+    **Solução:**
+    1. Acesse o **cPanel** da sua hospedagem
+    2. Procure por **MultiPHP INI Editor**
+    3. Aumente os valores:
+       - `memory_limit` → **512M**
+       - `max_execution_time` → **300**
+       - `max_input_time` → **300**
+       - `post_max_size` → **128M**
+       - `upload_max_filesize` → **128M**
+
+    <Info>
+      Solução completa em: [Limite de Memória](/resolucao-problemas/limite-memoria)
+    </Info>
+  </Accordion>
+
+  <Accordion title="2. Plugin com Conflito ou Desatualizado" icon="plug">
+    **Como identificar:**
+
+    Plugin pode estar causando crash!
+
+    **Solução:**
+    1. Acesse via **FTP** ou **Gerenciador de Arquivos** do cPanel
+    2. Vá até: `public_html/wp-content/plugins/`
+    3. Renomeie a pasta `plugins` para `plugins-OFF`
+    4. Tente acessar o site novamente
+
+    **Se o site voltar:**
+    - O problema é um plugin!
+    - Renomeie de volta para `plugins`
+    - Desative plugins um por um no WordPress até achar o culpado
+
+    **Se o site NÃO voltar:**
+    - O problema é outra causa (veja próximos itens)
+  </Accordion>
+
+  <Accordion title="3. Tema Quebrado ou Incompatível" icon="paintbrush">
+    **Como identificar:**
+
+    Tema pode estar corrompido!
+
+    **Solução:**
+    1. Acesse via **FTP** ou **Gerenciador de Arquivos**
+    2. Vá até: `public_html/wp-content/themes/`
+    3. Renomeie a pasta do tema ativo para `tema-OFF`
+    4. WordPress vai ativar tema padrão automaticamente
+    5. Tente acessar o site
+
+    **Se o site voltar:**
+    - O problema era o tema!
+    - Reinstale o tema ou use outro
+
+    <Warning>
+      **Importante:** Se usar tema do Easy Builder, reinstale o backup!
+    </Warning>
+  </Accordion>
+
+  <Accordion title="4. Arquivo .htaccess Corrompido" icon="file-code">
+    **Como identificar:**
+
+    Arquivo de configuração pode estar quebrado!
+
+    **Solução:**
+    1. Acesse via **FTP** ou **Gerenciador de Arquivos**
+    2. Vá até a pasta raiz: `public_html/`
+    3. Procure arquivo `.htaccess`
+    4. Renomeie para `.htaccess-OLD`
+    5. Tente acessar o site
+
+    **Se o site voltar:**
+    - O problema era o .htaccess!
+    - WordPress vai gerar um novo automaticamente
+
+    **Como gerar novo .htaccess:**
+    1. WordPress → Configurações → **Links Permanentes**
+    2. Clique em **Salvar Alterações** (sem mudar nada)
+    3. Novo .htaccess será criado
+  </Accordion>
+
+  <Accordion title="5. Permissões de Arquivo Incorretas" icon="shield">
+    **Como identificar:**
+
+    Permissões erradas impedem execução!
+
+    **Solução via cPanel:**
+    1. Gerenciador de Arquivos
+    2. Selecione pasta `public_html`
+    3. Botão direito → **Permissões**
+    4. Configure:
+       - **Pastas:** 755
+       - **Arquivos:** 644
+
+    **Aplicar recursivamente:**
+    - Marque opção "Aplicar a subdiretórios e arquivos"
+    - Confirmar
+
+    <Check>
+      Isso restaura permissões padrão seguras
+    </Check>
+  </Accordion>
+
+  <Accordion title="6. Banco de Dados Corrompido" icon="database">
+    **Como identificar:**
+
+    Tabelas do banco podem estar danificadas!
+
+    **Solução:**
+    1. Ative modo de debug do WordPress
+    2. Acesse via **FTP** o arquivo `wp-config.php`
+    3. Adicione antes de "/* That's all */"
+
+    ```php
+    define('WP_DEBUG', true);
+    define('WP_DEBUG_LOG', true);
+    define('WP_DEBUG_DISPLAY', false);
+    ```
+
+    4. Acesse o site novamente
+    5. Verifique arquivo de log em: `wp-content/debug.log`
+
+    **Reparar banco:**
+    1. Adicione no `wp-config.php`:
+
+    ```php
+    define('WP_ALLOW_REPAIR', true);
+    ```
+
+    2. Acesse: `seusite.com.br/wp-admin/maint/repair.php`
+    3. Clique em "Reparar Banco de Dados"
+    4. **IMPORTANTE:** Remova a linha depois de reparar!
+
+    <Warning>
+      Deixar WP_ALLOW_REPAIR ativo é risco de segurança!
+    </Warning>
+  </Accordion>
+
+  <Accordion title="7. Hospedagem com Recursos Insuficientes" icon="server">
+    **Como identificar:**
+
+    Servidor não aguenta o WordPress!
+
+    **Sinais:**
+    - Erro 500 constante
+    - Mesmo após todas as soluções
+    - Hospedagem muito barata (menos de R$ 10/mês)
+
+    **Solução:**
+    - **Migre para hospedagem melhor!**
+
+    **Recomendações:**
+    - [StayCloud](https://staydigital.com.br/) (R$ 27/mês)
+    - [Hostinger](https://www.hostinger.com.br/) (R$ 12/mês)
+
+    <Info>
+      Easy Builder funciona melhor em servidores com pelo menos 2GB de RAM
+    </Info>
+  </Accordion>
+</AccordionGroup>
+
+## Checklist Rápido de Diagnóstico
+
+Siga esta ordem para identificar o problema rapidamente:
+
+<Steps>
+  <Step title="1. Verifique Limite de Memória">
+    É a causa em 70% dos casos!
+
+    [Ver solução →](/resolucao-problemas/limite-memoria)
+  </Step>
+
+  <Step title="2. Desative Todos os Plugins">
+    Renomeie pasta `plugins` via FTP
+  </Step>
+
+  <Step title="3. Troque o Tema">
+    Renomeie pasta do tema ativo via FTP
+  </Step>
+
+  <Step title="4. Renomeie .htaccess">
+    Renomeie para `.htaccess-OLD`
+  </Step>
+
+  <Step title="5. Verifique Permissões">
+    755 para pastas, 644 para arquivos
+  </Step>
+
+  <Step title="6. Ative Debug Mode">
+    Adicione WP_DEBUG no wp-config.php
+  </Step>
+
+  <Step title="7. Entre em Contato com Hospedagem">
+    Se nada funcionar, peça ajuda ao suporte da hospedagem
+  </Step>
+</Steps>
+
+## Precisa de Ajuda?
+
+<CardGroup cols={2}>
+  <Card title="Comunidade Discord" icon="discord" href="https://discord.gg/WR6nzkydse">
+    Tire dúvidas com outros membros
+  </Card>
+
+  <Card title="Suporte WhatsApp" icon="whatsapp" href="https://api.whatsapp.com/send?phone=5551992751897">
+    Fale diretamente com o suporte
+  </Card>
+</CardGroup>

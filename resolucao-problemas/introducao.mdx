@@ -1,0 +1,97 @@
+---
+title: 'Resolução de Problemas'
+description: 'Soluções para os problemas mais comuns no Easy Builder'
+icon: 'circle-exclamation'
+---
+
+## Problemas Mais Comuns
+
+Encontre rapidamente a solução para o seu problema:
+
+<CardGroup cols={2}>
+  <Card title="Erro ao Colar Elementos" icon="paste" href="/resolucao-problemas/erro-colar-elementos">
+    Elementos do Easy Builder não colam no Elementor
+  </Card>
+
+  <Card title="Erro de Importação de Ícones" icon="icons" href="/resolucao-problemas/erro-importacao-icones">
+    Ícones não aparecem ou ficam como quadrados vazios
+  </Card>
+
+  <Card title="Erro 500 no Servidor" icon="server" href="/resolucao-problemas/erro-500">
+    Página apresenta erro 500 ou tela branca
+  </Card>
+
+  <Card title="Limite de Memória" icon="memory" href="/resolucao-problemas/limite-memoria">
+    Site lento ou erros de memória PHP
+  </Card>
+
+  <Card title="Templates Desconfigurados" icon="palette" href="/resolucao-problemas/templates-desconfigurados">
+    Cores e fontes não aparecem corretas
+  </Card>
+</CardGroup>
+
+## Cores e Fontes "Bugadas"?
+
+<Warning>
+  **Isso NÃO é bug!** Quando você importa um template e tudo parece diferente do preview, é o Elementor puxando as cores e fontes globais padrão do seu WordPress.
+</Warning>
+
+### Por que isso acontece?
+
+Templates do Easy Builder usam **Cores Globais** e **Fontes Globais** do Elementor. Isso permite que você personalize o site inteiro mudando apenas 4 cores e 4 fontes!
+
+**Você precisa configurar:**
+- Primary (Primária)
+- Secondary (Secundária)
+- Text (Texto)
+- Accent (Destaque)
+
+### Solução Rápida
+
+<Steps>
+  <Step title="1. Abrir Configurações do Site">
+    No Elementor: Clique no ícone hambúrguer (≡) → **Configurações do Site**
+  </Step>
+
+  <Step title="2. Configurar Cores">
+    Menu lateral: **Estilos Globais** → **Cores do Sistema**
+
+    Defina as 4 cores da marca do cliente
+  </Step>
+
+  <Step title="3. Configurar Fontes">
+    Menu lateral: **Tipografia**
+
+    Escolha as 4 fontes principais
+  </Step>
+
+  <Step title="4. Salvar">
+    Clique em **Atualizar**
+
+    **Toda a página se adapta automaticamente!**
+  </Step>
+</Steps>
+
+<Card title="Tutorial Completo" icon="video" href="/resolucao-problemas/templates-desconfigurados">
+  Veja o guia completo com 2 vídeos tutoriais, paletas recomendadas e fontes por categoria
+</Card>
+
+## Precisa de Mais Ajuda?
+
+<CardGroup cols={3}>
+  <Card title="Comunidade Discord" icon="discord" href="https://discord.gg/WR6nzkydse">
+    Tire dúvidas com outros membros
+  </Card>
+
+  <Card title="Suporte WhatsApp" icon="whatsapp" href="https://api.whatsapp.com/send?phone=5551992751897">
+    Fale diretamente com o suporte
+  </Card>
+
+  <Card title="Área de Membros" icon="graduation-cap" href="https://hotmart.com/en/club/easybuilder">
+    Acesse tutoriais e mentorias
+  </Card>
+</CardGroup>
+
+<Info>
+  **Dica:** Antes de entrar em contato com o suporte, tente as soluções das páginas específicas. A maioria dos problemas tem solução rápida!
+</Info>

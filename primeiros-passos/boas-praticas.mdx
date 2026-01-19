@@ -1,0 +1,2091 @@
+---
+title: 'Boas Práticas WordPress e Elementor'
+description: 'Protocolo padrão de implementação para garantir qualidade e consistência'
+icon: 'star'
+---
+
+## Para Quem é Este Guia?
+
+Este documento serve como **protocolo padrão** para:
+- 👥 **Time Easy Builder:** Ao criar e subir templates
+- 🎨 **Usuários:** Ao personalizar e criar páginas
+
+<Info>
+  **Objetivo:** Garantir que todos os projetos sigam os mesmos padrões de qualidade, performance e manutenibilidade. Use como checklist e referência rápida!
+</Info>
+
+---
+
+## 1. Nomenclatura de Elementos
+
+### Por Que Nomear Elementos?
+
+Quando você (ou outra pessoa) voltar para editar a página daqui 3 meses, nomes claros economizam **horas** de trabalho tentando entender onde está cada coisa.
+
+**Problema:** Elementos com nomes genéricos
+```
+❌ Container
+❌ Coluna 1
+❌ Section 2
+❌ Botão
+```
+
+**Solução:** Nomes descritivos e padronizados
+```
+✅ container-hero
+✅ btn-cta-whatsapp
+✅ secao-depoimentos
+✅ card-servico-01
+```
+
+### Padrão Recomendado
+
+Use: **`tipo-funcao-identificador`**
+
+<CardGroup cols={2}>
+  <Card title="Containers" icon="box">
+    **Exemplos:**
+    - `container-hero`
+    - `container-servicos`
+    - `container-depoimentos`
+    - `container-contato`
+    - `container-rodape`
+
+    **Quando usar:** Todo container principal de seção
+  </Card>
+
+  <Card title="Botões" icon="hand-pointer">
+    **Exemplos:**
+    - `btn-cta-principal` (botão de ação principal)
+    - `btn-whatsapp` (botão WhatsApp)
+    - `btn-secundario`
+    - `btn-fechar-modal`
+
+    **Quando usar:** Todos os botões importantes
+  </Card>
+
+  <Card title="Cards" icon="rectangle-list">
+    **Exemplos:**
+    - `card-servico-01`
+    - `card-beneficio-velocidade`
+    - `card-depoimento-maria`
+    - `card-produto-plano-pro`
+
+    **Quando usar:** Cards repetitivos ou importantes
+  </Card>
+
+  <Card title="Seções" icon="layer-group">
+    **Exemplos:**
+    - `secao-sobre`
+    - `secao-contato`
+    - `secao-portfolio`
+    - `secao-precos`
+
+    **Quando usar:** Seções principais da página
+  </Card>
+</CardGroup>
+
+### Como Nomear no Elementor
+
+<Steps>
+  <Step title="Selecione o elemento">
+    Clique no elemento (container, coluna, widget)
+  </Step>
+
+  <Step title="Abra configurações avançadas">
+    Vá na aba **"Avançado"**
+  </Step>
+
+  <Step title="Adicione ID ou Class CSS">
+    - **ID CSS:** Para elemento único (ex: `hero-principal`)
+    - **Classes CSS:** Para elementos reutilizáveis (ex: `btn-cta`)
+  </Step>
+</Steps>
+
+<Tip>
+  **Dica do time:** Nomeie ANTES de começar a personalizar. Fica mais fácil achar depois!
+</Tip>
+
+---
+
+## 2. Otimização de Imagens
+
+### Por Que Otimizar Imagens?
+
+**80% da lentidão de sites vem de imagens pesadas!**
+
+Imagem de 5MB (direto da câmera) = Site lento = Cliente insatisfeito = Menos vendas
+
+<Warning>
+  **Nunca suba fotos direto da câmera ou celular!** Sempre otimize antes.
+</Warning>
+
+### Formatos: O Que Usar e Quando
+
+<Tabs>
+  <Tab title="AVIF (Melhor!)">
+    **1ª Escolha - Formato Mais Moderno**
+
+    **Vantagens:**
+    - Compressão SUPERIOR ao WebP
+    - Arquivos ainda menores
+    - Qualidade visual excelente
+
+    **Quando usar:**
+    - Todas as imagens de site (hero, cards, produtos)
+    - Navegadores modernos (Chrome, Edge, Opera)
+
+    **Como converter:**
+    1. Abra [Squoosh.app](https://squoosh.app)
+    2. Arraste imagem
+    3. Selecione formato: **AVIF**
+    4. Ajuste qualidade: **50-70%**
+    5. Baixe otimizada
+
+    **Configuração recomendada:**
+    - Qualidade: 60% (balanço perfeito)
+    - Esforço: 4 (padrão)
+  </Tab>
+
+  <Tab title="WebP (Ótimo!)">
+    **2ª Escolha - Amplamente Suportado**
+
+    **Vantagens:**
+    - 96% menor que JPEG/PNG
+    - Excelente compressão
+    - Suporte em todos navegadores modernos
+
+    **Quando usar:**
+    - Alternativa ao AVIF
+    - Compatibilidade máxima
+    - Todas as imagens de site
+
+    **Como converter:**
+    1. Abra [Squoosh.app](https://squoosh.app)
+    2. Arraste imagem
+    3. Selecione formato: **WebP**
+    4. Ajuste qualidade: **60-80%**
+    5. Baixe otimizada
+
+    **Configuração recomendada:**
+    - Qualidade: 75% (padrão)
+    - Esforço: 4
+  </Tab>
+
+  <Tab title="SVG (Vetores!)">
+    **Para Ícones, Logos e Ilustrações**
+
+    **Vantagens:**
+    - Escalável infinitamente (não perde qualidade)
+    - Arquivo MUITO pequeno
+    - Pode alterar cores via CSS
+
+    **Quando usar:**
+    - Logos da empresa
+    - Ícones (ícones do Font Awesome já são SVG internamente)
+    - Ilustrações vetoriais
+    - Formas geométricas
+
+    **Onde criar:**
+    - Figma (exportar como SVG)
+    - Illustrator (salvar como SVG)
+    - Canva Pro (baixar como SVG)
+
+    <Warning>
+      **Não use SVG para fotos!** Só funciona com elementos vetoriais.
+    </Warning>
+  </Tab>
+</Tabs>
+
+### Tamanhos: O Que Usar Para Cada Caso
+
+| Tipo de Imagem | Largura Recomendada | Quando Usar |
+|----------------|---------------------|-------------|
+| **Hero/Banner Desktop** | 1920px | Imagem de fundo de seção hero full width |
+| **Hero/Banner Mobile** | 1080px | Mesma seção, mas versão mobile |
+| **Imagens de Conteúdo** | 1200px | Fotos dentro de seções (sobre nós, galeria) |
+| **Cards/Thumbnails** | 600px | Cards de serviços, produtos, blog |
+| **Ícones/Logos** | 200px ou SVG | Logos, ícones decorativos |
+
+<Check>
+  **Lembre-se:** Largura Desktop = 1920px / Mobile = 1080px (padrão Easy Builder)
+</Check>
+
+### Proporções: Quando Usar Cada Uma
+
+<CardGroup cols={2}>
+  <Card title="16:9 (Landscape)" icon="rectangle-wide">
+    **Uso:** Banners, vídeos, hero sections
+
+    **Exemplo:** 1920x1080px
+
+    **CSS:** `aspect-ratio: 16/9;`
+  </Card>
+
+  <Card title="1:1 (Quadrado)" icon="square">
+    **Uso:** Fotos de perfil, produtos, Instagram
+
+    **Exemplo:** 800x800px
+
+    **CSS:** `aspect-ratio: 1/1;`
+  </Card>
+
+  <Card title="4:3 (Clássico)" icon="image">
+    **Uso:** Fotos tradicionais, galerias
+
+    **Exemplo:** 1200x900px
+
+    **CSS:** `aspect-ratio: 4/3;`
+  </Card>
+
+  <Card title="4:5 (Retrato)" icon="rectangle-vertical">
+    **Uso:** Stories, fotos verticais
+
+    **Exemplo:** 1080x1350px
+
+    **CSS:** `aspect-ratio: 4/5;`
+  </Card>
+</CardGroup>
+
+---
+
+## 3. Tipografia Responsiva
+
+### Por Que Usar REM ao Invés de PX?
+
+**REM** é relativo ao tamanho base do navegador (16px), então:
+- ✅ Respeita preferências do usuário (acessibilidade)
+- ✅ Escala proporcionalmente
+- ✅ Mais fácil de ajustar globalmente
+
+**PX** é fixo:
+- ❌ Não respeita preferências do usuário
+- ❌ Difícil de manter consistência
+- ❌ Não escala bem
+
+<Info>
+  **Conversão rápida:** 1rem = 16px (padrão dos navegadores)
+</Info>
+
+### Tabela Completa de Tamanhos
+
+**Use esta tabela como referência ao ajustar textos:**
+
+| Elemento | Desktop (px) | Tablet (px) | Mobile (px) | Desktop (rem) | Tablet (rem) | Mobile (rem) |
+|----------|--------------|-------------|-------------|---------------|--------------|--------------|
+| **H1** | 48-60px | 36-48px | 28-36px | 3-3.75rem | 2.25-3rem | 1.75-2.25rem |
+| **H2** | 36-42px | 28-36px | 24-28px | 2.25-2.625rem | 1.75-2.25rem | 1.5-1.75rem |
+| **H3** | 28-32px | 24-28px | 20-24px | 1.75-2rem | 1.5-1.75rem | 1.25-1.5rem |
+| **H4** | 22-26px | 20-24px | 18-22px | 1.375-1.625rem | 1.25-1.5rem | 1.125-1.375rem |
+| **Texto Base** | 16-18px | 15-17px | 14-16px | 1-1.125rem | 0.9375-1.0625rem | 0.875-1rem |
+| **Texto Pequeno** | 14-15px | 13-14px | 12-13px | 0.875-0.9375rem | 0.8125-0.875rem | 0.75-0.8125rem |
+
+### Quando Usar Cada Tamanho
+
+<AccordionGroup>
+  <Accordion title="H1 - Título Principal (apenas 1 por página!)" icon="1">
+    **Onde usar:**
+    - Título do Hero (primeira seção)
+    - Único H1 da página inteira!
+
+    **Exemplo:**
+    > "Crie Sites Profissionais em Horas, Não Dias"
+
+    **Desktop:** 3rem (48px)
+    **Mobile:** 1.75rem (28px)
+
+    <Warning>
+      **SEO importante:** Use APENAS UM H1 por página! Google penaliza múltiplos H1s.
+    </Warning>
+  </Accordion>
+
+  <Accordion title="H2 - Títulos de Seção" icon="2">
+    **Onde usar:**
+    - Início de cada seção principal
+    - "Sobre Nós", "Nossos Serviços", "Depoimentos"
+
+    **Exemplo:**
+    > "O Que Nossos Clientes Dizem"
+
+    **Desktop:** 2.25rem (36px)
+    **Mobile:** 1.5rem (24px)
+  </Accordion>
+
+  <Accordion title="H3 - Subtítulos e Cards" icon="3">
+    **Onde usar:**
+    - Títulos de cards
+    - Subseções dentro de seções
+    - Nomes de serviços/produtos
+
+    **Exemplo:**
+    > "Consultoria Estratégica"
+
+    **Desktop:** 1.75rem (28px)
+    **Mobile:** 1.25rem (20px)
+  </Accordion>
+
+  <Accordion title="Texto Base - Parágrafos" icon="align-left">
+    **Onde usar:**
+    - Todo texto corrido
+    - Descrições
+    - Conteúdo principal
+
+    **Desktop:** 1rem (16px)
+    **Mobile:** 0.875rem (14px)
+
+    **Line-height:** 1.6-1.8 (espaço entre linhas)
+  </Accordion>
+</AccordionGroup>
+
+### Tipografia Fluida com clamp()
+
+**O que é clamp():** Faz o texto crescer/diminuir automaticamente conforme o tamanho da tela, SEM media queries!
+
+**Sintaxe:** `clamp(mínimo, ideal, máximo)`
+
+**Exemplo prático:**
+```css
+/* H1 que escala automaticamente */
+font-size: clamp(1.75rem, 5vw, 3.75rem);
+/* Mobile: 1.75rem → Desktop: 3.75rem → Entre eles: 5% da largura da tela */
+```
+
+**Por que usar:**
+- ✅ Menos código (não precisa media query)
+- ✅ Transição suave entre tamanhos
+- ✅ Mais fluido e profissional
+
+<Tip>
+  **Use clamp() para H1 e H2!** Para textos menores, valores fixos são mais previsíveis.
+</Tip>
+
+---
+
+## 4. Espaçamentos (Padding e Margin)
+
+### Por Que Usar Sistema de Múltiplos?
+
+**Consistência visual!** Usar sempre múltiplos de 8px (0.5rem) cria ritmo visual harmonioso.
+
+**Problema:** Espaçamentos aleatórios
+```
+❌ padding: 13px 27px; (valores aleatórios)
+❌ margin-bottom: 19px; (sem padrão)
+```
+
+**Solução:** Sistema padronizado
+```
+✅ padding: 1rem 2rem; (16px 32px - múltiplos de 8)
+✅ margin-bottom: 1.5rem; (24px - múltiplo de 8)
+```
+
+### Sistema de Espaçamento Base
+
+| Nome | Valor REM | Valor PX | Quando Usar |
+|------|-----------|----------|-------------|
+| **XS** | 0.5rem | 8px | Espaço mínimo entre elementos pequenos |
+| **S** | 1rem | 16px | Espaço padrão entre parágrafos |
+| **M** | 1.5rem | 24px | Espaço entre blocos relacionados |
+| **L** | 2rem | 32px | Padding interno de cards |
+| **XL** | 3rem | 48px | Espaço entre seções menores |
+| **XXL** | 4rem | 64px | Espaço entre seções médias |
+| **XXXL** | 6rem | 96px | Espaço entre seções grandes |
+
+### Containers: Quando e Como
+
+**Container Principal (seção inteira):**
+
+| Breakpoint | Padding Horizontal | Padding Vertical | Por Quê? |
+|------------|-------------------|------------------|----------|
+| **Desktop** | 5-7.5% | 5-7.5rem | Respira nas laterais, confortável verticalmente |
+| **Tablet** | 4-5% | 3.75-5rem | Menos espaço lateral, mantém respiração |
+| **Mobile** | 5-6% | 2.5-3.75rem | Aproveita tela pequena, menos vertical |
+
+**Container Interno (nested):**
+
+| Breakpoint | Padding | Por Quê? |
+|------------|---------|----------|
+| **Desktop** | 2.5-3.75rem | Cards e blocos internos precisam menos espaço |
+| **Tablet** | 1.875-2.5rem | Proporcionalmente menor |
+| **Mobile** | 1.25-1.875rem | Aproveita cada pixel |
+
+### Espaço Entre Seções
+
+**Por que importa:** Separação visual clara = página organizada e profissional
+
+| Breakpoint | Margin Bottom | Quando Usar |
+|------------|---------------|-------------|
+| **Desktop** | 5-7.5rem | Entre seções principais (Hero → Serviços → Depoimentos) |
+| **Tablet** | 3.75-5rem | Mesma lógica, proporcionalmente menor |
+| **Mobile** | 2.5-3.75rem | Mobile precisa menos espaço vertical |
+
+<Check>
+  **Regra de ouro:** Quanto MAIOR o elemento, MAIOR o espaço ao redor!
+</Check>
+
+---
+
+## 5. Botões Profissionais
+
+### Por Que Tamanho de Botão Importa?
+
+**Botões pequenos demais:** Difícil de clicar (especialmente no mobile!)
+**Botões grandes demais:** Parecem amadores e poluem a página
+
+### Tamanhos Padrão
+
+<Tabs>
+  <Tab title="Botão Médio (Padrão)">
+    **Quando usar:** 90% dos casos (CTAs principais, formulários)
+
+    | Breakpoint | Padding | Font Size | Por Quê? |
+    |------------|---------|-----------|----------|
+    | **Desktop** | 1rem 2rem | 1-1.125rem | Confortável para clicar |
+    | **Tablet** | 0.875rem 1.75rem | 0.9375-1.0625rem | Proporcionalmente menor |
+    | **Mobile** | 0.75rem 1.5rem | 0.875-1rem | Fácil de tocar com dedos |
+
+    **Código exemplo:**
+    ```css
+    padding: 1rem 2rem; /* Desktop */
+    font-size: 1rem;
+    border-radius: 0.5rem; /* Cantos arredondados */
+    ```
+  </Tab>
+
+  <Tab title="Botão Grande (CTA Forte)">
+    **Quando usar:** CTA PRINCIPAL da página (ex: "Comprar Agora", "Começar Grátis")
+
+    | Breakpoint | Padding | Font Size |
+    |------------|---------|-----------|
+    | **Desktop** | 1.25rem 2.5rem | 1.125-1.25rem |
+    | **Tablet** | 1.125rem 2.25rem | 1.0625-1.1875rem |
+    | **Mobile** | 1rem 2rem | 1-1.125rem |
+
+    **Quando usar:**
+    - Hero (botão principal)
+    - Final da página de vendas
+    - Ações de alta prioridade
+  </Tab>
+
+  <Tab title="Botão Pequeno (Secundário)">
+    **Quando usar:** Ações secundárias ("Saiba Mais", "Ver Detalhes")
+
+    | Breakpoint | Padding | Font Size |
+    |------------|---------|-----------|
+    | **Desktop** | 0.75rem 1.5rem | 0.875-1rem |
+    | **Tablet** | 0.625rem 1.25rem | 0.8125-0.9375rem |
+    | **Mobile** | 0.625rem 1.25rem | 0.8125-0.9375rem |
+  </Tab>
+</Tabs>
+
+### Botão Full Width no Mobile
+
+**Por quê fazer:** Botões largos no mobile são MUITO mais fáceis de clicar!
+
+```css
+/* Desktop e Tablet */
+width: auto;
+
+/* Mobile */
+width: 100%; /* Ocupa tela toda */
+```
+
+<Tip>
+  **Dica:** Configure no Elementor → Avançado → Width → Mobile: 100%
+</Tip>
+
+---
+
+## 6. Padrões de Código CSS
+
+### Estrutura e Organização
+
+**Como organizar CSS personalizado no Elementor:**
+
+```css
+/* ============================================
+   SEÇÃO: HERO PRINCIPAL
+   ============================================ */
+
+/* Botão CTA com efeito hover */
+.btn-cta-hero {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  transition: all 0.3s ease;
+}
+
+.btn-cta-hero:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* ============================================
+   SEÇÃO: CARDS DE SERVIÇOS
+   ============================================ */
+
+.card-servico {
+  border-radius: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.card-servico:hover {
+  transform: scale(1.05);
+}
+```
+
+### Boas Práticas de CSS
+
+<AccordionGroup>
+  <Accordion title="1. Use Classes, Não IDs para Estilos" icon="tag">
+    **Por quê:**
+    - IDs são únicos (só podem ser usados 1x)
+    - Classes são reutilizáveis
+
+    **Errado:**
+    ```css
+    #botao-1 { color: blue; } /* ID - não reutilizável */
+    ```
+
+    **Certo:**
+    ```css
+    .btn-primario { color: blue; } /* Classe - reutilizável */
+    ```
+  </Accordion>
+
+  <Accordion title="2. Agrupe Propriedades Relacionadas" icon="layer-group">
+    **Ordem recomendada:**
+
+    ```css
+    .elemento {
+      /* 1. Posicionamento */
+      position: relative;
+      top: 0;
+      left: 0;
+
+      /* 2. Box Model */
+      display: flex;
+      width: 100%;
+      padding: 1rem;
+      margin: 0;
+
+      /* 3. Tipografia */
+      font-size: 1rem;
+      font-weight: 600;
+      color: #333;
+
+      /* 4. Visual */
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 0.5rem;
+
+      /* 5. Animações */
+      transition: all 0.3s ease;
+    }
+    ```
+
+    **Por quê:** Mais fácil de ler e manter!
+  </Accordion>
+
+  <Accordion title="3. Use Variáveis CSS para Cores" icon="palette">
+    **Por quê:** Mudar cor em 1 lugar atualiza tudo!
+
+    ```css
+    /* Defina variáveis no topo */
+    :root {
+      --cor-primaria: #667eea;
+      --cor-secundaria: #764ba2;
+      --cor-texto: #333333;
+      --cor-fundo: #ffffff;
+    }
+
+    /* Use nas classes */
+    .btn-cta {
+      background: var(--cor-primaria);
+      color: var(--cor-fundo);
+    }
+
+    .btn-secundario {
+      background: var(--cor-secundaria);
+    }
+    ```
+
+    **Vantagem:** Troca cores do site inteiro mudando só as variáveis!
+  </Accordion>
+
+  <Accordion title="4. Prefira Flexbox/Grid a Position Absolute" icon="grip">
+    **Por quê:** Position absolute quebra responsividade!
+
+    **Errado (quebra no mobile):**
+    ```css
+    .elemento {
+      position: absolute;
+      top: 100px;
+      left: 200px; /* Vai ficar torto no mobile! */
+    }
+    ```
+
+    **Certo (responsivo):**
+    ```css
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem; /* Funciona em qualquer tela */
+    }
+    ```
+  </Accordion>
+
+  <Accordion title="5. Comente Código Complexo" icon="comment">
+    **Quando comentar:**
+    - Código não óbvio
+    - Hacks ou soluções específicas
+    - Código que pode confundir depois
+
+    ```css
+    /* Corrige bug do Safari com z-index */
+    .elemento {
+      transform: translateZ(0);
+      -webkit-transform: translateZ(0);
+    }
+
+    /* Gradiente animado (muda cor constantemente) */
+    @keyframes gradient-shift {
+      0% { background-position: 0% 50%; }
+      100% { background-position: 100% 50%; }
+    }
+    ```
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## 7. Padrões de JavaScript
+
+### Quando Usar JavaScript no Elementor
+
+**Use JS para:**
+- ✅ Interações (clique, scroll, hover complexo)
+- ✅ Animações programáticas
+- ✅ Validação de formulários customizada
+- ✅ Integração com APIs
+
+**NÃO use JS para:**
+- ❌ Coisas que CSS faz melhor (animações simples, hover, transições)
+- ❌ Estilização visual
+- ❌ Layouts
+
+### Estrutura de Código JS
+
+```javascript
+/* ============================================
+   SCROLL SUAVE PARA SEÇÕES
+   ============================================ */
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    const targetId = this.getAttribute('href');
+    const targetElement = document.querySelector(targetId);
+
+    if (targetElement) {
+      targetElement.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  });
+});
+
+/* ============================================
+   MODAL DE VÍDEO
+   ============================================ */
+
+function abrirModal(videoId) {
+  const modal = document.getElementById('modal-video');
+  const iframe = document.getElementById('video-frame');
+
+  // Insere URL do YouTube
+  iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+
+  // Mostra modal
+  modal.classList.add('ativo');
+}
+
+function fecharModal() {
+  const modal = document.getElementById('modal-video');
+  const iframe = document.getElementById('video-frame');
+
+  // Para vídeo
+  iframe.src = '';
+
+  // Esconde modal
+  modal.classList.remove('ativo');
+}
+```
+
+### Boas Práticas de JavaScript
+
+<CardGroup cols={2}>
+  <Card title="Use const e let, não var" icon="code">
+    ```javascript
+    // ❌ Errado (antigo)
+    var nome = "João";
+
+    // ✅ Certo (moderno)
+    const nome = "João"; // Não muda
+    let idade = 25; // Pode mudar
+    ```
+
+    **Por quê:** Mais seguro e previsível
+  </Card>
+
+  <Card title="Comente o QUE e POR QUÊ" icon="comment">
+    ```javascript
+    // Aguarda 300ms antes de executar
+    // para evitar múltiplos cliques
+    setTimeout(() => {
+      enviarFormulario();
+    }, 300);
+    ```
+
+    **Por quê:** Você vai esquecer daqui 1 semana!
+  </Card>
+
+  <Card title="Use addEventListener" icon="hand-pointer">
+    ```javascript
+    // ❌ Evite inline
+    <button onclick="clicar()">
+
+    // ✅ Use addEventListener
+    button.addEventListener('click', () => {
+      // código aqui
+    });
+    ```
+
+    **Por quê:** Mais organizado e manutenível
+  </Card>
+
+  <Card title="Valide Antes de Usar" icon="shield-check">
+    ```javascript
+    const elemento = document.querySelector('.botao');
+
+    if (elemento) {
+      elemento.addEventListener('click', () => {
+        // Código seguro
+      });
+    }
+    ```
+
+    **Por quê:** Evita erros se elemento não existir
+  </Card>
+</CardGroup>
+
+---
+
+## 8. Estrutura de Headings (SEO)
+
+### Por Que Hierarquia Importa?
+
+**Google usa headings para entender seu site!**
+
+✅ **Hierarquia correta = Melhor SEO**
+❌ **Hierarquia errada = Google confuso = Menos visitantes**
+
+### Regras Fundamentais
+
+<Steps>
+  <Step title="1 H1 por página (OBRIGATÓRIO!)">
+    **Por quê:** Google espera 1 H1 = tópico principal
+
+    **Onde:** Título principal do Hero
+
+    **Exemplo:** "Crie Sites Profissionais com Easy Builder"
+  </Step>
+
+  <Step title="Não pule níveis">
+    **Errado:** H1 → H3 (pulou o H2)
+
+    **Certo:** H1 → H2 → H3 → H4
+
+    **Por quê:** Google entende como estrutura lógica de documento
+  </Step>
+
+  <Step title="Cada seção principal = H2">
+    **Seções do site:**
+    - H2: Sobre Nós
+    - H2: Nossos Serviços
+    - H2: Depoimentos
+    - H2: Contato
+
+    **Por quê:** Google indexa melhor e usuário escaneia rápido
+  </Step>
+
+  <Step title="Configure via Widget Heading">
+    **No Elementor:**
+    - Use widget **"Heading"**
+    - Não use widget "Text Editor" estilizado como título
+
+    **Por quê:** Semântica HTML correta para SEO
+  </Step>
+</Steps>
+
+### Exemplo de Estrutura Completa
+
+```
+📄 Página: "Easy Builder - Crie Sites Rápido"
+
+H1 - "Crie Sites Profissionais em Horas" (Hero)
+
+  H2 - "Sobre o Easy Builder" (Seção)
+    H3 - "Nossa Missão" (Subseção)
+    H3 - "Nossos Valores" (Subseção)
+
+  H2 - "Funcionalidades" (Seção)
+    H3 - "Templates Prontos" (Card 1)
+    H3 - "IA Integrada" (Card 2)
+    H3 - "Suporte 24/7" (Card 3)
+
+  H2 - "Depoimentos" (Seção)
+    H3 - "João Silva" (Depoimento 1)
+    H3 - "Maria Santos" (Depoimento 2)
+
+  H2 - "Preços" (Seção)
+
+  H2 - "Fale Conosco" (Seção)
+```
+
+<Check>
+  **Esta estrutura é perfeita para SEO e acessibilidade!**
+</Check>
+
+---
+
+## 9. Cores e Contraste (Acessibilidade)
+
+### Por Que Contraste Importa?
+
+**Contraste ruim = Texto ilegível = Usuário desiste = Cliente perde venda**
+
+Além disso, **acessibilidade é LEI em muitos países!**
+
+### Contraste Mínimo (WCAG)
+
+<CardGroup cols={2}>
+  <Card title="Texto Normal" icon="font">
+    **Mínimo:** 4.5:1
+
+    **Exemplo OK:**
+    - Texto #222222 em fundo #FFFFFF ✅
+    - Texto #FFFFFF em fundo #333333 ✅
+
+    **Exemplo RUIM:**
+    - Texto #CCCCCC em fundo #FFFFFF ❌ (contraste 1.6:1)
+  </Card>
+
+  <Card title="Texto Grande (18px+)" icon="text-height">
+    **Mínimo:** 3:1
+
+    **Pode ser um pouco mais claro que texto normal**
+
+    Títulos grandes perdoam contraste menor
+  </Card>
+
+  <Card title="Botões e Links" icon="hand-pointer">
+    **Mínimo:** 3:1
+
+    **Importante:** Botão precisa se destacar do fundo!
+  </Card>
+
+  <Card title="Teste Sempre!" icon="vial">
+    Use [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/)
+
+    Cole cor do texto e cor do fundo = resultado instantâneo!
+  </Card>
+</CardGroup>
+
+### Combinações Seguras Prontas
+
+**Texto escuro em fundo claro:**
+- Texto: `#222222` ou `#333333`
+- Fundo: `#FFFFFF` ou `#F5F5F5`
+- Contraste: 12:1 ✅
+
+**Texto claro em fundo escuro:**
+- Texto: `#FFFFFF` ou `#F5F5F5`
+- Fundo: `#222222` ou `#1A1A1A`
+- Contraste: 14:1 ✅
+
+<Warning>
+  **Evite cinza claro em branco!** (#CCCCCC em #FFFFFF = contraste 1.6:1 = ILEGÍVEL)
+</Warning>
+
+---
+
+## 10. Performance: O Que Realmente Importa
+
+### 4 Pilares da Performance
+
+<Tabs>
+  <Tab title="1. Imagens Otimizadas">
+    **Impacto:** 80% da lentidão vem de imagens!
+
+    **Checklist:**
+    - ✅ Formato AVIF ou WebP
+    - ✅ Qualidade 60-80%
+    - ✅ Dimensões corretas (não usar 4K para card pequeno!)
+    - ✅ Lazy loading ativado
+
+    **Como ativar lazy load:**
+    Elementor → Imagem → Avançado → **Loading: Lazy**
+  </Tab>
+
+  <Tab title="2. Fontes Otimizadas">
+    **Impacto:** Cada fonte extra = +100-200kb!
+
+    **Regras:**
+    - ✅ Máximo 2-3 famílias de fontes
+    - ✅ Máximo 4-5 pesos por família
+    - ❌ Não carregue 10 variações se usa só 2!
+
+    **Exemplo ruim:**
+    ```
+    ❌ Roboto: 100, 300, 400, 500, 700, 900 (6 pesos!)
+    ```
+
+    **Exemplo bom:**
+    ```
+    ✅ Roboto: 400, 700 (2 pesos)
+    ```
+  </Tab>
+
+  <Tab title="3. Animações com Moderação">
+    **Impacto:** Animações demais = site pesado no mobile!
+
+    **Regras:**
+    - ✅ Anime só elementos chave (Hero, CTAs)
+    - ✅ Use `will-change` para animações complexas
+    - ❌ Não anime tudo na página
+    - ❌ Evite `scroll-triggered` em excesso
+
+    **Exemplo:**
+    ```css
+    .btn-cta {
+      transition: transform 0.3s ease; /* Leve */
+    }
+
+    .btn-cta:hover {
+      transform: translateY(-3px);
+    }
+    ```
+  </Tab>
+
+  <Tab title="4. CSS e JS Limpos">
+    **Impacto:** Código desnecessário = site mais lento!
+
+    **Checklist:**
+    - ✅ Remova CSS não usado
+    - ✅ Desabilite widgets não usados
+    - ✅ Regenere CSS regularmente
+    - ✅ Minifique código em produção
+
+    **Como regenerar CSS:**
+    Elementor → Ferramentas → **Regenerate CSS & Data**
+  </Tab>
+</Tabs>
+
+---
+
+## 11. Responsividade: Como Pensar Mobile-First
+
+### Por Que Mobile-First?
+
+**70% dos acessos vêm de celular!** Se o site não funciona bem no mobile, você perde 70% das conversões.
+
+### Breakpoints: O Que São e Como Usar
+
+**Breakpoints = Pontos onde layout muda**
+
+| Breakpoint | Largura | Dispositivos | Quando Ajustar |
+|------------|---------|--------------|----------------|
+| **Mobile** | até 767px | Celulares | SEMPRE configure! |
+| **Tablet** | 768-1024px | iPads, tablets | Configure se layout quebrar |
+| **Desktop** | 1025px+ | Notebooks, PCs | Configuração padrão |
+
+### Como Configurar no Elementor
+
+<Steps>
+  <Step title="1. Ative modo responsivo">
+    Clique no ícone de dispositivo (desktop/tablet/mobile) embaixo no Elementor
+  </Step>
+
+  <Step title="2. Mude para Mobile">
+    Clique em "Mobile" para ver preview mobile
+  </Step>
+
+  <Step title="3. Ajuste elemento por elemento">
+    - Tamanhos de fonte (reduza)
+    - Padding (reduza)
+    - Margin (reduza)
+    - Altura de seções (ajuste)
+    - Oculte elementos desnecessários (Hide on Mobile)
+  </Step>
+
+  <Step title="4. Teste em dispositivo real">
+    **IMPORTANTE:** Preview do Elementor nem sempre é exato!
+
+    Teste no celular de verdade ou use DevTools do navegador (F12)
+  </Step>
+</Steps>
+
+### Técnicas Responsivas Essenciais
+
+<AccordionGroup>
+  <Accordion title="Ocultar Elementos no Mobile" icon="eye-slash">
+    **Quando usar:** Elementos decorativos, textos longos, imagens grandes
+
+    **Como fazer:**
+    1. Selecione elemento
+    2. Avançado → Responsivo
+    3. Marque: **"Hide On Mobile"**
+
+    **Exemplo:** Imagem decorativa gigante que polui mobile
+  </Accordion>
+
+  <Accordion title="Reverse Columns (Inverter Ordem)" icon="arrows-up-down">
+    **Quando usar:** Quando imagem está à esquerda no desktop mas deve ficar ABAIXO do texto no mobile
+
+    **Como fazer:**
+    1. Selecione container
+    2. Layout → Responsivo
+    3. Mobile: **"Reverse Columns"**
+
+    **Antes (desktop):**
+    ```
+    [Imagem] [Texto]
+    ```
+
+    **Depois (mobile):**
+    ```
+    [Texto]
+    [Imagem]
+    ```
+
+    **Por quê:** Usuário lê texto antes de ver imagem (ordem lógica!)
+  </Accordion>
+
+  <Accordion title="Full Width no Mobile" icon="maximize">
+    **Quando usar:** Botões, formulários, imagens
+
+    **Por quê:** Aproveita espaço pequeno do mobile!
+
+    **Como fazer:**
+    1. Avançado → Width
+    2. Desktop: Auto ou Custom
+    3. Mobile: **100%**
+  </Accordion>
+
+  <Accordion title="Stack Vertical no Mobile" icon="grip-vertical">
+    **Quando usar:** Grid de 3-4 colunas no desktop
+
+    **Desktop:**
+    ```
+    [Card 1] [Card 2] [Card 3]
+    ```
+
+    **Mobile:**
+    ```
+    [Card 1]
+    [Card 2]
+    [Card 3]
+    ```
+
+    **Como fazer:** Elementor faz automaticamente, mas ajuste gaps!
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## 12. Formulários: UX e Acessibilidade
+
+### Por Que Formulários Importam?
+
+**Formulário ruim = Cliente desiste = Você perde lead/venda**
+
+### Tamanhos Mínimos (Especialmente Mobile!)
+
+| Propriedade | Desktop | Mobile | Por Quê? |
+|-------------|---------|--------|----------|
+| **Altura Campo** | 3.125rem (50px) | **2.75rem (44px) MÍNIMO** | Dedos precisam clicar fácil! |
+| **Font Size** | 1rem (16px) | **1rem (16px) MÍNIMO** | iOS faz zoom se menor que 16px! |
+| **Padding** | 0.75rem 1.25rem | 0.625rem 1rem | Texto não cola nas bordas |
+| **Espaço entre campos** | 1.25rem | 1rem | Fácil de distinguir campos |
+
+<Warning>
+  **CRÍTICO Mobile:** Font size mínimo 16px (1rem)! Se menor, iOS dá zoom automático e quebra layout!
+</Warning>
+
+### Labels e Placeholders
+
+**Labels (texto acima do campo):**
+```html
+<label>Nome Completo</label>
+<input type="text" placeholder="Digite seu nome">
+```
+
+**Quando usar:**
+- ✅ Sempre use labels (acessibilidade!)
+- ✅ Placeholder como exemplo adicional
+- ❌ Não use APENAS placeholder sem label
+
+**Font size labels:**
+- Desktop: 0.875-1rem
+- Mobile: 0.875-1rem (não menor!)
+
+### Textarea (Campo de Mensagem)
+
+**Altura mínima:**
+- Desktop: 9rem (≈6 linhas de texto)
+- Mobile: 7rem (≈5 linhas)
+
+**Por quê:** Usuário precisa ver o que está escrevendo!
+
+### Tabela Completa - Formulários (Detalhada)
+
+| Propriedade | Desktop | Tablet | Mobile | Observação |
+|-------------|---------|--------|--------|------------|
+| **Input Height** | 3.125rem - 3.5rem (50-56px) | 3rem - 3.25rem (48-52px) | 2.75rem - 3rem (44-48px) | Mínimo 44px mobile (area de toque) |
+| **Input Padding** | 0.75rem 1.25rem | 0.75rem 1.125rem | 0.625rem 1rem | Conforto visual |
+| **Input Font Size** | 1rem (16px) | 0.9375rem (15px) | **1rem (16px)** | CRÍTICO: 16px mobile evita zoom iOS |
+| **Border Radius** | 0.25rem - 0.5rem | 0.25rem - 0.5rem | 0.25rem - 0.5rem | Consistente em todos |
+| **Gap entre campos** | 1.25rem - 1.5rem | 1.125rem - 1.25rem | 1rem - 1.125rem | Separação clara |
+| **Label Font Size** | 0.875rem - 1rem | 0.8125rem - 0.9375rem | 0.875rem - 1rem | Legível mas menor que input |
+| **Label Margin Bottom** | 0.5rem | 0.375rem | 0.375rem | Espaço entre label e campo |
+| **Textarea Min-Height** | 9rem (144px ≈6 linhas) | 8rem (128px) | 7rem (112px) | Usuário vê o que digita |
+
+### Largura de Campos (Width)
+
+| Tipo de Campo | Largura Recomendada | Por Quê? |
+|---------------|---------------------|----------|
+| **Full width** | `width: 100%` | Nome, Email, Mensagem |
+| **50% (2 colunas)** | `width: calc(50% - 0.75rem)` | Nome + Sobrenome lado a lado |
+| **Email/Telefone** | `max-width: 25rem (400px)` | Não precisa ser gigante |
+
+---
+
+## 12.1. Ícones - Tamanhos Detalhados
+
+### Por Que Tamanho de Ícone Importa?
+
+**Ícones muito pequenos:** Invisíveis, perdem impacto
+**Ícones muito grandes:** Desproporcionais, amadores
+
+### Tabela Completa - Todos os Tipos de Ícones
+
+| Tipo de Ícone | Desktop | Tablet | Mobile | Quando Usar |
+|---------------|---------|--------|--------|-------------|
+| **Decorativos/Features** | 3rem - 4rem (48-64px) | 2.5rem - 3.5rem (40-56px) | 2.25rem - 3rem (36-48px) | Cards de serviços, benefícios |
+| **Em Botões** | 1.25rem - 1.5rem (20-24px) | 1.125rem - 1.375rem (18-22px) | 1rem - 1.25rem (16-20px) | Ícone ao lado de texto do botão |
+| **Inline (no texto)** | 1.125rem - 1.25rem (18-20px) | 1rem - 1.125rem (16-18px) | 1rem - 1.125rem (16-18px) | Ícone dentro de parágrafo |
+| **Redes Sociais** | 1.5rem - 2rem (24-32px) | 1.375rem - 1.75rem (22-28px) | 1.25rem - 1.5rem (20-24px) | Rodapé, links sociais |
+| **Logo** | 2.5rem - 4rem (40-64px) | 2.25rem - 3.5rem (36-56px) | 2rem - 3rem (32-48px) | Header, cabeçalho |
+
+### Dica: Ícones Inline com EM
+
+**Por quê usar `em` para ícones inline:**
+
+```css
+/* ❌ Com rem (tamanho fixo) */
+.icone-inline {
+  font-size: 1.125rem; /* Sempre 18px */
+}
+
+/* ✅ Com em (escala com texto ao redor) */
+.icone-inline {
+  font-size: 1.2em; /* 120% do tamanho do texto pai */
+}
+```
+
+**Vantagem:** Ícone cresce/diminui junto com o texto automaticamente!
+
+---
+
+## 12.2. Cards em Grid - Dimensões Completas
+
+### Por Que Padronizar Cards?
+
+**Consistência visual = Profissionalismo**
+
+Cards do mesmo tamanho = Layout harmonioso e organizado
+
+### Tabela Completa - Cards de Serviços/Produtos
+
+| Elemento | Desktop | Tablet | Mobile | Observação |
+|----------|---------|--------|--------|------------|
+| **Imagem Altura** | 15.625rem - 18.75rem (250-300px) | 13.75rem - 16.25rem (220-260px) | 12.5rem - 15rem (200-240px) | Use aspect-ratio para manter proporção |
+| **Card Padding** | 1.875rem (30px) | 1.5rem (24px) | 1.25rem (20px) | Espaço interno confortável |
+| **Gap entre cards** | 1.875rem (30px) | 1.5rem (24px) | 1.25rem (20px) | Separação entre cards |
+| **Border Radius** | 0.5rem - 1rem | 0.5rem - 1rem | 0.5rem - 1rem | Cantos arredondados |
+| **Título Card (H3)** | 1.5rem - 1.75rem | 1.375rem - 1.5rem | 1.25rem - 1.375rem | Destaque sem exagero |
+| **Descrição** | 0.9375rem - 1rem | 0.875rem - 0.9375rem | 0.875rem - 1rem | Legível e confortável |
+
+### Layout de Grid Responsivo
+
+**Desktop (3 colunas):**
+```css
+.grid-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.875rem;
+}
+```
+
+**Tablet (2 colunas):**
+```css
+@media (max-width: 1024px) {
+  .grid-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+```
+
+**Mobile (1 coluna):**
+```css
+@media (max-width: 767px) {
+  .grid-cards {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+}
+```
+
+### Grid Automático (Responsivo sem Media Queries!)
+
+```css
+.grid-auto {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  gap: clamp(1.25rem, 3vw, 1.875rem);
+}
+/* Colunas se ajustam automaticamente! */
+```
+
+<Tip>
+  **Use `auto-fit` para grid que se adapta sozinho!** Menos código, mais inteligente.
+</Tip>
+
+### Aspect Ratio para Imagens em Cards
+
+**Por quê usar:** Mantém proporção perfeita em qualquer tamanho!
+
+```css
+/* Landscape 16:9 (vídeos, banners) */
+.card-imagem {
+  aspect-ratio: 16/9;
+  object-fit: cover; /* Imagem preenche sem distorcer */
+}
+
+/* Quadrado 1:1 (produtos, perfis) */
+.card-imagem {
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+/* Retrato 4:5 (Instagram style) */
+.card-imagem {
+  aspect-ratio: 4/5;
+  object-fit: cover;
+}
+```
+
+---
+
+## 12.3. Tabelas de Referência Técnica Completa
+
+### Ícones - Valores Exatos por Breakpoint
+
+| Tipo | Desktop (rem) | Desktop (px) | Tablet (rem) | Tablet (px) | Mobile (rem) | Mobile (px) |
+|------|---------------|--------------|--------------|-------------|--------------|-------------|
+| **Decorativos** | 3 - 4 | 48 - 64 | 2.5 - 3.5 | 40 - 56 | 2.25 - 3 | 36 - 48 |
+| **Em Botões** | 1.25 - 1.5 | 20 - 24 | 1.125 - 1.375 | 18 - 22 | 1 - 1.25 | 16 - 20 |
+| **Redes Sociais** | 1.5 - 2 | 24 - 32 | 1.375 - 1.75 | 22 - 28 | 1.25 - 1.5 | 20 - 24 |
+| **Inline** | 1.2em | - | 1.2em | - | 1.2em | - |
+
+### Formulários - Valores Exatos por Breakpoint
+
+| Propriedade | Desktop (rem) | Desktop (px) | Tablet (rem) | Tablet (px) | Mobile (rem) | Mobile (px) |
+|-------------|---------------|--------------|--------------|-------------|--------------|-------------|
+| **Input Height** | 3.125 - 3.5 | 50 - 56 | 3 - 3.25 | 48 - 52 | 2.75 - 3 | 44 - 48 |
+| **Input Padding** | 0.75 1.25 | 12 20 | 0.75 1.125 | 12 18 | 0.625 1 | 10 16 |
+| **Input Font** | 1 | 16 | 0.9375 | 15 | 1 | 16 |
+| **Gap entre campos** | 1.25 - 1.5 | 20 - 24 | 1.125 - 1.25 | 18 - 20 | 1 - 1.125 | 16 - 18 |
+| **Label Font** | 0.875 - 1 | 14 - 16 | 0.8125 - 0.9375 | 13 - 15 | 0.875 - 1 | 14 - 16 |
+| **Textarea Min-Height** | 9 | 144 | 8 | 128 | 7 | 112 |
+
+### Cards em Grid - Valores Exatos por Breakpoint
+
+| Elemento | Desktop (rem) | Desktop (px) | Tablet (rem) | Tablet (px) | Mobile (rem) | Mobile (px) |
+|----------|---------------|--------------|--------------|-------------|--------------|-------------|
+| **Imagem Altura** | 15.625 - 18.75 | 250 - 300 | 13.75 - 16.25 | 220 - 260 | 12.5 - 15 | 200 - 240 |
+| **Card Padding** | 1.875 | 30 | 1.5 | 24 | 1.25 | 20 |
+| **Gap** | 1.875 | 30 | 1.5 | 24 | 1.25 | 20 |
+| **Título (H3)** | 1.5 - 1.75 | 24 - 28 | 1.375 - 1.5 | 22 - 24 | 1.25 - 1.375 | 20 - 22 |
+| **Descrição** | 0.9375 - 1 | 15 - 16 | 0.875 - 0.9375 | 14 - 15 | 0.875 - 1 | 14 - 16 |
+
+### Botões - Valores Exatos Completos (REM e PX)
+
+| Tamanho | Breakpoint | Padding (rem) | Padding (px) | Font (rem) | Font (px) |
+|---------|------------|---------------|--------------|------------|-----------|
+| **Large** | Desktop | 1.25 2.5 | 20 40 | 1.125 - 1.25 | 18 - 20 |
+| **Large** | Tablet | 1.125 2.25 | 18 36 | 1.0625 - 1.1875 | 17 - 19 |
+| **Large** | Mobile | 1 2 | 16 32 | 1 - 1.125 | 16 - 18 |
+| **Medium** | Desktop | 1 2 | 16 32 | 1 - 1.125 | 16 - 18 |
+| **Medium** | Tablet | 0.875 1.75 | 14 28 | 0.9375 - 1.0625 | 15 - 17 |
+| **Medium** | Mobile | 0.75 1.5 | 12 24 | 0.875 - 1 | 14 - 16 |
+| **Small** | Desktop | 0.75 1.5 | 12 24 | 0.875 - 1 | 14 - 16 |
+| **Small** | Tablet | 0.625 1.25 | 10 20 | 0.8125 - 0.9375 | 13 - 15 |
+| **Small** | Mobile | 0.625 1.25 | 10 20 | 0.8125 - 0.9375 | 13 - 15 |
+
+---
+
+## 13. Padrões de HTML Semântico
+
+### Por Que HTML Semântico?
+
+**Google lê HTML para entender seu site!**
+
+✅ **HTML semântico = Google entende = Melhor SEO**
+❌ **Tudo div genérica = Google confuso = SEO ruim**
+
+### Tags Semânticas e Quando Usar
+
+<CardGroup cols={2}>
+  <Card title="<header>" icon="h">
+    **Quando usar:** Cabeçalho do site (logo, menu)
+
+    **Não confunda com `<head>`** (metadados)
+
+    Elementor usa automaticamente se você marca seção como "Header"
+  </Card>
+
+  <Card title="<nav>" icon="bars">
+    **Quando usar:** Menu de navegação
+
+    **Exemplo:** Menu principal, menu rodapé
+
+    Indica para Google: "Isso é navegação"
+  </Card>
+
+  <Card title="<main>" icon="file">
+    **Quando usar:** Conteúdo principal (apenas 1 por página!)
+
+    **Exemplo:** Todo conteúdo entre header e footer
+
+    Google prioriza conteúdo dentro de `<main>`
+  </Card>
+
+  <Card title="<section>" icon="layer-group">
+    **Quando usar:** Cada seção temática
+
+    **Exemplo:** Sobre, Serviços, Depoimentos
+
+    Elementor gera automaticamente
+  </Card>
+
+  <Card title="<article>" icon="newspaper">
+    **Quando usar:** Conteúdo independente (posts de blog)
+
+    **Exemplo:** Card de blog, notícia, produto
+
+    Indica conteúdo reutilizável
+  </Card>
+
+  <Card title="<footer>" icon="shoe-prints">
+    **Quando usar:** Rodapé do site
+
+    Links úteis, copyright, redes sociais
+
+    Elementor marca automaticamente
+  </Card>
+</CardGroup>
+
+<Info>
+  **Elementor cuida disso automaticamente!** Mas entender ajuda a organizar melhor suas páginas.
+</Info>
+
+---
+
+## 14. Acessibilidade (A11y)
+
+### Por Que Acessibilidade?
+
+- ✅ **Legal:** Muitos países exigem por lei
+- ✅ **Ético:** 15% da população tem alguma deficiência
+- ✅ **SEO:** Google favorece sites acessíveis
+- ✅ **Conversão:** Mais gente consegue usar = mais vendas!
+
+### Checklist de Acessibilidade
+
+<Steps>
+  <Step title="✅ Contraste mínimo 4.5:1">
+    Teste em [WebAIM](https://webaim.org/resources/contrastchecker/)
+  </Step>
+
+  <Step title="✅ Textos alternativos em imagens">
+    **Como fazer:** Elementor → Imagem → **"Alt Text"**
+
+    **Exemplo:** "Logo Easy Builder" ou "Screenshot do painel"
+
+    **Por quê:** Leitores de tela descrevem imagem para cegos
+  </Step>
+
+  <Step title="✅ Links descritivos">
+    **Errado:** "Clique aqui"
+
+    **Certo:** "Baixe o manual do Easy Builder"
+
+    **Por quê:** Leitor de tela lê links fora de contexto
+  </Step>
+
+  <Step title="✅ Formulários com labels">
+    Sempre use `<label>` associado ao campo!
+
+    **Por quê:** Leitores de tela precisam saber o que é cada campo
+  </Step>
+
+  <Step title="✅ Hierarquia de headings correta">
+    H1 → H2 → H3 (sem pular!)
+
+    Navegação por headings é essencial para cegos
+  </Step>
+
+  <Step title="✅ Botões clicáveis (44x44px mínimo)">
+    Dedos precisam de área suficiente!
+
+    Mobile: Botões com pelo menos 44px de altura
+  </Step>
+</Steps>
+
+---
+
+## 15. Checklist Antes de Publicar
+
+Use este checklist **TODA VEZ** antes de entregar site:
+
+<Steps>
+  <Step title="✅ 1. Nomenclatura">
+    - Todos containers principais nomeados
+    - Botões importantes com nomes claros
+    - Fácil de encontrar elementos
+  </Step>
+
+  <Step title="✅ 2. Responsividade Testada">
+    - Desktop: OK
+    - Tablet: OK
+    - Mobile: **TESTADO EM CELULAR REAL!**
+  </Step>
+
+  <Step title="✅ 3. Imagens Otimizadas">
+    - Formato AVIF ou WebP
+    - Compressão 60-80%
+    - Tamanhos corretos
+    - Alt text preenchido
+  </Step>
+
+  <Step title="✅ 4. Tipografia Consistente">
+    - H1 único
+    - Hierarquia H1→H2→H3 correta
+    - Tamanhos seguem padrão
+    - Legível em todos dispositivos
+  </Step>
+
+  <Step title="✅ 5. Espaçamentos Harmoniosos">
+    - Múltiplos de 0.5rem (8px)
+    - Consistente entre seções similares
+    - Não tem espaços gigantes nem apertados demais
+  </Step>
+
+  <Step title="✅ 6. Contraste Adequado">
+    - Testado em WebAIM Contrast Checker
+    - Mínimo 4.5:1 para texto normal
+    - Texto legível em fundos coloridos
+  </Step>
+
+  <Step title="✅ 7. Links Funcionando">
+    - Todos botões linkam corretamente
+    - WhatsApp com número certo
+    - Links externos abrem em nova aba
+    - Links internos funcionam
+  </Step>
+
+  <Step title="✅ 8. Formulários Testados">
+    - Campos com tamanho adequado (min 44px altura mobile)
+    - Labels preenchidas
+    - Placeholder como exemplo
+    - Validação funcionando
+    - Envia para email correto
+  </Step>
+
+  <Step title="✅ 9. Performance Otimizada">
+    - CSS regenerado (Elementor → Tools)
+    - Widgets não usados desabilitados
+    - Fontes do Google: máximo 3 famílias
+    - Vídeos com lazy load
+  </Step>
+
+  <Step title="✅ 10. SEO Básico">
+    - Título da página preenchido
+    - Meta description preenchida (Yoast SEO)
+    - Headings com hierarquia correta
+    - URLs amigáveis (sem "pagina-123")
+  </Step>
+</Steps>
+
+<Check>
+  **Se passou em todos 10 itens = Site profissional pronto para entregar!**
+</Check>
+
+---
+
+## 16. Erros Comuns e Como Evitar
+
+<AccordionGroup>
+  <Accordion title="❌ Não testar em mobile real" icon="mobile">
+    **Erro:** Confiar só no preview do Elementor
+
+    **Por quê é problema:** Preview não mostra 100% real (especialmente animações, fontes, scroll)
+
+    **Solução:**
+    1. Publique página (pode ser privada)
+    2. Acesse do seu celular
+    3. Teste tudo: scroll, cliques, formulários
+    4. Use DevTools do Chrome (F12 → Toggle Device Toolbar)
+  </Accordion>
+
+  <Accordion title="❌ Abusar de animações" icon="wand-magic-sparkles">
+    **Erro:** Animar tudo (títulos, textos, imagens, botões)
+
+    **Por quê é problema:**
+    - Site fica lento (especialmente mobile)
+    - Distrai ao invés de guiar
+    - Parece amador
+
+    **Solução:**
+    - Anime APENAS: Hero, CTAs principais, cards importantes
+    - Use animações sutis (fade-in, slide-up)
+    - Evite animações longas (máximo 0.5s)
+  </Accordion>
+
+  <Accordion title="❌ Não otimizar imagens" icon="image">
+    **Erro:** Subir fotos direto da câmera (5-10MB cada!)
+
+    **Por quê é problema:**
+    - Site MUITO lento
+    - Cliente perde vendas (gente desiste de esperar)
+    - Gasta banda do servidor
+
+    **Solução:**
+    1. SEMPRE converta para AVIF ou WebP
+    2. Use Squoosh.app
+    3. Qualidade 60-80% (invisível ao olho nu!)
+    4. Redimensione para tamanho certo (não use 4K para thumbnail!)
+  </Accordion>
+
+  <Accordion title="❌ Não nomear elementos" icon="tag">
+    **Erro:** Deixar tudo como "Container", "Coluna", "Section"
+
+    **Por quê é problema:**
+    - Impossível achar elemento depois
+    - Perde tempo clicando em tudo
+    - Dificulta manutenção
+
+    **Solução:**
+    - Nomeie TODOS containers principais
+    - Use padrão: `tipo-funcao-identificador`
+    - Exemplo: `container-hero`, `btn-cta-whatsapp`
+  </Accordion>
+
+  <Accordion title="❌ Usar position: absolute demais" icon="up-down-left-right">
+    **Erro:** Posicionar tudo com `position: absolute`
+
+    **Por quê é problema:**
+    - Quebra TUDO no mobile
+    - Elementos sobrepõem
+    - Difícil de manter
+
+    **Solução:**
+    - Use **Flexbox** ou **CSS Grid**
+    - Position absolute SÓ para casos específicos (badges, overlays)
+  </Accordion>
+
+  <Accordion title="❌ Copiar CSS sem entender" icon="code">
+    **Erro:** Copiar código do Google e colar sem ler
+
+    **Por quê é problema:**
+    - Pode conflitar com outros estilos
+    - Pode quebrar responsividade
+    - Difícil de debugar depois
+
+    **Solução:**
+    - Use **Easy Coder IA** (gera código explicado!)
+    - Leia código antes de colar
+    - Teste após adicionar
+    - Comente código complexo
+  </Accordion>
+
+  <Accordion title="❌ Múltiplas fontes do Google" icon="font">
+    **Erro:** Carregar 5-10 famílias de fontes diferentes
+
+    **Por quê é problema:**
+    - Cada fonte = +100-200kb
+    - Site fica lento
+    - Poluição visual (muitas fontes diferentes)
+
+    **Solução:**
+    - Máximo 2-3 famílias
+    - Máximo 4-5 pesos por família
+    - Exemplo: Roboto (400, 700) + Montserrat (600, 800)
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## 17. Padrões de Código CSS Avançado
+
+### Animações e Transições
+
+**Quando adicionar animações:**
+- ✅ Hover em botões (feedback visual)
+- ✅ Entrada de elementos (scroll-triggered)
+- ✅ Modais/popups (abertura/fechamento)
+
+**Código padrão de animação:**
+
+```css
+/* ============================================
+   BOTÃO COM HOVER SUAVE
+   ============================================ */
+.btn-cta {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+
+  /* Transição suave */
+  transition: all 0.3s ease;
+
+  /* Otimização de performance */
+  will-change: transform;
+}
+
+.btn-cta:hover {
+  /* Levanta botão */
+  transform: translateY(-3px);
+
+  /* Adiciona sombra */
+  box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+}
+
+/* ============================================
+   CARD QUE CRESCE NO HOVER
+   ============================================ */
+.card-servico {
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 1px solid #e5e5e5;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-servico:hover {
+  transform: scale(1.05); /* Cresce 5% */
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+/* ============================================
+   GRADIENTE ANIMADO (FUNDO)
+   ============================================ */
+.hero-gradiente {
+  background: linear-gradient(
+    270deg,
+    #667eea,
+    #764ba2,
+    #f093fb,
+    #4facfe
+  );
+  background-size: 400% 400%;
+  animation: gradient-shift 15s ease infinite;
+}
+
+@keyframes gradient-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+```
+
+### Efeitos Visuais Comuns
+
+<Tabs>
+  <Tab title="Sombras">
+    **Quando usar:** Cards, botões elevados, modais
+
+    ```css
+    /* Sombra sutil (cards) */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+
+    /* Sombra média (hover) */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+
+    /* Sombra forte (modais) */
+    box-shadow: 0 25px 50px rgba(0,0,0,0.25);
+    ```
+
+    **Dica:** Use [Box Shadow Generator](https://cssgenerator.org/box-shadow-css-generator.html)
+  </Tab>
+
+  <Tab title="Blur (Desfoque)">
+    **Quando usar:** Fundos de texto, glassmorphism
+
+    ```css
+    /* Fundo desfocado atrás de texto */
+    .texto-sobre-imagem {
+      background: rgba(255,255,255,0.1);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      padding: 2rem;
+      border-radius: 1rem;
+    }
+    ```
+
+    **Resultado:** Efeito vidro fosco moderno!
+  </Tab>
+
+  <Tab title="Gradientes">
+    **Quando usar:** Botões, fundos de hero, overlays
+
+    ```css
+    /* Gradiente linear (esquerda → direita) */
+    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+
+    /* Gradiente diagonal */
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+
+    /* Gradiente radial (centro para fora) */
+    background: radial-gradient(circle, #667eea 0%, #764ba2 100%);
+
+    /* Gradiente em texto */
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    ```
+
+    **Gerador:** [CSS Gradient](https://cssgradient.io/)
+  </Tab>
+</Tabs>
+
+---
+
+## 18. Meta Tags e SEO
+
+### O Que São Meta Tags?
+
+**Meta tags = informações SOBRE a página** (invisíveis para visitantes, visíveis para Google)
+
+### Meta Tags Essenciais
+
+<AccordionGroup>
+  <Accordion title="Title Tag (Título da Página)" icon="heading">
+    **O que é:** Título que aparece na aba do navegador e no Google
+
+    **Como configurar:**
+    - Yoast SEO → **"Título SEO"**
+    - Ou Elementor → Configurações da Página → SEO
+
+    **Regras:**
+    - Máximo 60 caracteres
+    - Inclui palavra-chave principal
+    - Atrativo para clicar
+
+    **Exemplo BOM:**
+    ```
+    ✅ "Easy Builder - Crie Sites Profissionais em Horas | WordPress"
+    ```
+
+    **Exemplo RUIM:**
+    ```
+    ❌ "Home" (genérico demais!)
+    ❌ "Easy Builder é a melhor ferramenta do mundo para criar sites incríveis..." (longo demais!)
+    ```
+  </Accordion>
+
+  <Accordion title="Meta Description (Descrição)" icon="align-left">
+    **O que é:** Texto que aparece abaixo do título no Google
+
+    **Como configurar:**
+    - Yoast SEO → **"Meta Description"**
+
+    **Regras:**
+    - Máximo 155 caracteres
+    - Resumo atrativo da página
+    - Inclui benefício ou CTA
+
+    **Exemplo BOM:**
+    ```
+    ✅ "Crie landing pages e sites profissionais com Easy Builder. Templates prontos, IA integrada e suporte 24/7. Comece grátis hoje!"
+    ```
+
+    **Exemplo RUIM:**
+    ```
+    ❌ "Página inicial do Easy Builder." (sem benefício!)
+    ```
+  </Accordion>
+
+  <Accordion title="Open Graph (Redes Sociais)" icon="share-nodes">
+    **O que é:** Como página aparece ao compartilhar no Facebook, LinkedIn, WhatsApp
+
+    **Como configurar:**
+    - Yoast SEO → **"Social"**
+    - Defina título, descrição e imagem
+
+    **Imagem OG recomendada:**
+    - Tamanho: 1200x630px
+    - Formato: JPG ou PNG (redes sociais não suportam WebP bem)
+    - Com texto/logo visível
+
+    **Por quê importante:** Compartilhamento bonito = mais cliques!
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## 19. Conversão Rápida: REM ↔ PX
+
+### Tabela de Conversão
+
+<CardGroup cols={3}>
+  <Card title="Pequenos" icon="text-size">
+    - 0.5rem = **8px**
+    - 0.75rem = **12px**
+    - 1rem = **16px**
+    - 1.25rem = **20px**
+    - 1.5rem = **24px**
+  </Card>
+
+  <Card title="Médios" icon="text-height">
+    - 2rem = **32px**
+    - 2.5rem = **40px**
+    - 3rem = **48px**
+    - 3.5rem = **56px**
+    - 4rem = **64px**
+  </Card>
+
+  <Card title="Grandes" icon="maximize">
+    - 5rem = **80px**
+    - 6rem = **96px**
+    - 7.5rem = **120px**
+    - 10rem = **160px**
+  </Card>
+</CardGroup>
+
+### Quando Usar Cada Unidade
+
+| Unidade | Quando Usar | Exemplo | Por Quê? |
+|---------|-------------|---------|----------|
+| **rem** | Fontes, espaçamentos, padding, margin | `font-size: 1rem` | Relativo ao root (escalável) |
+| **em** | Elementos que escalam com pai | `icon-size: 1.2em` | Escala com elemento pai |
+| **%** | Larguras de containers, colunas | `width: 50%` | Relativo ao elemento pai |
+| **vw** | Elementos que escalam com largura da tela | `font-size: 5vw` | Relativo à viewport width |
+| **vh** | Alturas full-screen | `min-height: 100vh` | Relativo à viewport height |
+| **px** | Bordas, valores fixos críticos | `border: 1px solid` | Valor absoluto e fixo |
+
+<Warning>
+  **Evite px para textos e espaçamentos!** Use rem para melhor responsividade.
+</Warning>
+
+---
+
+## 20. Ferramentas Essenciais
+
+<CardGroup cols={3}>
+  <Card title="Squoosh" icon="image" href="https://squoosh.app">
+    **Converter imagens**
+
+    JPEG/PNG → AVIF/WebP
+
+    Grátis e rápido!
+  </Card>
+
+  <Card title="Contrast Checker" icon="eye" href="https://webaim.org/resources/contrastchecker/">
+    **Testar contraste**
+
+    Garante legibilidade
+
+    WCAG compliance
+  </Card>
+
+  <Card title="Google Fonts" icon="font" href="https://fonts.google.com">
+    **Biblioteca de fontes**
+
+    900+ fontes gratuitas
+
+    Já integrado no Elementor
+  </Card>
+
+  <Card title="CSS Gradient" icon="droplet" href="https://cssgradient.io/">
+    **Gerar gradientes**
+
+    Visual e código pronto
+
+    Copy/paste fácil
+  </Card>
+
+  <Card title="Box Shadow Generator" icon="cube" href="https://cssgenerator.org/box-shadow-css-generator.html">
+    **Gerar sombras**
+
+    Preview em tempo real
+
+    Código CSS pronto
+  </Card>
+
+  <Card title="Grid Generator" icon="grid" href="https://cssgrid-generator.netlify.app/">
+    **CSS Grid visual**
+
+    Cria grid responsivo
+
+    Código automático
+  </Card>
+
+  <Card title="Can I Use" icon="browser" href="https://caniuse.com/">
+    **Compatibilidade**
+
+    Verifica suporte CSS/JS
+
+    Em navegadores
+  </Card>
+
+  <Card title="PageSpeed Insights" icon="gauge-high" href="https://pagespeed.web.dev/">
+    **Testar performance**
+
+    Google oficial
+
+    Dicas de otimização
+  </Card>
+
+  <Card title="Meta Tags Generator" icon="tags" href="https://metatags.io/">
+    **Gerar Open Graph**
+
+    Preview social media
+
+    Código pronto
+  </Card>
+</CardGroup>
+
+---
+
+## Resumo Executivo: Referência Rápida
+
+<Tabs>
+  <Tab title="Imagens">
+    **Formatos:**
+    - 1ª: AVIF (50-70%)
+    - 2ª: WebP (60-80%)
+    - SVG (logos/ícones)
+
+    **Tamanhos:**
+    - Hero: 1920px (desktop) / 1080px (mobile)
+    - Conteúdo: 1200px
+    - Cards: 600px
+  </Tab>
+
+  <Tab title="Tipografia">
+    **Tamanhos (Desktop → Mobile):**
+    - H1: 3rem → 1.75rem
+    - H2: 2.25rem → 1.5rem
+    - Texto: 1rem → 0.875rem
+
+    **Line-height:**
+    - Headings: 1.2-1.3
+    - Texto: 1.6-1.8
+  </Tab>
+
+  <Tab title="Espaçamentos">
+    **Sistema:**
+    - Múltiplos de 0.5rem (8px)
+    - XS/S/M/L/XL/XXL/XXXL
+
+    **Entre seções:**
+    - Desktop: 5-7.5rem
+    - Mobile: 2.5-3.75rem
+  </Tab>
+
+  <Tab title="Botões">
+    **Médio (padrão):**
+    - Padding: 1rem 2rem
+    - Font: 1rem
+    - Mobile: Full width
+
+    **Altura mínima mobile:** 44px (dedos!)
+  </Tab>
+
+  <Tab title="Cores">
+    **Contraste mínimo:**
+    - Texto normal: 4.5:1
+    - Texto grande: 3:1
+
+    **Teste em:**
+    webaim.org/contrast
+  </Tab>
+
+  <Tab title="SEO">
+    **Essencial:**
+    - 1 H1 por página
+    - Hierarquia H1→H2→H3
+    - Title: 60 caracteres
+    - Description: 155 caracteres
+    - Alt text em imagens
+  </Tab>
+</Tabs>
+
+---
+
+## Aplicando no Easy Builder
+
+<Check>
+  **Para o Time Easy Builder:**
+
+  Ao criar templates, siga TODOS esses padrões. Templates que não seguem voltam para revisão!
+</Check>
+
+<Check>
+  **Para Usuários:**
+
+  Templates já vêm com esses padrões aplicados! Ao personalizar, mantenha os mesmos padrões para qualidade profissional.
+</Check>
+
+<Info>
+  **Este guia é vivo!** Será atualizado conforme novas práticas surgirem. Versão atual: 3.0 (Janeiro 2026)
+</Info>
+
+## Próximos Passos
+
+<CardGroup cols={2}>
+  <Card title="Workflows Avançados" icon="bolt" href="/primeiros-passos/workflows-avancados">
+    Técnicas profissionais de produção
+  </Card>
+
+  <Card title="Resolução de Problemas" icon="wrench" href="/resolucao-problemas/introducao">
+    Solucione erros comuns rapidamente
+  </Card>
+
+  <Card title="Iniciante WordPress" icon="wordpress" href="/guias-perfil/iniciante-wordpress">
+    Trilha completa de aprendizado
+  </Card>
+
+  <Card title="Easy Coder IA" icon="code" href="/inteligencia-artificial/easy-coder">
+    IA que escreve código CSS/JS para você
+  </Card>
+</CardGroup>

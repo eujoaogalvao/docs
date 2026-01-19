@@ -1,0 +1,255 @@
+---
+title: 'Limite de Memória PHP'
+description: 'Como aumentar o limite de memória do servidor para WordPress'
+icon: 'memory'
+---
+
+## O Problema
+
+Você enfrenta:
+- Site trava ao editar no Elementor
+- Erro 500 ao importar templates
+- Mensagem "Fatal error: Allowed memory size exhausted"
+- Lentidão extrema
+- WordPress fecha sozinho
+
+<Warning>
+  **Causa:** Limite de memória PHP muito baixo. WordPress + Elementor + Easy Builder precisam de pelo menos 256MB, idealmente 512MB!
+</Warning>
+
+## Tutoriais em Vídeo
+
+<Tabs>
+  <Tab title="Tutorial Completo - MultiPHP">
+    Aprenda a aumentar limite de memória PHP no cPanel:
+
+    <iframe
+      width="100%"
+      height="400"
+      src="https://www.youtube.com/embed/ZvRUGoVYjeg"
+      title="Como alterar o limite de memória do PHP"
+      frameBorder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowFullScreen
+    ></iframe>
+  </Tab>
+
+  <Tab title="Erro ao Colar Elementos">
+    Se aparece erro vermelho ao tentar colar templates do Easy Builder:
+
+    <iframe
+      width="100%"
+      height="400"
+      src="https://www.youtube.com/embed/fwFTzhqyVa0"
+      title="Erro ao dar Ctrl+V - Como resolver"
+      frameBorder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowFullScreen
+    ></iframe>
+  </Tab>
+</Tabs>
+
+## Passo a Passo
+
+<Steps>
+  <Step title="1. Acesse o cPanel">
+    Entre na sua hospedagem e acesse o **cPanel**
+
+    **Onde encontrar:**
+    - Hostinger: Painel → Avançado → cPanel
+    - StayCloud: Menu lateral → cPanel
+    - Outras: Geralmente em "Painel de Controle"
+
+    <Info>
+      Se não encontrar, entre em contato com sua hospedagem pedindo acesso ao cPanel
+    </Info>
+  </Step>
+
+  <Step title="2. Encontre MultiPHP INI Editor">
+    No cPanel, procure por:
+    - **MultiPHP INI Editor**
+    - Ou use a busca no topo: "MultiPHP"
+
+    <Check>
+      Ferramenta para editar configurações do PHP
+    </Check>
+  </Step>
+
+  <Step title="3. Selecione o Domínio">
+    Na aba **Modo Básico:**
+
+    1. Selecione seu domínio no menu dropdown
+    2. Se tiver apenas um site, já vem selecionado
+  </Step>
+
+  <Step title="4. Ajuste os Valores Recomendados">
+    **Configure TODOS esses valores:**
+
+    | Configuração | Valor Recomendado |
+    |--------------|-------------------|
+    | `memory_limit` | **512M** |
+    | `max_execution_time` | **300** |
+    | `max_input_time` | **300** |
+    | `max_input_vars` | **3000** |
+    | `post_max_size` | **128M** |
+    | `upload_max_filesize` | **128M** |
+
+    <Warning>
+      **Importante:** Use "M" maiúsculo (512M, não 512m)
+    </Warning>
+  </Step>
+
+  <Step title="5. Salve as Alterações">
+    Clique no botão **Aplicar** ou **Salvar** no final da página
+
+    <Check>
+      Configurações são aplicadas imediatamente!
+    </Check>
+  </Step>
+
+  <Step title="6. Verifique se Funcionou">
+    **Teste agora:**
+    1. Volte ao WordPress
+    2. Tente importar um template do Easy Builder
+    3. Edite uma página no Elementor
+
+    **Se ainda der erro:**
+    - Limpe o cache (LiteSpeed ou plugin de cache)
+    - Ctrl + F5 no navegador
+    - Aguarde 2-3 minutos para propagar
+  </Step>
+</Steps>
+
+## O Que Cada Configuração Faz
+
+<AccordionGroup>
+  <Accordion title="memory_limit (Mais Importante!)" icon="memory">
+    **O que é:**
+    Quantidade máxima de memória que um script PHP pode usar
+
+    **Por que aumentar:**
+    - WordPress sozinho: ~64MB
+    - Elementor: +128MB
+    - Easy Builder: +64MB
+    - **Total necessário: 256-512MB**
+
+    **Valor ideal:** 512M
+  </Accordion>
+
+  <Accordion title="max_execution_time" icon="clock">
+    **O que é:**
+    Tempo máximo que um script pode rodar antes de ser interrompido
+
+    **Por que aumentar:**
+    - Importar templates grandes demora
+    - Processar imagens demora
+    - Salvar páginas complexas demora
+
+    **Valor ideal:** 300 (5 minutos)
+  </Accordion>
+
+  <Accordion title="max_input_time" icon="hourglass">
+    **O que é:**
+    Tempo máximo para receber dados via POST/GET
+
+    **Por que aumentar:**
+    - Upload de imagens grandes
+    - Importar backups
+    - Colar templates do Easy Builder
+
+    **Valor ideal:** 300
+  </Accordion>
+
+  <Accordion title="max_input_vars" icon="list">
+    **O que é:**
+    Quantidade máxima de variáveis que podem ser enviadas
+
+    **Por que aumentar:**
+    - Páginas complexas têm muitas configurações
+    - Elementor envia muitos dados ao salvar
+    - Templates do Easy Builder têm muitos widgets
+
+    **Valor ideal:** 3000
+  </Accordion>
+
+  <Accordion title="post_max_size" icon="upload">
+    **O que é:**
+    Tamanho máximo de dados enviados via POST
+
+    **Por que aumentar:**
+    - Importar templates
+    - Salvar páginas grandes
+    - Upload de múltiplas imagens
+
+    **Valor ideal:** 128M
+  </Accordion>
+
+  <Accordion title="upload_max_filesize" icon="file-arrow-up">
+    **O que é:**
+    Tamanho máximo de um arquivo individual
+
+    **Por que aumentar:**
+    - Fazer upload de vídeos
+    - Importar backup do Easy Builder
+    - Enviar imagens de alta qualidade
+
+    **Valor ideal:** 128M
+  </Accordion>
+</AccordionGroup>
+
+## Método Alternativo: Via wp-config.php
+
+Se não tiver acesso ao cPanel, pode tentar via arquivo:
+
+<Steps>
+  <Step title="1. Acesse via FTP">
+    Use FileZilla ou Gerenciador de Arquivos da hospedagem
+  </Step>
+
+  <Step title="2. Encontre wp-config.php">
+    Arquivo fica na pasta raiz: `public_html/wp-config.php`
+  </Step>
+
+  <Step title="3. Adicione o Código">
+    Antes da linha `/* That's all, stop editing! */` adicione:
+
+    ```php
+    define('WP_MEMORY_LIMIT', '512M');
+    define('WP_MAX_MEMORY_LIMIT', '512M');
+    ```
+  </Step>
+
+  <Step title="4. Salve o Arquivo">
+    Upload de volta para o servidor
+  </Step>
+</Steps>
+
+<Warning>
+  **Atenção:** Esse método NÃO altera configurações do servidor, apenas do WordPress. O método via cPanel é mais eficaz!
+</Warning>
+
+## Hospedagem Não Permite Alterar?
+
+Algumas hospedagens baratas bloqueiam essa configuração!
+
+**Soluções:**
+1. **Entre em contato com suporte** pedindo para aumentar
+2. **Migre para hospedagem melhor:**
+   - [StayCloud](https://staydigital.com.br/) - Recomendada
+   - [Hostinger](https://www.hostinger.com.br/) - Alternativa
+
+<Info>
+  Easy Builder funciona perfeitamente em hospedagens com recursos adequados. Investir R$ 27/mês em hospedagem profissional evita dores de cabeça!
+</Info>
+
+## Precisa de Ajuda?
+
+<CardGroup cols={2}>
+  <Card title="Comunidade Discord" icon="discord" href="https://discord.gg/WR6nzkydse">
+    Tire dúvidas com outros membros
+  </Card>
+
+  <Card title="Suporte WhatsApp" icon="whatsapp" href="https://api.whatsapp.com/send?phone=5551992751897">
+    Fale diretamente com o suporte
+  </Card>
+</CardGroup>

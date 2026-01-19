@@ -1,0 +1,147 @@
+---
+title: 'Erro ao Colar Elementos'
+description: 'Solução para quando elementos do Easy Builder não colam no Elementor'
+icon: 'paste'
+---
+
+## O Problema
+
+Você tenta colar uma seção do Easy Builder no Elementor, mas:
+- Nada acontece
+- Aparece mensagem de erro
+- Elementos não aparecem
+
+## Solução: Checklist Completo
+
+Siga estas etapas na ordem:
+
+<Steps>
+  <Step title="1. Verifique os Plugins Necessários">
+    Acesse: **WordPress → Plugins → Plugins Instalados**
+
+    **Plugins OBRIGATÓRIOS:**
+    - ✅ Elementor (versão gratuita)
+    - ✅ Elementor Pro (versão paga)
+
+    <Warning>
+      Se algum plugin estiver faltando, instale-o antes de continuar!
+    </Warning>
+
+    **Como instalar:**
+    1. Plugins → Adicionar novo
+    2. Buscar "Elementor"
+    3. Instalar + Ativar
+  </Step>
+
+  <Step title="2. Atualize o WordPress">
+    WordPress desatualizado causa incompatibilidades!
+
+    **Verificar versão:**
+    - Painel → Atualizações
+    - Se aparecer atualização disponível → **Atualizar Agora**
+
+    <Check>
+      Mantenha sempre na última versão estável
+    </Check>
+  </Step>
+
+  <Step title="3. Verifique os Recursos do Elementor">
+    Alguns widgets podem estar desativados!
+
+    **Verificar:**
+    1. Elementor → Configurações → **Recursos**
+    2. Procure por "Container" ou "Flexbox Container"
+    3. Se estiver **Inativo** → Ative!
+
+    <iframe
+      width="100%"
+      height="400"
+      src="https://www.youtube.com/embed/vRiI8gCpZaY"
+      title="Como ativar recursos do Elementor"
+      frameBorder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowFullScreen
+    ></iframe>
+  </Step>
+
+  <Step title="4. Sincronize a Biblioteca do Elementor">
+    A biblioteca precisa estar sincronizada!
+
+    **Como sincronizar:**
+    1. Elementor → Ferramentas → **Sincronizar Biblioteca**
+    2. Clique em "Sincronizar"
+    3. Aguarde concluir
+
+    <iframe
+      width="100%"
+      height="400"
+      src="https://www.youtube.com/embed/DxEEFSG7nBU"
+      title="Como sincronizar biblioteca Elementor"
+      frameBorder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowFullScreen
+    ></iframe>
+  </Step>
+
+  <Step title="5. Limpe o Cache">
+    Cache pode causar problemas!
+
+    **Se usar LiteSpeed Cache:**
+    1. LiteSpeed Cache → Gerenciamento
+    2. Clique em **Purgar Tudo**
+
+    **Se usar outro plugin de cache:**
+    - Procure opção similar (Limpar Cache / Clear Cache)
+
+    **Após limpar:**
+    - Ctrl + F5 no navegador (força recarregar)
+  </Step>
+
+  <Step title="6. Teste Novamente">
+    Agora tente colar o elemento novamente!
+
+    **Passo a passo:**
+    1. Abra Easy Builder
+    2. Copie a seção desejada
+    3. No Elementor: Botão direito → **Colar de outro site**
+    4. Ctrl + V
+
+    <Check>
+      Se seguiu todos os passos, deve funcionar agora!
+    </Check>
+  </Step>
+</Steps>
+
+## Ainda Não Funcionou?
+
+<Accordion title="Causa Rara: Extensão Desatualizada">
+  **Atualize o Easy Builder:**
+
+  1. Abra o navegador
+  2. Vá em **Extensões** (chrome://extensions/)
+  3. Procure "Easy Builder"
+  4. Clique em **Atualizar** (se disponível)
+  5. Recarregue a página do WordPress
+</Accordion>
+
+<Accordion title="Causa Rara: Conflito com Outros Plugins">
+  Pode haver conflito com outros plugins!
+
+  **Teste desativando plugins:**
+  1. Desative TODOS os plugins (exceto Elementor e Elementor Pro)
+  2. Teste se cola
+  3. Se funcionar: Reative um por um até achar o culpado
+  4. Remova ou substitua o plugin problemático
+</Accordion>
+
+## Precisa de Ajuda?
+
+<CardGroup cols={2}>
+  <Card title="Comunidade Discord" icon="discord" href="https://discord.gg/WR6nzkydse">
+    Tire dúvidas com outros membros
+  </Card>
+
+  <Card title="Suporte WhatsApp" icon="whatsapp" href="https://api.whatsapp.com/send?phone=5551992751897">
+    Fale diretamente com o suporte
+  </Card>
+</CardGroup>

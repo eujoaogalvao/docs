@@ -1,0 +1,422 @@
+<PERGUNTA 7>       
+
+COMO SABER O TAMANHO DAS IMAGENS PARA CRIAR AS SESSÕES?
+
+Sempre entregar o link do tutorial em vídeo:    
+https://www.youtube.com/watch?v=7pIbuzBIx98
+E entregar o conteúdo em texto:
+    
+    *   Instrução em Texto:
+        
+        🖼️ **COMO CRIAR IMAGENS DE FUNDO PERSONALIZADAS PARA AS SEÇÕES DO EASY BUILDER (sem enrolação, direto ao ponto)**
+        
+        Antes de sair querendo fazer imagem bonita no Figma ou Photoshop, o primeiro passo é **montar sua seção no Elementor**.
+        
+        👉 Então faz assim:
+        
+        1. Abre o Elementor
+        2. Copia e cola a seção que tu vai usar (botão direito > colar de outro site > Ctrl + V)
+        3. Altera os textos, as cores, a fonte global... deixa tudo redondinho e com a estrutura que tu quer.
+        
+        💡 _Exemplo: se for uma seção de benefícios, já muda o conteúdo e ajusta o layout antes de pensar na imagem de fundo._
+        
+        Beleza. Agora tu vai criar uma imagem pra ser usada **como plano de fundo dessa seção**. O tamanho dessa imagem precisa bater com a altura da seção que tu montou.
+        
+        🧮 Como saber o tamanho?
+        
+        👉 Clica na seção > aba "Layout" > verifica o campo "Altura mínima".
+        
+        Digamos que tá em **875px**. Pronto, esse é o valor da altura que tu vai usar na tua imagem.
+        
+        📐 Agora cria um novo arquivo no Photoshop ou Figma com essas dimensões:
+        
+        > `1920 x 875` (1920 de largura, 875 de altura)
+        
+        Sim, tu pode usar **800px de altura** como base, mas o ideal é **ajustar pro que tu realmente montou**.
+        
+        🎨 Cria a imagem com os elementos visuais que tu quiser (cores, formas, personagens, etc.) e **salva/exporta no formato** **`.webp`** pra garantir desempenho.
+        
+        📂 Pra converter a imagem em `.webp`, tu pode usar ferramentas como Squoosh ( [](https://squoosh.app)) ou qualquer outro conversor de imagem confiável.
+        
+        Depois disso, volta no Elementor:
+        
+        4. Clica na seção onde tu quer a imagem
+        5. Vai em **Estilo > Tipo de Fundo > Clássico**
+        6. Envia a imagem .webp e marca a opção **“Capa”** pra que ela preencha a área toda.
+        
+        🔄 E o Mobile?
+        
+        No mobile a lógica é a mesma, **mas a imagem deve ser criada com largura de 1080px**. A altura depende da seção, então ajusta visualmente pra manter proporção e legibilidade.
+        
+        👉 Tu pode duplicar a seção, esconder a original no mobile, e aplicar a versão otimizada só pra celular (em **Avançado > Responsivo**).
+        
+        🛠️ DICA EXTRA:
+        
+        Se a altura da seção estiver bugada ou difícil de pegar (por causa de margens, paddings, etc), tu pode:
+        
+        *   **Puxar a setinha pra baixo** pra ver o espaço real
+        *   Tirar um print da área visível
+        *   Criar a imagem com base nessa proporção
+        
+        🧠 Lembra: o Easy Builder **não cria a imagem por ti**. Ele organiza, estrutura, agiliza... mas o design visual é responsabilidade tua. Então cria com carinho. Um layout bom começa por uma imagem que **encaixa certinho no espaço dela**.
+        
+        📺 Quer ver isso tudo com mouse mexendo, camada sendo montada e imagem subindo? Assiste aqui:
+        
+        [](https://www.youtube.com/watch?v=7pIbuzBIx98)
+        
+          
+</PERGUNTA 7>        
+    
+
+
+
+
+
+
+      
+<PERGUNTA 8>
+    
+SE O CLIENTE QUISER SABER COMO SABER OS CANAIS DA COMUNIDADE DO EASY BUILDER COMO DISCORD OU WHATSAPP OU LASTLINK?    
+
+Sempre entregar o link da aula gravada:
+https://www.youtube.com/watch?v=50vasGWw5qE
+E também entregar o conteúdo em texto:
+
+    Instrução em Texto:
+    
+*   Atalho simples que ajuda muito no workflow
+    https://www.youtube.com/watch?v=pSaGTZBowK0    
+*   \[Ouro\] Como usar seu cofre de recursos pessoal \[Meus Recursos\]
+    
+    [https://www.youtube.com/watch?v=22CGB8Yr98s](https://www.youtube.com/watch?v=22CGB8Yr98s)
+    
+    *   Instrução em Texto:
+        
+        💰 **COMO USAR A ABA “MEUS RECURSOS” DO EASY BUILDER – TEU COFRE DE OURO**
+        
+        Se liga nessa funcionalidade cabulosa que poucos usam direito: a aba **Meus Recursos** do Easy Builder. É ali que tu guarda tudo que já criou — sessões, botões, imagens, páginas inteiras, códigos CSS — pra usar de novo em qualquer projeto, com 2 cliques.
+        
+        👉 Pra acessar:
+        
+        Clica no ícone do Easy Builder no navegador e vai direto em **Meus Recursos** (é a primeira opção da barra lateral).
+        
+        Aí começa a magia. Tu pode criar pastas pra organizar tudo. Exemplo:
+        
+        1. Clica em **"Adicionar Pasta"**
+        2. Nomeia como quiser, tipo “Sessões”, “Imagens Flutuantes”, “Meus Botões”, “Códigos CSS”
+        
+        Dentro de cada pasta, tu ainda pode criar subpastas. Exemplo:
+        
+        > Pasta: Sessões
+        > 
+        > Subpasta: Sessão de Bio
+        
+        ✨ **COMO SALVAR UM ELEMENTO (como um botão, ícone ou sessão):**
+        
+        3. No Elementor, seleciona o elemento desejado
+        4. Clica com o **botão direito > Copiar**
+        5. Antes de colar, **limpa tua área de transferência**:
+            *   Pressiona `Windows + V` (no Windows) ou `Command + Shift + V` (Mac)
+            *   Apaga tudo clicando em “Limpar tudo”
+        6. Volta no Easy Builder > Meus Recursos > entra na pasta certa
+        7. Clica em **“Adicionar Componente”**
+        8. Nomeia esse recurso, adiciona uma imagem representativa (print do elemento, se quiser)
+        9. No campo indicado, aperta **Ctrl + V** (ou Command + V no Mac)
+        10. Clica em **"Criar Componente"**
+        
+        Pronto. Esse elemento tá salvo pra sempre.
+        
+        Quando quiser reutilizar:
+        
+        > Vai em Meus Recursos > Clica em **Copiar** > Volta pro Elementor > Botão direito onde quiser colar > **Colar de outro site** > Ctrl + V
+        
+        🧱 **QUER SALVAR UMA SESSÃO COMPLETA? MESMO ESQUEMA:**
+        
+        11. Seleciona a sessão (clicando na borda azul que envolve toda ela)
+        12. Botão direito > Copiar
+        13. Limpa a área de transferência
+        14. Volta pro Easy Builder > Cria ou entra na pasta “Sessões”
+        15. Adiciona um componente > cola > salva
+        
+        📄 **QUER SALVAR UMA PÁGINA INTEIRA COMO TEMPLATE?**
+        
+        16. Desce até o final da página no Elementor
+        17. Botão direito na última seção > **“Copiar todo o conteúdo”**
+        18. Limpa o histórico de copiar (`Windows + V`)
+        19. Vai em Meus Recursos > Cria uma pasta “Páginas de Captura” (ou o nome que quiser)
+        20. Cria um componente com o nome da página > cola > cria
+        
+        👉 Depois, pode usar essa página em outros projetos sem refazer nada.
+        
+        🧬 **QUER SALVAR UM CÓDIGO (tipo um CSS de efeito)?**
+        
+        21. Copia o código completo
+        22. Vai em Meus Recursos > Cria pasta “Códigos”
+        23. Cria subpasta “Scroll”, “Glow”, “Botões” etc
+        24. Adiciona um componente > nomeia > cola o código no campo > salva
+        
+        Quando for usar:
+        
+        > Vai no elemento desejado (ex: botão) > Avançado > CSS Personalizado > cola o código
+        
+        📦 Isso elimina a necessidade de bloco de notas, Trello, Google Drive bagunçado...
+        
+        Agora tudo que tu cria, personaliza ou acha pela internet, tu pode guardar direto no Easy Builder.
+        
+        📺 Quer ver com print, clique e exemplo? Tá aqui o vídeo completo:[](https://www.youtube.com/watch?v=22CGB8Yr98s)
+        
+          
+</PERGUNTA 8> 
+    
+<PERGUNTA 9>
+   
+*   Como participar da nossa comunidade no Behance
+    
+    Esse é o link para o nosso behance:
+https://www.behance.net/easybuilderr    
+    Sempre enviar essa vídeo aula explicando:
+    [https://youtu.be/cdWJmB8Rn6Y    
+
+</PERGUNTA 9>
+
+<PERGUNTA 10>
+
+
+POSSO CRIAR QUALQUER TIPO DE PÁGINA COM O EASY BUILDER?
+    
+Sempre enviar o link desse tutorial em vídeo:
+https://youtu.be/u0XEJZ1dqWo
+E entregar o tutorial em texto:
+    
+    *   Instrução em Texto:
+        
+        **"Dá pra criar qualquer tipo de site com Easy Builder?"**
+        
+        Spoiler: sim, e com o pé nas costas — mas com um detalhe importante: **você tem que usar o cérebro**, porque ninguém vai fazer 100% por você. Mas relaxa, que o processo é simples.
+        
+        🧩 Quando alguém te pergunta se dá pra fazer institucional, portfólio, blog, e-commerce, landing, one page, o caralho a quatro... a resposta é: **sim, dá.**
+        
+        O Easy Builder não é um “template fechado”, ele é um **acelerador de estrutura**. O segredo tá em **combinar, adaptar e montar como Lego.**
+        
+        Pra você entender: imagina que você achou um site gringo com layout top. Aí tu pensa: “Não tem isso no Easy Builder”. Mas tem sim, só que em **peças**. Tipo:
+        
+        > Cabeçalho com imagem + título + subtítulo + botão → tem
+        > 
+        > Sessão com ícones e textos organizados → tem
+        > 
+        > Sessão com mapa, formulário, rodapé → tudo já disponível
+        > 
+        > Carrossel? Tem também. Sessão com vídeo? Também.
+        
+        Talvez não venha montado igualzinho àquele site que tu viu, mas: 👉 Tu importa uma sessão parecida
+        
+        👉 Adapta: muda texto, troca o botão, ajusta ícone
+        
+        👉 Duplica se precisar repetir layout
+        
+        👉 Troca fundo, bota borda, remove o que não quiser
+        
+        👉 E pronto: ficou do teu jeito, sem construir do zero
+        
+        É **isso que economiza tempo** e mantém o controle criativo na tua mão.
+        
+        📦 E com o tempo, o Easy Builder só cresce. Cada vez mais sessões estão sendo adicionadas pra atender variedade de páginas — inclusive sessão de download de app, seção com ícone animado, depoimentos, FAQs, sessão "Sobre nós", etc.
+        
+        ⚠️ E se **você criar uma estrutura própria**, salva nos **Meus Recursos** dentro do Easy Builder. Assim você constrói seu próprio acervo com o que ainda não veio pronto. Fica tudo na tua biblioteca, prontinho pra usar no próximo projeto.
+        
+        🎯 **Resumo?**
+        
+        ✔️ Dá pra fazer institucional? Sim
+        
+        ✔️ Landing page de vendas? Óbvio
+        
+        ✔️ Página de blog? Sim
+        
+        ✔️ E-commerce? Dá pra estruturar o visual. O catálogo/listing é com plugin (tipo WooCommerce)
+        
+        ✔️ Qualquer projeto? Sim, desde que você saiba adaptar o layout
+        
+        💡 Ninguém entrega o site 100% do seu jeito. Mas o Easy Builder te dá **as ferramentas, os blocos e os atalhos**. O resto é criatividade e 10 minutos de bom gosto.
+        
+        📺 Quer ver o vídeo que prova isso?[](https://www.youtube.com/watch?v=u0XEJZ1dqWo)
+        
+
+</PERGUNTA 10>
+
+<PERGUNTA 11>
+
+COMO EU POSSO CRIAR IMAGENS DE FUNDO PARA O ELEMENTOR PARA DESKTOP?
+    
+Sempre trazer o conteúdo em vídeo:   https://youtu.be/bh0gjT2u6Cs?si=\_HaV8BCmGKKsloT-
+E entregar o tutorial em texto:
+    
+    *   Instrução em Texto:
+        
+        🧱 **COMO CRIAR BACKGROUNDS DE RESPEITO NO ELEMENTOR – COM DIMENSÃO CERTA E JÁ PENSADO NO RESPONSIVO**
+        
+        Essa aula aqui é a base pra deixar o layout do site bonito de verdade. A gente não tá falando de firula, é o fundo que dá o tom profissional da parada. E sim, se tu errar no tamanho da imagem ou na posição, tua seção vira um samba do caralho.
+        
+        Começa assim ó: pega a seção que tu quer colocar imagem de fundo. O tamanho padrão que o Júnior usa é **1920 x 800 px**, mas isso pode mudar dependendo do layout. Não é tamanho fixo.
+        
+        Quer saber o tamanho exato da tua seção? Clica nela, vai em **Layout > Altura Mínima** e olha o valor. Se for, por exemplo, 640, então tua imagem precisa ter **640 px de altura** pra encaixar bonitinho.
+        
+        Abre o Photoshop ou Figma e cria um arquivo com **1920 x (altura da tua seção)**. RGB, 72dpi, 8 bits, tá? Se quiser printar o wireframe da seção do Easy Builder e jogar por cima como guia, pode também. Coloca uma camada preta por baixo, muda o modo da imagem de referência pra “Divisão” e já era — dá pra editar em cima tranquilo.
+        
+        ⚠️ Sempre lembra: imagem de fundo tem que ser **leve**. Exporta como JPEG com qualidade “Muito Alta” e tamanho máximo de até **100 KB**. Se passar disso, o carregamento do site vira um desastre.
+        
+        Depois disso, sobe no site de compressão (tipo [](https://squoosh.app)), converte pra **WebP**, ajusta a qualidade (64 já tá ótimo) e salva.
+        
+        Vai no Elementor, clica na seção > aba **Estilo > Fundo > Clássico** > adiciona a imagem. Aí configura:
+        
+        *   **Posição**: Top Center
+        *   **Repetição**: No Repeat
+        *   **Tamanho**: Capa (Cover)
+        
+        Isso garante que a imagem preencha certinho o container, sem esticar feio.
+        
+</PERGUNTA 11>
+
+<PERGUNTA 12>
+
+COMO EU POSSO CRIAR IMAGENS DE FUNDO PARA O ELEMENTOR PARA MOBILE?
+        
+Sempre trazer o conteúdo em vídeo:   https://youtu.be/bh0gjT2u6Cs?si=\_HaV8BCmGKKsloT-
+E entregar o tutorial em texto:
+
+
+        No tablet e laptop, você pode ajustar a posição da imagem usando o controle “Personalizado” no eixo X.
+        
+        No mobile, ele não mostrou ainda, vai ficar pra próxima aula — mas o princípio é o mesmo: ou tu cria uma imagem pensada só pro celular ou ajusta a posição do fundo ali mesmo no Elementor.
+        
+        Quer fazer aquelas transições fodas onde parece que o fundo continua de uma seção pra outra? O truque é:
+        
+        > Cria **duas seções diferentes**, mas usa imagens que tenham o mesmo alinhamento, altura, e luz parecida. A transição vai parecer uma coisa só. Magia pura.
+        
+        📸 Se liga também: luz, sombra, contraste... tudo isso muda o sentimento que o layout transmite. Quer autoridade? Contraste mais forte. Quer algo mais suave e amigável? Clareia, suaviza, tira saturação. Não é frescura, é psicologia visual.
+        
+        🎥 Quer ver tudo isso com o mouse clicando e o Photoshop aberto? Aqui tá o vídeo completo:
+        
+        [](https://www.youtube.com/watch?v=bh0gjT2u6Cs)
+  
+ </PERGUNTA 12>     
+     
+<PERGUNTA 13>
+        
+COMO CRIAR IMAGENS DE FUNDO PARA MOBILE COM QUALIDADE NO WORDPRESS/ ELEMENTOR?
+    
+    [https://www.youtube.com/watch?v=MHUFiE\_Cyy0](https://www.youtube.com/watch?v=MHUFiE_Cyy0)
+    
+    *   Instrução em Texto:
+        
+        📱 **COMO CRIAR UMA IMAGEM DE FUNDO PROFISSIONAL PARA MOBILE SEM QUEBRAR A QUALIDADE**
+        
+        Seguinte... Aquele printzinho padrão da tela mobile do Elementor que todo mundo faz pra criar imagem? 🤢 Joga no lixo. Parece que tá tudo lindo no editor, mas no celular real a imagem fica distorcida, serrilhada e com cara de layout amador. Por quê? Porque o print tem **300 e poucos pixels de largura**, e o celular real tem **1080px** ou mais. Resultado: a imagem é esticada e a resolução vai pro saco.
+        
+        💡 Qual a solução então? Criar a imagem com a **largura real que o celular usa**. O Júnior curte usar **385px de largura** como base do layout, e depois **aumenta isso manualmente no Photoshop** pra 1080px de largura, sem distorcer nada.
+        
+        👉 Primeiro, ativa uma extensão de print tipo o **Lightshot** no teu PC. Deixa o layout mobile visível no Elementor, dá um print só da área que interessa (a seção do fundo) e cola no Photoshop.
+        
+        Agora segue o truque 👇
+        
+        Depois que colar o print no Photoshop:
+        
+        1. Vai em **Imagem > Tamanho da imagem**
+        2. Muda a **largura para 1080 px**
+        3. Deixa a opção de manter proporção ativa (aquele pininho)
+        4. Pronto, a imagem já tá com o tamanho certo pro mobile
+        
+        🔥 DICA DE OURO:
+        
+        Com essa imagem pronta, você pode ir colando os elementos (como o personagem, fundo extra, sombras, etc.) em cima, e ajustar tudo com **máscaras**, **pincel** e posicionamento com guia (divide o canvas em 50% na vertical e centraliza o conteúdo ali).
+        
+        📸 Vai exportar a imagem?
+        
+        *   **Arquivo > Exportar > Salvar para Web (Ctrl + Alt + Shift + S)**
+        *   Formato JPEG, qualidade “Muito Alta”
+        *   Tamanho ideal: entre **60KB e 100KB**
+        *   Se passar disso, converte pra WebP usando o site: [https://squoosh.app](https://squoosh.app)
+        
+        No **Squoosh**, arrasta a imagem, muda o formato pra **WebP**, ajusta a compressão (até 80 de qualidade geralmente tá ótimo), salva e pronto.
+        
+        Agora no Elementor:
+        
+        5. Vai na seção > **Estilo**
+        6. Em **Fundo**, coloca a imagem
+        7. Configura assim:
+            *   **Posição**: Top Center
+            *   **Repetição**: No Repeat
+            *   **Tamanho**: Capa (Cover)
+        
+        💥 Pronto! Agora tua imagem vai aparecer com qualidade de verdade no mobile e ainda vai carregar rápido.
+        
+        🎥 Quer ver isso sendo feito passo a passo?
+        
+        Assiste a aula completa aqui ([https://www.youtube.com/watch?v=MHUFiE\_Cyy0](https://www.youtube.com/watch?v=MHUFiE_Cyy0)
+        
+          
+</PERGUNTA 13>
+    
+<PERGUNTA 14>    
+
+
+COMO CRIAR FUNDOS NO ELEMENTOR QUE SÃO EMENDADOS (CONSIDERADOS COMO UNIDOS OU CONECTADOS OU TAMBÉM CHAMADO DE LAYOUTS CONTÍNUOS)?
+    
+Sempre enviar o link da aula gravada:
+https://www.youtube.com/watch?v=EDGFwZp0TQg
+Sempre entregar o material em texto:    
+    
+*   Instrução em Texto:
+        
+        
+        Primeiro, você precisa ter **duas seções com a MESMA largura e altura**. Vamos supor que a primeira tem 614px de altura. A segunda também tem que ter **614px cravado**, sem um pixel a mais ou a menos. Isso é sagrado, irmão. Senão a emenda vai dar ruim.
+        
+        ⚙️ DICA: pra saber o tamanho exato de uma seção no Elementor, seleciona ela, vai em **Layout > Altura Mínima** e vê o valor. Anota.
+        
+        Agora, vamo pro Photoshop (ou Figma se tu for do contra). Cria um arquivo com **1920px de largura** e **(soma das duas alturas das seções)**. Exemplo: 614px + 615px = 1229px.
+        
+        No Photoshop:
+        
+        1. Cria uma **guia horizontal** no ponto onde a primeira seção termina (Ex: em 614px).
+        2. Cria tua arte normalmente (personagem, fundo, luz, sombra…)
+        3. Na parte de cima, desenha a primeira parte da imagem (pra primeira seção).
+        4. Embaixo da guia, desenha a continuação (pra segunda seção). Isso vai formar o "emendado".
+        
+        📸 Agora vai o segredo técnico:
+        
+        Vai na **ferramenta de corte**, pressiona e seleciona a opção **“Fatiar por Guias”**.
+        
+        O Photoshop vai dividir a imagem exatamente onde tu colocou a guia.
+        
+        Depois:
+        
+        *   Vai em **Arquivo > Exportar > Salvar para Web**
+        *   Seleciona cada imagem individualmente
+        *   Exporta com qualidade “Muito Alta” e converte pra WebP (usa [https://squoosh.app](https://squoosh.app))
+        *   Mantém o tamanho da imagem entre **60KB e 100KB**
+        
+        Agora de volta ao Elementor:
+        
+        5. Cria as duas seções
+        6. A primeira com **614px**, a segunda com **615px** (ou o valor que você definiu)
+        7. Na primeira seção:
+            *   Estilo > Fundo > coloca a **primeira imagem**
+            *   Configura:
+            *   👉 Posição: Top Center
+            *   👉 Repetição: No Repeat
+            *   👉 Tamanho: Capa (Cover)
+        8. Na segunda seção:
+            *   Mesma coisa: coloca a **segunda imagem**
+            *   Mesmas configs: Top Center / No Repeat / Capa
+        
+        💥 Pronto. O fundo vai parecer um só, contínuo, lisinho.
+        
+        📱 No responsivo (tablet e mobile), o princípio é o mesmo, mas **ajusta o posicionamento da imagem** se der alguma folga.
+        
+        Evita criar emendas “milimétricas” no mobile (tipo linha que encaixa linha), porque dispositivos diferentes podem quebrar isso. Em vez disso, joga um **degradê**, uma **sombra**, ou qualquer coisa que suavize a transição.
+        
+        🎥 Quer ver tudo isso na prática com guia, Photoshop, corte e tudo mais?
+        
+        Assiste o vídeo aqui (com link completo, nada de encurtador): [https://www.youtube.com/watch?v=EDGFwZp0TQg](https://www.youtube.com/watch?v=EDGFwZp0TQg)
+        
+          
+</PERGUNTA 14> 

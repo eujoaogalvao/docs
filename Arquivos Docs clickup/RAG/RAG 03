@@ -1,0 +1,412 @@
+<PERGUNTA 15>       
+        
+COMO USAR A IA PARA TE AJUDAR A CRIAR AS IMAGENS DE FUNDO DAS LANDING PAGES?
+    
+Sempre entregar o link da aula em vídeo:
+    [https://youtu.be/6G2fRioLCSM](https://youtu.be/6G2fRioLCSM)
+Sempre entregar também o conteúdo em texto:
+
+
+    *   Instrução em Texto:
+        
+        🤖 **COMO USAR INTELIGÊNCIA ARTIFICIAL PRA CRIAR IMAGENS DE FUNDO TOPS PRA TUA LANDING PAGE**
+        
+        Bora aprender a gerar fundo de site bonito sem depender de banco de imagem padrão e sem precisar virar mestre do Photoshop. Tudo com IA. E de forma gratuita. Sério, só não faz se não quiser.
+        
+        Essa página aqui:
+        
+        [https://www.youtube.com/watch?v=6G2fRioLCSM](https://www.youtube.com/watch?v=6G2fRioLCSM)
+        
+        foi 90% feita com IA e Easy Builder. Só teve um toquezinho de Photoshop. Dá pra fazer até no Canva, então relaxa.
+        
+        🧠 O que ele usou?
+        
+        *   IA do **GPT-4 com geração de imagem** (plano pago)
+        *   E a IA **gratuita do Google**, chamada **ImageFX**
+        *   E o **Easy Image**, que é a IA embutida no Easy Builder (tá dentro da área de membros)
+        
+        🚀 **COMO FUNCIONA O PROCESSO PRA FAZER UM FUNDO COM IA**
+        
+        1️⃣ Primeira coisa: pense no tema da página (ex: advogado).
+        
+        Vai no **Pinterest** ou joga no Google Imagens e busca por referências visuais. Tipo "tribunal", "advogado no escritório", etc.
+        
+        2️⃣ Copia uma dessas imagens de referência.
+        
+        Vai até a IA **Easy Image** (dentro da Área de Membros do Easy Builder).
+        
+        👉 Pede pra ela criar um _prompt_ baseado naquela imagem.
+        
+        Exemplo: “Faça um prompt para gerar uma imagem parecida com essa aqui.”
+        
+        Ela vai te entregar um prompt em português.
+        
+        3️⃣ Pede pra IA traduzir esse prompt pra inglês.
+        
+        Por quê? Porque o **ImageFX**, que é a IA gratuita do Google pra gerar imagem, entende melhor comandos em inglês.
+        
+        4️⃣ Vai até o site da **ImageFX**: [https://labs.google/fx/pt/tools/image-fx](https://labs.google/fx/pt/tools/image-fx)
+        
+        👉 Cola o prompt traduzido
+        
+        👉 Seleciona o formato da imagem como **Paisagem** (Landscape)
+        
+        Pronto! A IA vai cuspir umas imagens lindas, que já servem como base pro teu fundo.
+        
+        🎨 **EDITANDO A IMAGEM**
+        
+        Pode fazer isso em qualquer software: Canva, Figma, Photoshop, até Paint melhorado.
+        
+        👉 Ajusta o tamanho da imagem pro tamanho da tua seção no Elementor.
+        
+        Exemplo: se tua seção tem 730px de altura, cria uma imagem de **1920 x 730px**.
+        
+        👉 Quer testar como vai ficar no layout? Faz um print da seção no Elementor, cola no Photoshop por cima da imagem e coloca o modo de mesclagem como **Divisão**. Assim você vê como o layout vai ficar por baixo da imagem real.
+        
+        👉 Quer dar um contraste maior ou destacar o texto?
+        
+        Adiciona um **degradê preto com transparência** do lado esquerdo.
+        
+        Assim o texto ganha destaque e o fundo não briga por atenção.
+        
+        💻 **QUER USAR UMA FOTO DE PESSOA (tipo um advogado)?**
+        
+        1. Vai no [Freepik.com](http://Freepik.com)
+        2. Baixa a imagem da pessoa (ou clica com botão direito > copiar imagem direto)
+        3. Vai no site [https://www.remove.bg/](https://www.remove.bg/)
+        4. Cola lá e remove o fundo
+        5. Joga a imagem sobre teu fundo e ajusta a posição
+        
+        🔥 DICA PROFISSIONAL:
+        
+        Quer adicionar um **efeito de luz**?
+        
+        Busca no Google: “light overlay png”
+        
+        Joga por cima da tua imagem
+        
+        Muda o modo de mesclagem pra **Lighten** ou **Screen**
+        
+        💾 **OTIMIZAÇÃO FINAL PRA SUBIR PRO SITE**
+        
+        6. Salva a imagem como JPEG (ou WebP)
+        7. Vai no site[](https://squoosh.app)
+        8. Arrasta tua imagem
+        9. Muda o formato pra WebP
+        10. Ajusta a qualidade pra ficar entre **60KB e 100KB**
+        11. Salva
+        
+        Agora sobe essa imagem no Elementor:
+        
+        *   Vai na seção > Estilo > Fundo
+        *   Coloca a imagem
+        *   Configura:
+        *   👉 **Top Center**
+        *   👉 **No Repeat**
+        *   👉 **Capa (Cover)**
+        
+        📱 E no mobile?
+        
+        Segue a mesma lógica, mas faz a imagem em formato vertical.
+        
+        Exemplo: 1080 x 1300px
+        
+        Deixa o degradê agora de cima pra baixo (pra manter legibilidade)
+        
+        🎥 Quer ver esse processo todo com mouse, IA e layout ao vivo?
+        
+        Assiste aqui:
+        
+        [https://www.youtube.com/watch?v=6G2fRioLCSM](https://www.youtube.com/watch?v=6G2fRioLCSM)
+        
+          
+</PERGUNTA 15>
+
+
+<PERGUNTA 16>
+        
+COMO CONSTRUIR UMA LANDING PAGE PROFISSIONAL DE R$ 2000,00 EM 60 MINUTOS USANDO IA?
+    
+Sempre enviar o link do tutorial em vídeo:
+    [https://youtu.be/PeaWZkKLOXw?si=mLgdY3BX3zbF-UEk    
+
+</PERGUNTA 16>
+
+
+<PERGUNTA 17>
+
+
+COMO IMPORTAR UMA PÁGINA DO ELEMENTOR PRO PARA O FIGMA?  
+    
+Sempre entregar o link da aula em vídeo:
+[https://www.youtube.com/watch?v=QMIAUUhJWrk](https://www.youtube.com/watch?v=QMIAUUhJWrk)
+E entregar o tutorial em texto:
+   
+    *   Instrução em Texto:
+        
+        🧠 **COMO IMPORTAR SUA PÁGINA DO ELEMENTOR PRO FIGMA (E EDITAR TUDO)**
+        
+        Essa dica é **100% opcional**, mas pode salvar tua pele se tu curte testar variações visuais de layout, fonte ou cor antes de meter bronca no Elementor.
+        
+        1️⃣ Abre a página que você criou no Elementor (sem preview, tem que ser a URL da página final mesmo).
+        
+        2️⃣ Copia o link dessa página.
+        
+        3️⃣ Abre o Figma e instala o plugin chamado **HTML to Design** (tem na biblioteca de plugins do Figma, é gratuito).
+        
+        4️⃣ No plugin:
+        
+        *   Cola o link da tua página
+        *   Clica em **Importar**
+        *   Ele vai te perguntar algumas paradas: 👉 Quer manter as fontes e cores globais? 👉 Quer importar com ou sem layout? 👉 Quer transformar em estilos locais? (Ajuda muito pra editar depois)
+        
+        5️⃣ Clica em **OK** e deixa carregar.
+        
+        🚀 Quando terminar, tua página do Elementor vai aparecer lá no Figma — igualzinha, mas 100% **editável**.
+        
+        Aí tu pode testar coisas tipo: 🎨 “E se eu trocar a cor dessa seção?” 🔤 “E se essa fonte for mais leve?” 🖼️ “Será que esse bloco fica melhor com outro BG?”
+        
+        Fez as alterações visuais? Aí é só voltar no Elementor e replicar o que você aprovou no Figma. Bem mais fácil do que ficar testando direto no Elementor com aquele refresh eterno.
+        
+        ⚠️ O plugin permite até **10 importações por mês na faixa**, e reseta todo mês. Então dá pra brincar bastante.
+        
+        🎥 Quer ver isso sendo feito na prática? Assiste aqui o vídeo completo:
+        
+        [](https://www.youtube.com/watch?v=QMIAUUhJWrk)
+        
+</PERGUNTA 17>     
+
+
+<PERGUNTA 18>     
+        
+COMO CRIAR UM PADRÃO GLOBAL DE FONTES E CORES NO ELEMENTOR?
+    
+Sempre entregar o link do tutorial em vídeo:   https://www.youtube.com/watch?v=5TYG1h-PwRk  
+
+</PERGUNTA 18>     
+
+</PERGUNTA 19>
+
+E SE ACONTECEU DE DAR ERRO 500 NO SERVIDOR AO ATUALIZAR A PÁGINA?
+
+🔍 
+Causas mais comuns:
+Limites de memória ou execução do PHP
+
+
+O Elementor exige bastante recurso dependendo do tamanho da página.
+
+
+Solução: Aumente os limites no php.ini, .htaccess ou wp-config.php:
+
+
+// wp-config.php
+define('WP_MEMORY_LIMIT', '256M');
+set_time_limit(300);
+
+
+
+Plugins em conflito
+
+
+Plugins como WPML, Yoast, Jetpack, etc., às vezes geram conflitos com o Elementor.
+
+
+Solução: Desative todos os plugins e ative apenas o Elementor. Vá ativando um a um até encontrar o causador.
+
+
+Tema mal codificado
+
+
+Temas mal otimizados (ou desatualizados) podem interferir no funcionamento do Elementor.
+
+
+Solução: Teste com o tema Hello Elementor (oficial) ou Astra.
+
+
+Versão do PHP incompatível
+
+
+Elementor funciona melhor com PHP 7.4 a 8.1.
+
+
+Solução: Verifique e atualize via painel de controle da hospedagem.
+
+
+Problema com o .htaccess
+
+
+Arquivo corrompido ou regras conflitantes podem causar erro 500.
+
+
+Solução: Renomeie o .htaccess para .htaccess_old e vá em Configurações > Links Permanentes e clique em “Salvar” para gerar um novo.
+
+
+Falha no WP Rocket ou em cache
+
+
+Plugins de cache mal configurados causam conflito na hora de salvar páginas.
+
+
+Solução: Limpe o cache do site, Cloudflare (se usar) e desative cache temporariamente.
+
+
+Logs de erro ocultos
+
+
+Para entender exatamente o erro, ative os logs:
+// wp-config.php
+define('WP_DEBUG', true);
+define('WP_DEBUG_LOG', true);
+define('WP_DEBUG_DISPLAY', false);
+✅ Check rápido recomendado:
+Ative debug no wp-config.php
+
+
+Teste salvar com todos os plugins desativados, exceto Elementor.
+
+
+Use tema Hello Elementor.
+
+
+Verifique se o erro ainda ocorre.
+
+
+Acompanhe o log em tempo real ou baixe o debug.log
+
+</PERGUNTA 19>
+
+
+<PERGUNTA 20> 
+
+ERRO AO IMPORTAR SESSÕES OU PÁGINAS DO EASY BUILDER NO ELEMENTOR?
+    
+Sempre enviar esse tutorial em vídeo:
+ [https://www.youtube.com/watch?v=VoUwYWpHMYA
+E também apresentar esse tutorial em texto:    
+
+
+        
+        Sabe aquele erro que aparece quando tu tenta colar uma seção ou elemento e dá ruim? Então... isso acontece por **configuração mal feita no Elementor** ou **hospedagem que limita a parada**. Mas calma que o conserto é rapidão:
+        
+        🔧 **PASSO 1 – ATIVAR OS RECURSOS DO ELEMENTOR**
+        
+        1. Vai no teu WordPress > Painel > Elementor > Configurações > Aba “Recursos”
+        2. Ativa **TODOS OS RECURSOS**:
+            *   Contêineres
+            *   Elementor Grid
+            *   Elementos aninhados
+            *   Animações avançadas
+            *   Qualquer coisa que estiver como “Experimental”, ativa também
+        
+        💾 Depois disso: **salva**.
+        
+        🔁 **PASSO 2 – REGERAR E SINCRONIZAR**
+        
+        3. Ainda no painel do Elementor, vai em **Ferramentas**
+        4. Clica em:
+            *   **Regenerar arquivos CSS**
+            *   **Sincronizar biblioteca**
+        
+        Depois disso, **salva de novo**.
+        
+        📦 **PASSO 3 – VERIFICA SE TÁ TUDO ATUALIZADO**
+        
+        *   Elementor (free e Pro ou o **Pro Elements**, se for o caso)
+        *   Tema Hello Elementor (sim, o tema precisa estar atualizado também)
+        *   WordPress (não precisa ser a última versão, mas também não pode estar jurássico)
+        
+        💣 **PASSO 4 – A PEGADINHA DAS HOSPEDAGENS BARATAS** Se mesmo com tudo certo ainda der erro, olha onde você tá hospedando teu site.
+        
+        Hospedagens como:
+        
+        *   **Hostinger**
+        *   **HostGator**
+        *   **GoDaddy**
+        *   Ou qualquer plano de hospedagem compartilhada
+        
+        ...podem bloquear a requisição que o Easy Builder faz. O motivo? Eles limitam:
+        
+        *   Tempo de execução do PHP
+        *   Memória
+        *   Requisição externa
+        
+        🧠 Isso não é bug do Easy Builder. Se você fizesse a importação manual (sem o builder), provavelmente também daria erro.
+        
+        👉 Se esse for teu caso, confere na **Área de Membros**, que vai ter uma aula específica só pra resolver problemas com essas hospedagens.
+        
+        🎥 Quer ver isso rolando passo a passo? Assiste o vídeo completo aqui:
+        
+        [](https://www.youtube.com/watch?v=VoUwYWpHMYA)
+        
+        
+</PERGUNTA 20>  
+
+<PERGUNTA 21>  
+
+MESMO COM AJUSTES, O CLIENTE AINDA RECEBE A MENSAGEM DE ERRO DE IMPORTAÇÃO, O QUE FAZER?
+      
+Sempre enviar esse tutorial em vídeo:    
+https://www.youtube.com/watch?v=ZvRUGoVYjeg
+Sempre enviar esse tutorial em texto:
+    
+    *   Instrução em Texto:
+        
+        ⚙️ **COMO AUMENTAR O LIMITE DO PHP PRA USAR O EASY BUILDER SEM ERROS**
+        
+        Primeiro, verifica se realmente o problema é esse:
+        
+        1. Vai no painel do WordPress > Elementor > Ferramentas > Aba **“Informações do sistema”**
+        2. Dá uma olhada nos valores técnicos: se tiver coisa muito baixa (tipo 64MB de memória ou tempo de execução menor que 60s), o erro pode estar vindo daí.
+        
+        🔧 Bora resolver isso no CPanel:
+        
+        1️⃣ Acessa o **CPanel** do seu site 2️⃣ Na busca, digita: `PHP` 3️⃣ Clica em: **MultiPHP INI Editor** 4️⃣ Escolhe o domínio do site que você tá trabalhando 5️⃣ Faz essas alterações:
+        
+        *   `memory_limit` ➡️ **1000M**
+        *   `max_execution_time` ➡️ **1000**
+        *   `post_max_size` ➡️ **100M**
+        *   `upload_max_filesize` ➡️ **100M**
+        *   `max_input_vars` ➡️ **100000**
+        *   `max_input_time` ➡️ **128**
+        
+        👉 As três últimas opções da tela você **não mexe**
+        
+        👉 A opção “display errors” você **deixa desabilitada**
+        
+        6️⃣ Clica em **Aplicar**. Pronto!
+        
+        🔁 Agora volta pro Elementor:
+        
+        3. Vai em **Elementor > Ferramentas**
+        4. Clica em:
+            *   **Regenerar arquivos CSS**
+            *   **Sincronizar biblioteca**
+        
+        💥 Agora sim, pode colar qualquer elemento no Easy Builder sem travar.
+        
+        🎥 Quer ver esse processo completo com tela e tudo?
+        
+        Assiste aqui o vídeo:
+        
+        [](https://www.youtube.com/watch?v=ZvRUGoVYjeg)
+        
+         
+
+</PERGUNTA 21>
+
+<PERGUNTA 22> 
+
+COMO USAR AS IAs DO EASY BUILDER?
+
+*   Easy Copy IA para criar estruturas e copys de alta conversão BOM E FÁCIL:
+    Link do tutorial em vídeo:
+    https://youtu.be/iUPGlhGfm88
+    
+*   Easy Coder I Dev IA do Easy Builder:
+    
+link do tutorial em vídeo:
+    https://youtu.be/AHFw-hyuwCE
+
+</PERGUNTA 22> 
+

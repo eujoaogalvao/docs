@@ -1,0 +1,437 @@
+ <PERGUNTA 40>           
+
+E SE O CLIENTE JÁ TEM WORDPRESS INSTALADO MAS PODE SUBSTITUIR PELO NOSSO BACKUP?
+    
+    *   Etapa 1: Tenha domínio e Hospedagem configurados
+        
+          
+        
+        Sem um domínio você não consegue colocar um site no ar. É ele que identifica para os navegadores, qual servidor você deve acessar. Alguns sites vendem domínios e hospedagem juntos, é mais fácil de configurar e dependendo do plano que escolher, ao assinar a hospedagem você ganha o domínio de brinde. Nesses casos, recomendamos para você pegar hospedagem + domínio na Stay Cloud.
+        
+        *   [**StayCloud**](https://br.staycloud.com.br/easy)
+            
+            A Stay é uma empresa de hospedagem que por ter serviços e suporte de extrema qualidade, é parceira do Easy Builder. Aqui você pode assinar domínio e hospedagem juntos tendo opções de hospedagem com domínio grátis.
+            
+              
+            
+            Prós:
+            
+            *   Servidor rápido
+            *   Fácil instalação
+            *   Suporte incrível
+            *   Plugins pagos de graça
+            
+              
+            
+            Contras
+            
+            *   Poucos reais mais caro
+            
+              
+            
+            [](https://br.staycloud.com.br/easy)
+            
+            Utilize o cupom EASYBUILDER para ganhar um desconto adicional.
+            
+              
+            
+        *   **Hostinger**
+            
+            Hostinger é um provedor gigante, muita gente gosta pelos preços acessíveis, porém você pode ser o azarado que vai enfrentar problemas com virus, baixa velocidade de carregamento e suporte ineficiente. Pra quem está no início ela quebra um galho! Mas não recomendamos para projetos e empresas grandes.
+            
+              
+            
+            Prós:
+            
+            *   Baixo investimento
+            *   Fácil instalação
+            
+            Contras
+            
+            *   Roleta Russa
+            *   Precisa aumentar o PHP para o EB funcionar
+            *   Meio lento
+            *   Não suporta escala
+            
+            [https://hostinger.com.br/?REFERRALCODE=LNXJUNIORSF6](https://hostinger.com.br/?REFERRALCODE=LNXJUNIORSF6)
+            
+                        
+
+
+            
+    *   Etapa 2: Instale o WordPress
+        
+        *   Como instalar o WordPress na Hostinger
+            
+            Vídeo Tutorial: [https://www.youtube.com/watch?v=IxxLksxbYwM](https://www.youtube.com/watch?v=IxxLksxbYwM)
+            
+            Artigo Explicativo: [https://www.hostinger.com.br/tutoriais/como-instalar-o-wordpress](https://www.hostinger.com.br/tutoriais/como-instalar-o-wordpress)
+            
+        *   Como instalar o WordPress na Stay
+            
+            Vídeo Tutorial: [https://youtu.be/VP01CAQzpec?si=y4jckWEpBKD5kMQ\_&t=698](https://youtu.be/VP01CAQzpec?si=y4jckWEpBKD5kMQ_&t=698)
+            
+            Artigo Explicativo: [https://help.staycloud.com.br/hc/pt-br/articles/31507203435675-Como-instalar-o-WordPress-WordPress-1-Clique-Stay](https://help.staycloud.com.br/hc/pt-br/articles/31507203435675-Como-instalar-o-WordPress-WordPress-1-Clique-Stay)
+            
+    *   Etapa 3: Instale o Easy Builder no seu Navegador
+        
+        **Faça o Download do Easy Builder**
+        
+        O EB é uma extensão do navegador e é totalmente segura. Funciona em todos os navegadores exceto Mozilla.
+        
+        Link para instalar: [https://chromewebstore.google.com/detail/easy-builder/ngpbabbfpbihacogfnbgobceeadfidcb/reviews](https://chromewebstore.google.com/detail/easy-builder/ngpbabbfpbihacogfnbgobceeadfidcb/reviews)
+        
+          
+        
+        **Assista o tutorial inicial**
+        
+        Lembrando que em nossa área de membros possuímos um tutorial completo em vídeo, vale a pena conferir.
+        
+          
+        
+        Baixe nosso material em PDF: [https://easybuilder.com.br/wp-content/uploads/2025/01/Manual-Easy-Builder-I-Onboarding-Freemium.pdf?swcfpc=1](https://easybuilder.com.br/wp-content/uploads/2025/01/Manual-Easy-Builder-I-Onboarding-Freemium.pdf?swcfpc=1)
+        
+          
+        
+    *   Etapa 4: Instale o Backup do Easy Builder
+        
+        Agora com o WordPress instalado você precisa instalar uma série de recursos no WordPress, pois por padrão ele vem “pelado”. Porém, deixe essa parte com a gente. Instale nosso Backup (instalação configurada) e não precisa se precoupar com MUITA coisa pois deixamos toda a parte técnica pronta para você.
+        
+          
+        
+        Instalar o backup do Easy Builder te poupa de configurar WordPress, Elementor e plugins na unha. Em dois cliques, tu já tá com tudo pronto, funcionando e sem erro. É o atalho pra começar a criar sem passar raiva.
+        
+          
+        
+        [_O link para baixar o backup está disponível dentro da nossa área de membros_](https://lastlink.com/f/easybuilder/classroom/3d27b21b-4a7e-4b09-99f8-861ea5a25e80/1c4941c8-4614-4b81-a00b-8798396e46c9)_:_
+        
+ </PERGUNTA 40>    
+
+ <PERGUNTA 41>   
+
+COMO INSTALAR O BACKUP DO EASY BUILDER?
+        
+        1️⃣ Vai no teu WordPress
+        
+        👉 Menu “Plugins” > “Adicionar Novo”
+        
+        👉 Clica em “Enviar plugin”
+        
+        👉 Escolhe o arquivo ZIP do plugin de importação que veio com o backup
+        
+        👉 Instala e ativa
+        
+        2️⃣ Depois de ativar, aparece a opção “Importar” na lateral esquerda do WordPress.
+        
+        👉 Clica em **Importar**
+        
+        3️⃣ Vai aparecer a opção de “Carregar Arquivo de Backup”
+        
+        👉 Escolhe o arquivo do backup (.wpress)
+        
+        👉 Arrasta e solta na área de upload
+        
+        👉 Aguarda terminar (pode levar alguns minutos)
+        
+        4️⃣ Após finalizar, ele vai te pedir pra logar de novo.
+        
+        👉 Usa o **usuário e senha que veio junto com o backup**
+        
+        5️⃣ Logou? Pronto, parceiro. O site tá configurado com tudo.
+        
+          
+        
+    *   Etapa 5: Painel do WP > Elementor > Ferramentas > Regenerar CSS e sincronizar biblioteca
+        
+        1. No painel de navegação à esquerda, coloque o mouse sobre o **“Elementor”** e depois clique em **“Ferramentas”** como no print abaixo.![](https://easybuilder.com.br/wp-content/uploads/2024/11/print-recriando-pacote.png)
+        2. Clique em **“Gerar arquivos e dados novamente”** e **“Sincronizar biblioteca”** e depois em _Salvar alterações_.![](https://easybuilder.com.br/wp-content/uploads/2024/11/print-tela-recriando.png)
+        
+        Pronto, agora você pode criar suas páginas utilizando o Easy Builder!
+            
+        
+*   Eu tenho, mas como saber se eu posso substituir?
+    
+    É simples: Se no wordpress atual existem coisas relevantes que você deseja manter.. se esse site está ativo, com páginas sendo utilizadas, mídias importantes ou qualquer coisa útil qual não pode ser perdida, não instale o backup. Caso contrário, instale pois será uma mão na roda.
+    
+
+  </PERGUNTA 41>   
+
+ <PERGUNTA 42>      
+
+COMO CRIAR E PERSONALIZAR SUA PÁGINA?
+  
+*   Etapa 6: Crie sua primeira página usando os recursos do Easy Builder
+    
+    Assista ao vídeo abaixo para aprender a criar páginas com o Easy Builder: https://www.youtube.com/watch?v=yV24uyf5YXA
+
+
+    Caso seja iniciante, assista o vídeo abaixo com Tudo que você precisa saber para usar o Easy Builder com maestria. Não só sobre Easy Builder você vai aprender, como também conceitos básicos de personalização e funcionamento.
+    
+    [https://www.youtube.com/watch?v=pNGtNLb5xy4](https://www.youtube.com/watch?v=pNGtNLb5xy4)
+    
+*   Etapa 7: Personalize as cores e fontes do seu site
+    
+    **COMO PERSONALIZAR CORES E FONTES NO EASY BUILDER EM 2 MINUTOS** 
+    
+    Tu já deve ter percebido que quando importa uma página pelo Easy Builder, tudo já vem responsivo. Massa. Mas se tu quiser deixar as fontes e cores com a cara do teu cliente (ou da tua marca), sem precisar mudar elemento por elemento, presta atenção:
+    
+    Primeiro, abre a página no Elementor normalmente. Aí no canto superior esquerdo, tu vai ver três tracinhos empilhados (tipo hambúrguer
+    
+    🍔). Clica neles e depois vai em **“Configurações do Site”**.
+    
+    1\. Cores Globais 🌈
+    
+    Em **Cores Globais**, tu vai ver quatro caixinhas: primária, secundária, texto e realce. Só clicar em cima e mudar a cor pra que quiser (pode arrastar na paleta ou colar o hex tipo `#FF0000`). Isso já altera em tudo que estiver usando essas cores globais. Sim, tudo mesmo.
+    
+    2\. Fontes Globais ✍️
+    
+    Agora, em **Fontes Globais**, o esquema é o mesmo. Tu pode escolher:
+    
+    *   A família da fonte (tipo Poppins, Bebas, etc)
+    *   O peso (fino, médio, grosso)
+    *   Tamanho, altura da linha, espaçamento…
+    
+    **Dica:** dá pra configurar diferente pra _desktop_, _tablet_ e _celular_ clicando no ícone de dispositivo no canto inferior esquerdo do editor. Digamos que a fonte ficou pequena no mobile? Vai lá no modo celular e aumenta só pra ele.
+    
+    Terminou de ajustar? Não esquece de clicar em **“Atualizar”** no cantinho. Espera a barrinha roxa carregar e pronto. Volta no site e tudo vai estar com as novas cores e fontes.
+    
+    **Importante:** essas mudanças só funcionam se os elementos estiverem usando as configurações globais. Se não tiverem, tu pode editar um por um — clicando no texto > aba “Estilo” > mudando fonte e cor direto ali.
+    
+    **Aviso:** em breve vai rolar uma opção pra importar as sessões _SEM_ essas configs globais, ou seja, vai colar a parada com o estilo exato do template — sem puxar cor nem fonte padrão do WP. Aguardem.
+    
+    **Quer ver isso na prática?** Tá aqui o link completo com o passo a passo em vídeo:
+    
+    [https://www.youtube.com/watch?v=YdBD9Zha4ms](https://www.youtube.com/watch?v=YdBD9Zha4ms)
+    
+*   Etapa 8: Crie as imagens da sua página
+    
+         
+    **Como não sabemos se você já manja de design, deixamos os principais conteúdos abaixo a sua disposição.**
+    
+    *   Como saber o tamanho para criar imagens de seções
+        
+        **COMO CRIAR IMAGENS DE FUNDO PERSONALIZADAS PARA AS SEÇÕES DO EASY BUILDER (sem enrolação, direto ao ponto)**
+        
+        Antes de sair querendo fazer imagem bonita no Figma ou Photoshop, o primeiro passo é montar sua seção no Elementor.
+        
+        **👉 Então faz assim:**
+        
+        *   Abre o Elementor
+        *   Copia e cola a seção que tu vai usar (_botão direito > colar de outro site > Ctrl + V_)
+        *   Altera os textos, as cores, a fonte global… deixa tudo redondinho e com a estrutura que tu quer.
+        
+        _💡 Exemplo:_ se for uma seção de benefícios, já muda o conteúdo e ajusta o layout antes de pensar na imagem de fundo.
+        
+        Beleza. Agora tu vai criar uma imagem pra ser usada como plano de fundo dessa seção. O tamanho dessa imagem precisa bater com a altura da seção que tu montou.
+        
+        🧮 **Como saber o tamanho?**
+        
+        **👉 Clica na seção > aba “Layout” > verifica o campo “Altura mínima”.**
+        
+        Digamos que tá em 875px. Pronto, esse é o valor da altura que tu vai usar na tua imagem.
+        
+        **📐 Agora cria um novo arquivo no Photoshop ou Figma** com essas dimensões:
+        
+        _1920 x 875 (1920 de largura, 875 de altura)_
+        
+        Sim, tu pode usar 800px de altura como base, mas o ideal é ajustar pro que tu realmente montou.
+        
+        **🎨 Cria a imagem** com os elementos visuais que tu quiser (cores, formas, personagens, etc.) e **salva/exporta no formato .webp** pra garantir desempenho.
+        
+        **📂 Pra converter a imagem em .webp**, tu pode usar ferramentas como Squoosh ou qualquer outro conversor de imagem confiável.
+        
+        Depois disso, volta no Elementor:
+        
+        **Clica na seção onde tu quer a imagem**
+        
+        Vai em _Estilo > Tipo de Fundo > Clássico_
+        
+        Envia a imagem .webp e marca a opção “Capa” pra que ela preencha a área toda.
+        
+        🔄 **E o Mobile?**
+        
+        No mobile a lógica é a mesma, mas **a imagem deve ser criada com largura de 1080px**. A altura depende da seção, então ajusta visualmente pra manter proporção e legibilidade.
+        
+        **👉 Tu pode duplicar a seção, esconder a original no mobile**, e aplicar a versão otimizada só pra celular (em _Avançado > Responsivo_).
+        
+        🛠️ **DICA EXTRA:**
+        
+        Se a altura da seção estiver bugada ou difícil de pegar (por causa de margens, paddings, etc.), tu pode:
+        
+        *   Puxar a setinha pra baixo pra ver o espaço real
+        *   Tirar um print da área visível
+        *   Criar a imagem com base nessa proporção
+        
+        **🧠 Lembra:** o Easy Builder não cria a imagem por ti. Ele organiza, estrutura, agiliza… mas o design visual é responsabilidade tua. Então cria com carinho. Um layout bom começa por uma imagem que encaixa certinho no espaço dela.
+        
+        **📺 Quer ver isso tudo com mouse mexendo, camada sendo montada e imagem subindo?** Assiste aqui:
+        
+        [https://www.youtube.com/watch?v=7pIbuzBIx98](https://www.youtube.com/watch?v=7pIbuzBIx98)
+
+ </PERGUNTA 42> 
+
+ <PERGUNTA 43> 
+
+
+COMO CRIAR IMAGENS DE FUNDO NO PHOTOSHOP?
+        
+        Essa e muitas outras aulas você encontra no módulo “Design & Personalizações” dentro da área de membros: [https://www.youtube.com/watch?v=bh0gjT2u6Cs](https://www.youtube.com/watch?v=bh0gjT2u6Cs)
+        
+    *   Mapa para encontrar conteúdos de design na área de membros:
+        
+        ![](https://t9007068676.p.clickup-attachments.com/t9007068676/8d1cce6f-099a-4047-a09b-42c43a353070/image.png)
+        
+        **Todos esses módulos falam de design e estão disponíveis na área de membros (LastLink)!**
+        
+        **Design & Personalizações:** Módulo disponível na área de membros com instruções básicas.
+        
+        **Mentorias Gravadas:** Aqui temos 2 mentorias gravadas interessantes:  “Processo Criativo” e “Análise de Páginas”. Ambas trazem conceitos essenciais tanto para iniciantes quanto para avançados.
+        
+        **Bônus Arsenal do Designer:** Nesse módulo você terá a caixa preta. Onde baixar imagens de qualidade, fontes, qual programa de edição usar em cada caso, como usar IA para gerar imagens (inclusive uma gratuita), e muito mais. Essencial para todos, principalmente para iniciantes.
+        
+        **Design Easy:** Nosso curso de design não só para Landing Pages mas também para logotipos, infoprodutos, redes sociais e muito mais. O forte aqui é o uso da IA para facilitar e otimizar o processo. Caso o seu plano não contemple esse treinamento, poderá adquirir separadamente com um valor especial para membros.
+        
+          
+        
+        Para assinar o Design Easy com desconto aperte aqui: [https://lastlink.com/p/C1E1DE8C0/checkout-payment](https://lastlink.com/p/C1E1DE8C0/checkout-payment)
+        
+*   Etapa 9: Ajuste o Responsivo (Tablet, Celular...)
+    
+    Isso não consigo te explicar em texto, mas temos um vídeo explicativo pra você: [https://www.youtube.com/watch?v=DI8\_3pnfVXs](https://www.youtube.com/watch?v=DI8_3pnfVXs)
+    
+*   Etapa 10: Defina a página criada como a página inicial
+    
+    Isso é fácil, em menos de 1 minuto você resolve. Basta assistir 52 segundo de tutorial: [https://www.youtube.com/watch?v=JXklrHxlNeo](https://www.youtube.com/watch?v=JXklrHxlNeo)
+
+ </PERGUNTA 43> 
+
+ <PERGUNTA 44> 
+
+COMO ASSINAR O DESIGN EASY COM DESCONTO?
+
+https://lastlink.com/p/C1E1DE8C0/checkout-payment
+
+ </PERGUNTA 44> 
+
+ <PERGUNTA 45>
+
+E SE OS TEMPLATES DO EASY BUILDER ESTIVEREM VINDO TODOS DESCONFIGURADOS?
+   
+    
+    Tu já deve ter percebido que quando importa uma página pelo Easy Builder, tudo já vem responsivo. Massa. Mas se tu quiser deixar as fontes e cores com a cara do teu cliente (ou da tua marca), sem precisar mudar elemento por elemento, presta atenção:
+    
+    Primeiro, abre a página no Elementor normalmente. Aí no canto superior esquerdo, tu vai ver três tracinhos empilhados (tipo hambúrguer
+    
+    🍔). Clica neles e depois vai em **“Configurações do Site”**.
+    
+    1\. Cores Globais 🌈
+    
+    Em **Cores Globais**, tu vai ver quatro caixinhas: primária, secundária, texto e realce. Só clicar em cima e mudar a cor pra que quiser (pode arrastar na paleta ou colar o hex tipo `#FF0000`). Isso já altera em tudo que estiver usando essas cores globais. Sim, tudo mesmo.
+    
+    2\. Fontes Globais ✍️
+    
+    Agora, em **Fontes Globais**, o esquema é o mesmo. Tu pode escolher:
+    
+    *   A família da fonte (tipo Poppins, Bebas, etc)
+    *   O peso (fino, médio, grosso)
+    *   Tamanho, altura da linha, espaçamento…
+    
+    **Dica:** dá pra configurar diferente pra _desktop_, _tablet_ e _celular_ clicando no ícone de dispositivo no canto inferior esquerdo do editor. Digamos que a fonte ficou pequena no mobile? Vai lá no modo celular e aumenta só pra ele.
+    
+    Terminou de ajustar? Não esquece de clicar em **“Atualizar”** no cantinho. Espera a barrinha roxa carregar e pronto. Volta no site e tudo vai estar com as novas cores e fontes.
+    
+    **Importante:** essas mudanças só funcionam se os elementos estiverem usando as configurações globais. Se não tiverem, tu pode editar um por um — clicando no texto > aba “Estilo” > mudando fonte e cor direto ali.
+    
+    **Aviso:** em breve vai rolar uma opção pra importar as sessões _SEM_ essas configs globais, ou seja, vai colar a parada com o estilo exato do template — sem puxar cor nem fonte padrão do WP. Aguardem.
+    
+    **Quer ver isso na prática?** Tá aqui o link completo com o passo a passo em vídeo:
+    
+    [](https://www.youtube.com/watch?v=YdBD9Zha4ms)
+    
+ </PERGUNTA 45>
+
+ <PERGUNTA 46>
+
+COMO USAR O COFRE DE RECURSOS PESSOAL DO EASY BUILDER?
+    
+Sempre enviar o tutorial em vídeo:
+    [https://www.youtube.com/watch?v=22CGB8Yr98s    
+Explicação em texto:
+    “Meus Recursos” é tipo o **cofre de ouro** do Easy Builder. É lá onde tu guarda tudo o que criou, ajustou ou curtiu: seções, botões, páginas inteiras, códigos CSS... tudo salvo na nuvem, organizado por pastas, pronto pra ser usado de novo com dois cliques. Em vez de refazer o mesmo trampo mil vezes, tu salva uma vez e reutiliza pra sempre. É produtividade no modo hacker.
+    
+    *   Instrução em Texto:
+        
+        
+        Se liga nessa funcionalidade cabulosa que poucos usam direito: a aba **Meus Recursos** do Easy Builder. É ali que tu guarda tudo que já criou — sessões, botões, imagens, páginas inteiras, códigos CSS — pra usar de novo em qualquer projeto, com 2 cliques.
+        
+        👉 Pra acessar:
+        
+        Clica no ícone do Easy Builder no navegador e vai direto em **Meus Recursos** (é a primeira opção da barra lateral).
+        
+        Aí começa a magia. Tu pode criar pastas pra organizar tudo. Exemplo:
+        
+        1. Clica em **"Adicionar Pasta"**
+        2. Nomeia como quiser, tipo “Sessões”, “Imagens Flutuantes”, “Meus Botões”, “Códigos CSS”
+        
+        Dentro de cada pasta, tu ainda pode criar subpastas. Exemplo:
+        
+        > Pasta: Sessões
+        > 
+        > Subpasta: Sessão de Bio
+        
+        ✨ **COMO SALVAR UM ELEMENTO (como um botão, ícone ou sessão):**
+        
+        3. No Elementor, seleciona o elemento desejado
+        4. Clica com o **botão direito > Copiar**
+        5. Antes de colar, **limpa tua área de transferência**:
+            *   Pressiona `Windows + V` (no Windows) ou `Command + Shift + V` (Mac)
+            *   Apaga tudo clicando em “Limpar tudo”
+        6. Volta no Easy Builder > Meus Recursos > entra na pasta certa
+        7. Clica em **“Adicionar Componente”**
+        8. Nomeia esse recurso, adiciona uma imagem representativa (print do elemento, se quiser)
+        9. No campo indicado, aperta **Ctrl + V** (ou Command + V no Mac)
+        10. Clica em **"Criar Componente"**
+        
+        Pronto. Esse elemento tá salvo pra sempre.
+        
+        Quando quiser reutilizar:
+        
+        > Vai em Meus Recursos > Clica em **Copiar** > Volta pro Elementor > Botão direito onde quiser colar > **Colar de outro site** > Ctrl + V
+        
+        🧱 **QUER SALVAR UMA SESSÃO COMPLETA? MESMO ESQUEMA:**
+        
+        11. Seleciona a sessão (clicando na borda azul que envolve toda ela)
+        12. Botão direito > Copiar
+        13. Limpa a área de transferência
+        14. Volta pro Easy Builder > Cria ou entra na pasta “Sessões”
+        15. Adiciona um componente > cola > salva
+        
+        📄 **QUER SALVAR UMA PÁGINA INTEIRA COMO TEMPLATE?**
+        
+        16. Desce até o final da página no Elementor
+        17. Botão direito na última seção > **“Copiar todo o conteúdo”**
+        18. Limpa o histórico de copiar (`Windows + V`)
+        19. Vai em Meus Recursos > Cria uma pasta “Páginas de Captura” (ou o nome que quiser)
+        20. Cria um componente com o nome da página > cola > cria
+        
+        👉 Depois, pode usar essa página em outros projetos sem refazer nada.
+        
+        🧬 **QUER SALVAR UM CÓDIGO (tipo um CSS de efeito)?**
+        
+        21. Copia o código completo
+        22. Vai em Meus Recursos > Cria pasta “Códigos”
+        23. Cria subpasta “Scroll”, “Glow”, “Botões” etc
+        24. Adiciona um componente > nomeia > cola o código no campo > salva
+        
+        Quando for usar:
+        
+        > Vai no elemento desejado (ex: botão) > Avançado > CSS Personalizado > cola o código
+        
+        📦 Isso elimina a necessidade de bloco de notas, Trello, Google Drive bagunçado...
+        
+        Agora tudo que tu cria, personaliza ou acha pela internet, tu pode guardar direto no Easy Builder.
+        
+        📺 Quer ver com print, clique e exemplo? Tá aqui o vídeo completo: [https://www.youtube.com/watch?v=22CGB8Yr98s](https://www.youtube.com/watch?v=22CGB8Yr98s)
+        
+
+ </PERGUNTA 46>

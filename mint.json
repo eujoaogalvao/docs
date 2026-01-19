@@ -1,0 +1,130 @@
+{
+  "$schema": "https://mintlify.com/schema.json",
+  "name": "Easy Builder Docs",
+  "logo": {
+    "dark": "/logo/light.svg",
+    "light": "/logo/dark.svg"
+  },
+  "favicon": "/favicon.svg",
+  "colors": {
+    "primary": "#A6CF00",
+    "light": "#CCFE02",
+    "dark": "#A6CF00",
+    "background": {
+      "light": "#ffffff",
+      "dark": "#08090a"
+    },
+    "anchors": {
+      "from": "#A6CF00",
+      "to": "#CCFE02"
+    }
+  },
+  "topbarLinks": [
+    {
+      "name": "Suporte",
+      "url": "https://wa.me/5566996255253"
+    }
+  ],
+  "topbarCtaButton": {
+    "name": "Assinar Easy Builder",
+    "url": "https://easybuilder.com.br"
+  },
+  "tabs": [
+    {
+      "name": "Inteligência Artificial",
+      "url": "inteligencia-artificial"
+    },
+    {
+      "name": "Resolução de Problemas",
+      "url": "resolucao-problemas"
+    },
+    {
+      "name": "FAQ",
+      "url": "faq"
+    }
+  ],
+  "anchors": [
+    {
+      "name": "Área de Membros",
+      "icon": "graduation-cap",
+      "url": "https://hotmart.com/en/club/easybuilder"
+    },
+    {
+      "name": "Instalar Extensão",
+      "icon": "puzzle-piece",
+      "url": "https://link.easybuilder.com.br/instalar-eb"
+    },
+    {
+      "name": "WhatsApp Comercial",
+      "icon": "whatsapp",
+      "url": "https://wa.me/5566999049672"
+    }
+  ],
+  "navigation": [
+    {
+      "group": "Guia Obrigatório Inicial",
+      "pages": [
+        "primeiros-passos/configuracao",
+        "funcionalidades/backup-configurado",
+        "guias-perfil/iniciante-wordpress",
+        "guias-perfil/usuario-pratico"
+      ]
+    },
+    {
+      "group": "Guias Extras",
+      "pages": [
+        "primeiros-passos/workflows-avancados",
+        "primeiros-passos/boas-praticas",
+        "primeiros-passos/glossario",
+        "links-uteis"
+      ]
+    },
+    {
+      "group": "Funcionalidades",
+      "pages": [
+        "funcionalidades/meus-recursos",
+        "funcionalidades/easy-sales",
+        "funcionalidades/design-easy"
+      ]
+    },
+    {
+      "group": "Inteligência Artificial",
+      "pages": [
+        "inteligencia-artificial/introducao",
+        "inteligencia-artificial/easy-copy",
+        "inteligencia-artificial/easy-coder",
+        "inteligencia-artificial/copy-builder",
+        "inteligencia-artificial/revisao-copys",
+        "inteligencia-artificial/diretor-criativo",
+        "inteligencia-artificial/analisador-critico",
+        "inteligencia-artificial/webson-vendedor"
+      ]
+    },
+    {
+      "group": "FAQ",
+      "pages": [
+        "faq/perguntas-frequentes"
+      ]
+    },
+    {
+      "group": "Resolução de Problemas",
+      "pages": [
+        "resolucao-problemas/introducao",
+        "resolucao-problemas/erro-colar-elementos",
+        "resolucao-problemas/erro-importacao-icones",
+        "resolucao-problemas/erro-500",
+        "resolucao-problemas/limite-memoria",
+        "resolucao-problemas/templates-desconfigurados"
+      ]
+    }
+  ],
+  "footerSocials": {
+    "x": "https://x.com/easybuilder_",
+    "instagram": "https://www.instagram.com/easybuilder_",
+    "youtube": "https://www.youtube.com/@Easy.Builder"
+  },
+  "modeToggle": {
+    "default": "light",
+    "isHidden": true
+  }
+}
