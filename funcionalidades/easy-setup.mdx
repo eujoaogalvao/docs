@@ -1,0 +1,878 @@
+---
+title: 'Easy Setup - Plugin de Diagnóstico'
+description: 'Plugin que verifica e corrige automaticamente configurações do WordPress para Easy Builder'
+icon: 'stethoscope'
+---
+
+## O Que é o Easy Setup?
+
+**Easy Setup** é um plugin WordPress que funciona como um **médico do seu site** - ele diagnostica problemas e corrige automaticamente configurações necessárias para o Easy Builder funcionar 100%.
+
+<Info>
+  **Instalou WordPress manualmente?** Easy Setup verifica se TUDO está configurado corretamente para usar Easy Builder sem erros!
+</Info>
+
+## Por Que Usar?
+
+<CardGroup cols={2}>
+  <Card title="Diagnóstico Automático" icon="stethoscope">
+    Verifica 9 configurações essenciais em segundos
+  </Card>
+
+  <Card title="Correção com 1 Clique" icon="wand-magic-sparkles">
+    Corrige problemas automaticamente (sem mexer em código!)
+  </Card>
+
+  <Card title="Evita Erros" icon="shield-check">
+    Previne erros de importação, ícones, cores e fontes
+  </Card>
+
+  <Card title="Economiza Tempo" icon="clock">
+    Pula 30+ minutos de configuração manual
+  </Card>
+</CardGroup>
+
+<Check>
+  **Alternativa ao Backup:** Se você NÃO quer usar o Backup Configurado, use Easy Setup para garantir que seu WordPress está pronto!
+</Check>
+
+---
+
+## Como Baixar
+
+<Card title="Download Easy Setup" icon="download" href="https://drive.google.com/drive/folders/1A9KIl5o-6dWmPzULu4c6CLo8T2GSeGSr?usp=sharing">
+  Acesse a pasta do Google Drive e baixe o plugin (.zip)
+</Card>
+
+---
+
+## Como Instalar
+
+<Steps>
+  <Step title="1. Baixe o plugin">
+    Acesse o link acima e baixe o arquivo `.zip`
+  </Step>
+
+  <Step title="2. Instale no WordPress">
+    **WordPress → Plugins → Adicionar Novo → Enviar Plugin**
+
+    - Clique em "Escolher arquivo"
+    - Selecione o `.zip` do Easy Setup
+    - Clique em "Instalar Agora"
+  </Step>
+
+  <Step title="3. Ative o plugin">
+    Após instalação, clique em **"Ativar Plugin"**
+  </Step>
+
+  <Step title="4. Acesse o painel">
+    **WordPress → Easy Setup** (menu lateral)
+
+    Painel de diagnóstico vai abrir!
+  </Step>
+</Steps>
+
+<Warning>
+  **Plugin se auto-deleta em 6 horas!** Após corrigir tudo, o plugin se remove automaticamente do seu WordPress. É temporário, só para setup inicial!
+</Warning>
+
+---
+
+## O Que o Plugin Verifica?
+
+### Status da Verificação (9 Checagens)
+
+<AccordionGroup>
+  <Accordion title="1. Plugin Elementor" icon="e">
+    **Verifica:**
+    - ✅ Elementor está instalado
+    - ✅ Elementor está ativo
+    - ✅ Elementor está atualizado
+
+    **Se encontrar problema:**
+    - Botão **"Instalar Elementor"** (se não instalado)
+    - Botão **"Ativar Elementor"** (se desativado)
+    - Botão **"Atualizar Elementor"** (se desatualizado)
+
+    **Correção:** 1 clique!
+  </Accordion>
+
+  <Accordion title="2. Elementor Pro / ProElements" icon="crown">
+    **Verifica:**
+    - ✅ Elementor PRO OU ProElements está instalado
+    - ✅ Está ativo
+
+    **Se encontrar problema:**
+    - Botão **"Instalar ProElements"** (baixa e instala automaticamente!)
+
+    **Por quê importa:** Easy Builder precisa de funcionalidades PRO para importar templates complexos
+
+    <Info>
+      **ProElements = Grátis!** Plugin faz download automático de [ProElements.org](https://proelements.org)
+    </Info>
+  </Accordion>
+
+  <Accordion title="3. Experimento: Contêineres Flexbox" icon="box">
+    **Verifica:**
+    - ✅ Recurso "Container" do Elementor está ativo
+
+    **O que é:** Sistema moderno de layout do Elementor (substitui Section/Column)
+
+    **Se encontrar problema:**
+    - Botão **"Ativar Contêineres"**
+
+    **Por quê importa:** Templates modernos do Easy Builder usam Containers!
+  </Accordion>
+
+  <Accordion title="4. Experimento: Elementos Aninhados" icon="layer-group">
+    **Verifica:**
+    - ✅ Recurso "Nested Elements" do Elementor está ativo
+
+    **O que é:** Permite elementos dentro de elementos (aninhamento)
+
+    **Se encontrar problema:**
+    - Botão **"Ativar Elementos Aninhados"**
+
+    **Por quê importa:** Templates avançados usam widgets aninhados
+  </Accordion>
+
+  <Accordion title="5. Tema Hello Elementor Ativo" icon="brush">
+    **Verifica:**
+    - ✅ Tema "Hello Elementor" está ativo
+
+    **Por quê importa:**
+    - Tema MAIS leve para Elementor
+    - Zero conflitos
+    - Perfeito para Easy Builder
+
+    **Se encontrar problema:**
+    - Botão **"Ativar Hello Theme"** (instala e ativa automaticamente!)
+
+    **Alternativa:** Qualquer tema leve serve, mas Hello é o recomendado
+  </Accordion>
+
+  <Accordion title="6. Limite de Memória PHP (mín. 512M)" icon="memory">
+    **Verifica:**
+    - ✅ `memory_limit` ≥ 512M
+
+    **Por quê importa:** Templates grandes precisam de memória para importar
+
+    **Se encontrar problema:**
+    - ❌ **NÃO corrige automaticamente** (precisa acesso ao servidor)
+    - ✅ Mostra botão **"Ver Tutorial"** linkando para solução
+
+    **Como corrigir:** [Ver guia completo](/resolucao-problemas/limite-memoria)
+  </Accordion>
+
+  <Accordion title="7. Max Input Vars PHP (mín. 100.000)" icon="list">
+    **Verifica:**
+    - ✅ `max_input_vars` ≥ 100000
+
+    **O que é:** Quantidade de campos que podem ser enviados de uma vez
+
+    **Por quê importa:** Templates têm muitos widgets (muitas variáveis!)
+
+    **Se encontrar problema:**
+    - Mostra **tutorial** de como aumentar no cPanel
+
+    **Como corrigir:** [Ver guia completo](/resolucao-problemas/limite-memoria)
+  </Accordion>
+
+  <Accordion title="8. Post Max Size PHP (mín. 128M)" icon="upload">
+    **Verifica:**
+    - ✅ `post_max_size` ≥ 128M
+
+    **O que é:** Tamanho máximo de dados enviados
+
+    **Por quê importa:** Importar template grande envia muitos dados
+
+    **Se encontrar problema:**
+    - Mostra **tutorial** de como aumentar
+
+    **Como corrigir:** [Ver guia completo](/resolucao-problemas/limite-memoria)
+  </Accordion>
+
+  <Accordion title="9. Tempo Máx. de Execução PHP (mín. 180s)" icon="stopwatch">
+    **Verifica:**
+    - ✅ `max_execution_time` ≥ 180 segundos
+
+    **O que é:** Tempo máximo que script pode rodar
+
+    **Por quê importa:** Importação de template demora (precisa de tempo!)
+
+    **Se encontrar problema:**
+    - Mostra **orientação** de como corrigir
+
+    **Como corrigir:** [Ver guia completo](/resolucao-problemas/limite-memoria)
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Como Usar o Plugin
+
+### Interface Visual
+
+Ao acessar **WordPress → Easy Setup**, você verá:
+
+**Lista de Verificações:**
+```
+✅ Plugin Elementor                          [OK]
+✅ Elementor Pro / ProElements               [OK]
+✅ Experimento: Contêineres Flexbox          [OK]
+✅ Experimento: Elementos Aninhados          [OK]
+✅ Tema Hello Elementor Ativo                [OK]
+⚠️ Limite de Memória PHP (mín. 512M)        [ATENÇÃO] [Ver Tutorial]
+⚠️ Max Input Vars PHP (mín. 100.000)        [ATENÇÃO] [Ver Tutorial]
+✅ Post Max Size PHP (mín. 128M)             [OK]
+✅ Tempo Máx. de Execução PHP (mín. 180s)    [OK]
+```
+
+### Sistema de Cores
+
+<CardGroup cols={3}>
+  <Card title="✅ Verde (OK)" icon="circle-check">
+    Configuração correta!
+
+    Nada a fazer.
+  </Card>
+
+  <Card title="⚠️ Amarelo (Atenção)" icon="triangle-exclamation">
+    Precisa correção
+
+    **Clique no botão** para corrigir ou ver tutorial
+  </Card>
+
+  <Card title="❌ Vermelho (Erro)" icon="circle-xmark">
+    Problema crítico
+
+    **Corrija imediatamente** antes de usar Easy Builder!
+  </Card>
+</CardGroup>
+
+---
+
+## Funcionalidades Detalhadas
+
+### 1. Correção Automática (Com 1 Clique)
+
+**O plugin corrige automaticamente:**
+
+<Steps>
+  <Step title="Instalar Elementor">
+    Se Elementor não está instalado, plugin baixa e instala automaticamente!
+
+    **Fonte:** WordPress.org (oficial)
+  </Step>
+
+  <Step title="Ativar Elementor">
+    Se instalado mas inativo, ativa com 1 clique
+  </Step>
+
+  <Step title="Atualizar Elementor">
+    Se versão antiga, atualiza para mais recente
+  </Step>
+
+  <Step title="Instalar ProElements">
+    **DESTAQUE:** Baixa ProElements automaticamente de [ProElements.org](https://proelements.org)!
+
+    Você NÃO precisa:
+    - Achar site
+    - Baixar manualmente
+    - Enviar pelo WordPress
+
+    Plugin faz TUDO sozinho!
+  </Step>
+
+  <Step title="Ativar Contêineres Flexbox">
+    Ativa experimento moderno do Elementor
+
+    **Código:**
+    ```php
+    update_option('elementor_experiment-container', 'active');
+    ```
+  </Step>
+
+  <Step title="Ativar Elementos Aninhados">
+    Ativa recurso de aninhamento
+
+    Essencial para templates avançados!
+  </Step>
+
+  <Step title="Instalar e Ativar Hello Theme">
+    **Destaque #2:** Baixa e ativa Hello Elementor automaticamente!
+
+    Tema mais leve e compatível
+  </Step>
+</Steps>
+
+### 2. Orientações para Correção Manual
+
+**Para configurações PHP que não podem ser corrigidas automaticamente:**
+
+<CardGroup cols={2}>
+  <Card title="Mostra Tutorial" icon="book">
+    Link direto para página de resolução de problemas
+
+    Guia passo a passo de como corrigir no cPanel
+  </Card>
+
+  <Card title="Valores Recomendados" icon="gauge">
+    Mostra o valor IDEAL para cada configuração PHP:
+
+    - Memory Limit: 512M+
+    - Max Input Vars: 100.000+
+    - Post Max Size: 128M+
+    - Max Execution Time: 180s+
+  </Card>
+</CardGroup>
+
+---
+
+## Recurso Especial: Auto-Delete em 6 Horas
+
+<Warning>
+  **Plugin temporário!** Easy Setup se auto-deleta 6 horas após ativação.
+</Warning>
+
+### Por Quê Auto-Delete?
+
+**Motivo:** Plugin é para SETUP INICIAL apenas!
+
+Depois que WordPress está configurado, plugin não é mais necessário e seria só "peso morto" no servidor.
+
+### Como Funciona
+
+<Steps>
+  <Step title="Instalou e ativou plugin">
+    Contador de 6 horas começa
+  </Step>
+
+  <Step title="Você usa para configurar">
+    Corrige tudo que precisa
+
+    Verificações ficam verdes ✅
+  </Step>
+
+  <Step title="Após 6 horas">
+    Plugin SE DESATIVA automaticamente
+
+    E SE DELETA do servidor!
+  </Step>
+</Steps>
+
+**No painel do plugin você vê:**
+```
+⏱️ Este plugin será removido automaticamente em 4 horas e 23 minutos.
+```
+
+<Info>
+  **Quer manter ativo?** Basta desativar e reativar (contador reinicia para 6 horas)
+</Info>
+
+---
+
+## Fluxo de Uso Recomendado
+
+<Steps>
+  <Step title="1. Instale WordPress novo">
+    Ou use WordPress existente que precisa configurar
+  </Step>
+
+  <Step title="2. Instale Easy Setup">
+    Baixe do Google Drive → Envie no WordPress → Ative
+  </Step>
+
+  <Step title="3. Acesse painel">
+    WordPress → Easy Setup (menu lateral)
+
+    Veja lista de verificações
+  </Step>
+
+  <Step title="4. Corrija tudo que está vermelho/amarelo">
+    **Clique nos botões "Corrigir"** para correção automática
+
+    **Ou siga tutoriais** para configurações PHP
+  </Step>
+
+  <Step title="5. Confirme tudo verde ✅">
+    Todas as 9 verificações devem estar OK!
+  </Step>
+
+  <Step title="6. Instale Easy Builder (extensão)">
+    Agora sim, instale extensão do navegador:
+
+    [Instalar Easy Builder](https://link.easybuilder.com.br/instalar-eb)
+  </Step>
+
+  <Step title="7. Teste importação">
+    Crie página → Editar com Elementor → Easy Builder → Copiar sessão → Colar
+
+    **Funcionou?** Setup completo! ✅
+  </Step>
+
+  <Step title="8. Deixe plugin se auto-deletar">
+    Após 6 horas, ele sai sozinho
+
+    Ou desative manualmente se quiser
+  </Step>
+</Steps>
+
+---
+
+## Comparação: Backup vs Easy Setup
+
+<Tabs>
+  <Tab title="Backup Configurado (Recomendado)">
+    **O que é:** WordPress completo pronto para uso
+
+    **Vantagens:**
+    - ✅ TUDO já configurado (plugins, tema, otimizações)
+    - ✅ 1 instalação = tudo pronto
+    - ✅ Zero configuração manual
+    - ✅ Inclui WP Rocket, LiteSpeed, proteções
+    - ✅ Economiza 45+ minutos
+
+    **Desvantagem:**
+    - ❌ Substitui WordPress existente (não é upgrade!)
+
+    **Quando usar:**
+    - Começando WordPress do ZERO
+    - Quer velocidade máxima de setup
+    - Não tem WordPress configurado ainda
+
+    [Ver Backup Configurado →](/funcionalidades/backup-configurado)
+  </Tab>
+
+  <Tab title="Easy Setup (Este Plugin)">
+    **O que é:** Plugin de diagnóstico e correção
+
+    **Vantagens:**
+    - ✅ Funciona em WordPress EXISTENTE
+    - ✅ Não apaga nada
+    - ✅ Diagnóstico visual claro
+    - ✅ Correção automática de 7 itens
+    - ✅ Se auto-deleta (não fica ocupando espaço)
+
+    **Desvantagens:**
+    - ❌ Não instala outros plugins (só Elementor/ProElements/Hello)
+    - ❌ Configurações PHP precisam ser manuais
+    - ❌ Economiza "só" 30 minutos (vs 45 do backup)
+
+    **Quando usar:**
+    - Já tem WordPress com conteúdo
+    - Não quer reinstalar tudo
+    - Quer diagnóstico do que está errado
+    - Precisa ajustar WordPress existente
+  </Tab>
+</Tabs>
+
+<Tip>
+  **Começando do zero?** Use **Backup Configurado** (mais completo!)
+
+  **Já tem WordPress?** Use **Easy Setup** (diagnóstico e correção!)
+</Tip>
+
+---
+
+## Detalhes Técnicos
+
+### O Que o Plugin Faz "Por Baixo dos Panos"
+
+<AccordionGroup>
+  <Accordion title="Verificação de Plugins" icon="magnifying-glass">
+    **Código:**
+    ```php
+    // Verifica se Elementor existe na lista de plugins
+    $installed_plugins = get_plugins();
+    if (!isset($installed_plugins['elementor/elementor.php'])) {
+      return 'not_installed';
+    }
+
+    // Verifica se está ativo
+    if (!is_plugin_active('elementor/elementor.php')) {
+      return 'not_active';
+    }
+    ```
+
+    **Ação:** Lista todos plugins, verifica status
+  </Accordion>
+
+  <Accordion title="Instalação Automática de ProElements" icon="download">
+    **Fluxo:**
+    1. Faz request para ProElements.org
+    2. Baixa arquivo ZIP
+    3. Descompacta na pasta `/wp-content/plugins/`
+    4. Ativa plugin automaticamente
+
+    **Vantagem:** Usuário NÃO precisa fazer nada!
+  </Accordion>
+
+  <Accordion title="Ativação de Experimentos" icon="flask">
+    **Código:**
+    ```php
+    // Ativa Container
+    update_option('elementor_experiment-container', 'active');
+
+    // Ativa Nested Elements
+    update_option('elementor_experiment-nested-elements', 'active');
+
+    // Regenera CSS do Elementor
+    \Elementor\Plugin::instance()->files_manager->clear_cache();
+    ```
+
+    **Resultado:** Recursos ativados + cache limpo = funciona imediatamente!
+  </Accordion>
+
+  <Accordion title="Verificação de Limites PHP" icon="server">
+    **Código:**
+    ```php
+    // Pega limite de memória
+    $memory_limit = ini_get('memory_limit');
+
+    // Converte para bytes (512M = 536870912 bytes)
+    $memory_bytes = ebs_convert_to_bytes($memory_limit);
+
+    // Compara com mínimo recomendado
+    return $memory_bytes >= 536870912; // 512M
+    ```
+
+    **Nota:** Plugin APENAS verifica, não altera (precisa permissões de servidor)
+  </Accordion>
+
+  <Accordion title="Timer de Auto-Delete" icon="clock">
+    **Como funciona:**
+    1. Ao ativar, salva timestamp atual: `time()`
+    2. Agenda evento WordPress: `wp_schedule_single_event(time() + 21600, 'ebs_auto_delete_event')`
+    3. Após 6h (21600 segundos), evento dispara
+    4. Plugin se desativa
+    5. Plugin se deleta completamente
+
+    **Código:**
+    ```php
+    function ebs_plugin_activation() {
+      update_option('ebs_activation_time', time());
+      wp_schedule_single_event(time() + 21600, 'ebs_auto_delete_event');
+    }
+    ```
+
+    **Contador regressivo:** Interface mostra quanto tempo falta
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Código de Exemplo: O Que Plugin Gera
+
+### Configurações que Plugin Ativa
+
+**No banco de dados WordPress (wp_options):**
+
+```sql
+-- Ativa Containers
+UPDATE wp_options
+SET option_value = 'active'
+WHERE option_name = 'elementor_experiment-container';
+
+-- Ativa Nested Elements
+UPDATE wp_options
+SET option_value = 'active'
+WHERE option_name = 'elementor_experiment-nested-elements';
+
+-- Marca setup como finalizado
+INSERT INTO wp_options (option_name, option_value)
+VALUES ('ebs_setup_finalized', '1');
+```
+
+**Ações que dispara:**
+```php
+// Limpa cache do Elementor
+\Elementor\Plugin::instance()->files_manager->clear_cache();
+
+// Regenera arquivos CSS
+\Elementor\Plugin::instance()->files_manager->regenerate_files();
+
+// Sincroniza biblioteca de templates
+\Elementor\Core\Common\Modules\Connect\Apps\Library::instance()->sync_library();
+```
+
+---
+
+## Checklist Final (Tudo Verde!)
+
+Quando TODAS as verificações estiverem ✅ (verdes), você está pronto:
+
+<Steps>
+  <Step title="✅ Elementor instalado e atualizado">
+    Versão mais recente ativa
+  </Step>
+
+  <Step title="✅ ProElements ou Elementor PRO ativo">
+    Funcionalidades PRO disponíveis
+  </Step>
+
+  <Step title="✅ Contêineres Flexbox ativo">
+    Sistema moderno de layout habilitado
+  </Step>
+
+  <Step title="✅ Elementos Aninhados ativo">
+    Aninhamento de widgets funcionando
+  </Step>
+
+  <Step title="✅ Hello Theme ativo">
+    Tema leve e otimizado
+  </Step>
+
+  <Step title="✅ Memory Limit ≥ 512M">
+    Memória suficiente para importações
+  </Step>
+
+  <Step title="✅ Max Input Vars ≥ 100.000">
+    Variáveis suficientes para templates complexos
+  </Step>
+
+  <Step title="✅ Post Max Size ≥ 128M">
+    Tamanho de post adequado
+  </Step>
+
+  <Step title="✅ Max Execution Time ≥ 180s">
+    Tempo suficiente para importações
+  </Step>
+</Steps>
+
+<Check>
+  **Tudo verde = WordPress 100% pronto para Easy Builder!** Agora é só usar!
+</Check>
+
+---
+
+## Problemas Comuns
+
+<AccordionGroup>
+  <Accordion title="Plugin não aparece no menu" icon="eye-slash">
+    **Causa:** Plugin não está ativo
+
+    **Solução:**
+    1. WordPress → Plugins
+    2. Procure "Easy Setup"
+    3. Clique em "Ativar"
+  </Accordion>
+
+  <Accordion title="Botão 'Corrigir' não funciona" icon="hand-pointer">
+    **Causas possíveis:**
+    - Permissões de arquivo incorretas
+    - Hospedagem bloqueando instalação automática
+
+    **Solução:**
+    1. Tente novamente
+    2. Se persistir, corrija manualmente:
+       - [Instalar Elementor manualmente](/primeiros-passos/configuracao)
+       - [Baixar ProElements](https://proelements.org)
+  </Accordion>
+
+  <Accordion title="PHP warnings aparecem em vermelho" icon="triangle-exclamation">
+    **Causa:** Limites de PHP da hospedagem muito baixos
+
+    **Solução:**
+    1. Acesse cPanel da hospedagem
+    2. MultiPHP INI Editor
+    3. Aumente valores conforme [tutorial completo](/resolucao-problemas/limite-memoria)
+
+    **Ou:** Entre em contato com suporte da hospedagem
+  </Accordion>
+
+  <Accordion title="Plugin sumiu antes de 6 horas" icon="clock">
+    **Causa:** Você pode ter desativado acidentalmente
+
+    **Solução:** Reinstale (não tem problema!)
+
+    **Nota:** Se já corrigiu tudo, não precisa mais do plugin!
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Quando NÃO Usar Easy Setup
+
+<Warning>
+  **Não use Easy Setup se:**
+
+  - ✅ Você já instalou o **Backup Configurado** (já vem tudo pronto!)
+  - ✅ Seu WordPress JÁ está funcionando perfeitamente com Easy Builder
+  - ✅ Todas configurações já estão corretas
+
+  Plugin é para SETUP INICIAL ou DIAGNÓSTICO de problemas!
+</Warning>
+
+---
+
+## Segurança e Privacidade
+
+<CardGroup cols={2}>
+  <Card title="Código Open Source" icon="code">
+    Plugin pode ser auditado completamente
+
+    Todo código está disponível para inspeção
+  </Card>
+
+  <Card title="Não Coleta Dados" icon="shield-check">
+    Plugin NÃO envia dados para fora
+
+    Tudo roda localmente no seu WordPress
+  </Card>
+
+  <Card title="Auto-Delete Seguro" icon="trash">
+    Remove-se completamente após 6h
+
+    Zero rastros no banco de dados
+  </Card>
+
+  <Card title="Aprovado pela Equipe" icon="certificate">
+    Criado pela equipe Easy Builder
+
+    Testado em milhares de instalações
+  </Card>
+</CardGroup>
+
+---
+
+## Alternativas
+
+<Tabs>
+  <Tab title="Opção 1: Backup Configurado">
+    **Melhor para:** WordPress DO ZERO
+
+    **Vantagens:**
+    - TUDO configurado (plugins, tema, otimizações)
+    - 1 instalação = tudo funciona
+    - Inclui WP Rocket, proteções, etc
+
+    **Como usar:** [Ver guia completo](/funcionalidades/backup-configurado)
+  </Tab>
+
+  <Tab title="Opção 2: Easy Setup (Este)">
+    **Melhor para:** WordPress EXISTENTE
+
+    **Vantagens:**
+    - Não apaga conteúdo existente
+    - Diagnóstico visual
+    - Corrige automaticamente
+
+    **Como usar:** Esta página!
+  </Tab>
+
+  <Tab title="Opção 3: Manual">
+    **Melhor para:** Quem prefere controle total
+
+    **Processo:**
+    1. Seguir [Configuração Inicial](/primeiros-passos/configuracao)
+    2. Instalar plugins manualmente
+    3. Configurar PHP no cPanel
+    4. Ativar experimentos
+
+    **Desvantagem:** Demora mais (45+ minutos)
+  </Tab>
+</Tabs>
+
+---
+
+## Perguntas Frequentes
+
+<AccordionGroup>
+  <Accordion title="Easy Setup é obrigatório?" icon="circle-question">
+    **NÃO!** É opcional.
+
+    **Alternativas:**
+    - Backup Configurado (mais completo)
+    - Configuração manual (mais controle)
+
+    **Quando usar:** Diagnóstico rápido ou ajustar WordPress existente
+  </Accordion>
+
+  <Accordion title="Posso desativar antes de 6 horas?" icon="power-off">
+    **SIM!** Você pode desativar quando quiser.
+
+    **Como:** WordPress → Plugins → Easy Setup → Desativar
+
+    **Resultado:** Plugin para de funcionar mas não se deleta (só deleta após 6h se ATIVO)
+  </Accordion>
+
+  <Accordion title="O que acontece se reativar após desativar?" icon="arrows-rotate">
+    **Contador reinicia!** Você ganha mais 6 horas.
+
+    **Exemplo:**
+    - Ativou às 10h
+    - Desativou às 11h
+    - Reativou às 14h
+    - Auto-delete vai acontecer às 20h (6h após 14h)
+  </Accordion>
+
+  <Accordion title="Plugin afeta performance do site?" icon="gauge-high">
+    **Impacto MÍNIMO!** Plugin só roda no admin (wp-admin).
+
+    Visitantes do site NÃO são afetados.
+
+    **E depois de 6h:** Plugin some = zero impacto!
+  </Accordion>
+
+  <Accordion title="Posso usar em sites de clientes?" icon="users">
+    **SIM!** Perfeito para isso.
+
+    **Fluxo:**
+    1. Instale WordPress do cliente
+    2. Rode Easy Setup
+    3. Corrija tudo
+    4. Deixe se auto-deletar
+    5. Cliente nunca vê o plugin!
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Download e Suporte
+
+<CardGroup cols={2}>
+  <Card title="Baixar Easy Setup" icon="download" href="https://drive.google.com/drive/folders/1A9KIl5o-6dWmPzULu4c6CLo8T2GSeGSr?usp=sharing">
+    Acesse Google Drive e baixe plugin (.zip)
+  </Card>
+
+  <Card title="Tutorial de Configuração" icon="book" href="/primeiros-passos/configuracao">
+    Guia completo de setup WordPress
+  </Card>
+
+  <Card title="Resolver Limite de PHP" icon="memory" href="/resolucao-problemas/limite-memoria">
+    Se avisos PHP aparecerem
+  </Card>
+
+  <Card title="Suporte WhatsApp" icon="whatsapp" href="https://wa.me/5566999049672">
+    Dúvidas ou problemas? Fale conosco!
+  </Card>
+</CardGroup>
+
+---
+
+## Resumo: Easy Setup em 3 Pontos
+
+1. **Diagnóstico Automático:** Verifica 9 configurações essenciais
+2. **Correção com 1 Clique:** Instala/ativa Elementor, ProElements, Hello Theme automaticamente
+3. **Auto-Delete em 6h:** Plugin temporário que se remove sozinho
+
+<Check>
+  **Easy Setup = Médico do WordPress!** Diagnostica problemas, receita soluções, corrige automaticamente. Depois vai embora. Simples assim!
+</Check>
+
+## Próximos Passos
+
+<CardGroup cols={3}>
+  <Card title="Backup Configurado" icon="download" href="/funcionalidades/backup-configurado">
+    Alternativa completa (WordPress pronto)
+  </Card>
+
+  <Card title="Configuração Inicial" icon="gear" href="/primeiros-passos/configuracao">
+    Guia manual de setup
+  </Card>
+
+  <Card title="Iniciante WordPress" icon="wordpress" href="/guias-perfil/iniciante-wordpress">
+    Trilha completa de aprendizado
+  </Card>
+</CardGroup>
