@@ -72,6 +72,7 @@
       "pages": [
         "primeiros-passos/configuracao",
         "funcionalidades/backup-configurado",
+        "funcionalidades/easy-setup",
         "guias-perfil/iniciante-wordpress",
         "guias-perfil/usuario-pratico"
       ]
@@ -88,7 +89,6 @@
     {
       "group": "Funcionalidades",
       "pages": [
-        "funcionalidades/easy-setup",
         "funcionalidades/meus-recursos",
         "funcionalidades/easy-sales",
         "funcionalidades/design-easy"
