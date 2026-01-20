@@ -1,0 +1,203 @@
+.ebs-wrap {
+    margin-top: 20px;
+}
+
+#ebs-checklist {
+    background: #fff;
+    border: 1px solid #c3c4c7;
+    padding: 0 12px 12px;
+    margin-top: 20px;
+}
+
+.ebs-check-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #f0f0f1;
+}
+
+.ebs-check-item:last-child {
+    border-bottom: none;
+}
+
+.ebs-status-icon {
+    font-size: 20px;
+    width: 30px;
+    text-align: center;
+}
+
+.ebs-check-title {
+    flex-grow: 1;
+    font-size: 14px;
+    padding: 0 10px;
+}
+
+.ebs-action-area {
+    display: flex;
+    align-items: center;
+    min-width: 180px; /* Garante alinhamento */
+    justify-content: flex-start;
+}
+
+.ebs-manual-fix {
+    font-style: italic;
+    color: #50575e;
+}
+
+.spinner.is-active {
+    float: none;
+    margin: 0 0 0 10px;
+}
+
+/* Seção de Ferramentas de Manutenção */
+#ebs-maintenance-tools {
+    background: #fff;
+    border: 1px solid #c3c4c7;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 4px;
+}
+
+#ebs-maintenance-tools h2 {
+    margin-top: 0;
+    color: #1d2327;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+#ebs-maintenance-tools > p {
+    color: #646970;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.ebs-maintenance-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.ebs-maintenance-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background: #f9f9f9;
+    border: 1px solid #e1e1e1;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+    position: relative;
+}
+
+.ebs-maintenance-item:hover {
+    border-color: #0073aa;
+    background: #f0f8ff;
+}
+
+.ebs-maintenance-info {
+    flex: 1;
+}
+
+.ebs-maintenance-info h3 {
+    margin: 0 0 5px 0;
+    color: #1d2327;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.ebs-maintenance-info p {
+    color: #646970;
+    font-size: 13px;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.ebs-maintenance-action {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.ebs-maintenance-button {
+    background: #0073aa;
+    border-color: #0073aa;
+    color: #fff;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    min-width: 120px;
+}
+
+.ebs-maintenance-button:hover {
+    background: #005a87;
+    border-color: #005a87;
+    color: #fff;
+    transform: translateY(-1px);
+}
+
+.ebs-maintenance-button:disabled {
+    background: #c3c4c7 !important;
+    border-color: #c3c4c7 !important;
+    color: #a7aaad !important;
+    cursor: not-allowed;
+    transform: none !important;
+}
+
+.ebs-maintenance-action .spinner {
+    margin: 0;
+    float: none;
+}
+
+.ebs-maintenance-action .spinner.is-active {
+    visibility: visible;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .ebs-check-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .ebs-action-area {
+        min-width: auto;
+        width: 100%;
+    }
+    
+    .ebs-maintenance-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    
+    .ebs-maintenance-action {
+        width: 100%;
+        justify-content: flex-start;
+    }
+    
+    .ebs-maintenance-button {
+        min-width: 140px;
+    }
+}
+
+/* Melhorias visuais gerais */
+.ebs-check-item {
+    transition: background-color 0.2s ease;
+}
+
+.ebs-check-item:hover {
+    background-color: #f9f9f9;
+}
+
+.ebs-fix-button {
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.ebs-fix-button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
